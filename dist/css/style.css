@@ -84,6 +84,10 @@ body {
   /*color: red;*/
 }
 
+p {
+  font-size: 1.25rem;
+}
+
 .profile-summary {
   font-size: 1.5rem;
 }
@@ -125,10 +129,13 @@ body {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Yantramanav', sans-serif;
 }
 
 .letsgo-menu {
   grid-column: 1 / span 1;
+  text-align: right;
+  margin: auto 0;
 }
 
 .letsgo-menu-content {
