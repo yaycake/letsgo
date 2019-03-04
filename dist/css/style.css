@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.section__1 {
+  border: 1px solid red;
+  position: relative;
+}
+.grid-col-3-row-2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .75fr 2.75fr;
+  height: 70vh;
+  grid-gap: 50px;
+}
+
+.section__1-image-top {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.section__1-image-left, .section__1-image-right {
+  background-size: cover;
+}
+
+.section__1-image-left {
+  grid-column: 1/span 2;
+  background-position: top;
+  border-radius: 0 5px 5px 0;
+}
+
+.section_1-image-right {
+  grid-column: 3/span 1;
+  /*border-radius: 5px 0 0 5px;*/
+}
+
+.section__1-title {
+  position: absolute;
+  letter-spacing: 2px;
+  font-family: 'Passion One', cursive;
+}
+
+.park_title {
+  font-size: 5rem;
+  left: 2rem;
+  bottom: -9.25rem;
+  text-shadow: 5px 5px #ffffff;
+  letter-spacing: 5px;
+}
+
+.national_park {
+  font-size: 3rem;
+  bottom: -11.25rem;
+  right: 2rem;
+}
+
+.section__2 {
+  margin-top: 8rem;
+ /* border: 1px solid blue;
+  height: 500px;*/
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 1fr 3fr;
+}
+
+.section__2-image-left {
+  margin-top: 50px;
+  grid-column: 1 /span 1;
+  border-radius: 0 5px 5px 0;
+}
+
+.section__2-profile-text {
+  font-family: 'Yantramanav', sans-serif;
+  margin-left: 1rem;
+  grid-column: 2/span 2;
+  width: 60%;
+}
+
+.section__2-profile-text > div > p {
+  font-size: 1.25rem;
+  /*color: red;*/
+}
+
+.profile-summary {
+  font-size: 1.5rem;
+}
+
+.profile_header {
+  font-size: 1.5rem;
+}
+
+.section__3 {
+  position: relative;
+}
+
+.section__3-grid-col-3{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 50vh;
+  grid-gap: 50px;
+  margin-top: 2rem;
+}
+
+.section__3-image-left {
+  grid-column: 1 / span 1;
+}
+
+.section__3-image-right {
+  grid-column: 2 / span 2;
+}
+
+.letsgo_title {
+  position: absolute;
+  bottom: -5.5rem;
+  left: 2rem;
+  font-size: 3rem;
+  font-family: 'Passion One', cursive;
+  text-shadow: 5px 5px #ffffff;
+}
+
+.section__4-grid-col-2 {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.letsgo-menu {
+  grid-column: 1 / span 1;
+}
+
+.letsgo-menu-content {
+  grid-column: 2 /span 2;
+  width: 60%;
+}
