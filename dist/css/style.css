@@ -6,17 +6,11 @@ body {
   border: 1px solid red;
   position: relative;
 }
-.grid-col-3-row-2{
+.grid-col-20{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: .75fr 2.75fr;
+  grid-template-columns: repeat(20, 1fr);
   height: 70vh;
-  grid-gap: 50px;
-}
-
-.section__1-image-top {
-  grid-column: 1 / span 3;
-  grid-row: 1;
+  grid-gap: 0px;
 }
 
 .section__1-image-left, .section__1-image-right {
@@ -24,38 +18,47 @@ body {
 }
 
 .section__1-image-left {
-  grid-column: 1/span 2;
+  grid-column: 1/span 7;
   background-position: top;
-  border-radius: 0 5px 5px 0;
+
 }
 
-.section_1-image-right {
-  grid-column: 3/span 1;
-  /*border-radius: 5px 0 0 5px;*/
+.section__1-image-right {
+  grid-column: 8 / span 14;
 }
 
 .section__1-title {
-  position: absolute;
-  letter-spacing: 2px;
-  font-family: 'Passion One', cursive;
+
 }
 
 .park_title {
-  font-size: 5rem;
+  font-size: 3rem;
+  margin-top: 80px;
   left: 2rem;
   bottom: -9.25rem;
-  text-shadow: 5px 5px #ffffff;
-  letter-spacing: 5px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.national_park {
+.park_title>h1 {
+  margin: .5rem;
+  margin-left: 80px;
+}
+
+/*.national_park {
   font-size: 3rem;
   bottom: -11.25rem;
   right: 2rem;
 }
 
+.national_park>h1 {
+  margin: .5rem;
+}*/
+
+
 .section__2 {
-  margin-top: 8rem;
+  /*margin-top: 8rem;*/
  /* border: 1px solid blue;
   height: 500px;*/
 }
@@ -67,15 +70,15 @@ body {
 }
 
 .section__2-image-left {
-  margin-top: 50px;
-  grid-column: 1 /span 1;
-  border-radius: 0 5px 5px 0;
+  /*margin-top: 50px;*/
+  grid-column: 1 /span 6;
+
 }
 
 .section__2-profile-text {
   font-family: 'Yantramanav', sans-serif;
-  margin-left: 1rem;
-  grid-column: 2/span 2;
+  /*margin-left: 1rem;*/
+  grid-column: 8 /span 12;
   width: 60%;
 }
 
