@@ -1,0 +1,23 @@
+{
+  "name": "letsgo",
+  "version": "1.0.0",
+  "description": "letsgo project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaycake/letsgo.git"
+  },
+  "author": "Grace Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaycake/letsgo/issues"
+  },
+  "homepage": "https://github.com/yaycake/letsgo#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
