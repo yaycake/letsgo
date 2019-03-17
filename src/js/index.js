@@ -1,6 +1,7 @@
 import Park from './models/Park';
 import ParkAlerts from './models/ParkAlerts';
 import * as parkView from './views/parkView';
+import * as parkalertsView from './views/parkalertsView';
 import axios from 'axios';
 import parkCodes from '../data/parks.json'
 
@@ -9,7 +10,6 @@ import parkCodes from '../data/parks.json'
 
 // Global state of the app
 const state = {};
-
 
 // On Window Load, begin Park
 window.addEventListener('load', ()=> {
@@ -30,7 +30,6 @@ const controlPark = async () => {
     //DEV View random value
     console.log(randomPark)
 
-
     return parkCodes[randomPark].parkCode
   }
   // 2. Take park code and call park API
@@ -44,10 +43,30 @@ const controlPark = async () => {
     console.log(error)
     alert('Error Getting A Park!')
   }
-
   // Check for Park Alerts
   console.log('calling for park alerts!')
-  controlParkAlerts();
+
+  try {
+      await state.park.getParkAlerts();
+
+
+    if (state.park.parkAlertsArr){
+      console.log('should be rendering alerts')
+      parkView.renderParkAlerts(state.park.parkAlertsArr)
+    } else {
+      parkView.renderNoParkAlerts()
+    }
+
+
+    } catch (error){
+      console.log(error)
+    }
+
+    console.log("print park alerts")
+    console.log(state.park.parkAlerts)
+
+
+
 
 
   // render park view on ui
@@ -56,20 +75,33 @@ const controlPark = async () => {
 
 }
 
-const controlParkAlerts = async () =>{
+// const controlParkAlerts = async () =>{
 
-    state.parkalerts = new ParkAlerts(state.park.parkcode);
+//     state.parkalerts = new ParkAlerts(state.park.parkcode);
 
-    try {
-      await state.parkalerts.getParkAlerts();
+//     try {
+//       await state.park.getParkAlerts();
 
-    }catch (error){
-      console.log(error)
+//       if (state.park.parkAlertsArr){
+//       console.log('should be rendering alerts')
+//       parkalertsView.renderParkAlerts(state.park.parkAlertsArr)
+//     } else {
+//       parkalertsView.renderNoParkAlerts();
+//     }
 
-    }
 
 
-}
+//     } catch (error){
+//       console.log(error)
+//     }
+
+//     console.log("print park alerts")
+//     console.log(state.parkAlertsArr)
+
+
+
+
+// }
 
 
 

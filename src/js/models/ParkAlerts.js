@@ -11,12 +11,12 @@ export default class ParkAlerts {
       const res = await axios(`${nps.baseUrl}/alerts?parkCode=${this.parkCode}&api_key=${nps.apiKey}`)
 
       const alertsArr = res.data.data
-
-
+      // hoist park alerts array
+      let parkAlertsArr = [];
 
       if (alertsArr.length > 0){
-        // hoist park alerts array
-        let parkAlerts = [];
+
+
         // Function Constructor for a singular alert
         const ParkAlert = function(title, description, url){
           this.title = title,
@@ -32,21 +32,18 @@ export default class ParkAlerts {
           console.log('pushing to parkAlerts...')
 
           // Push alert into parkAlerts array
-          parkAlerts.push(nextAlert)
+          parkAlertsArr.push(nextAlert)
 
           //DEV View Park Alerts
-          console.log(parkAlerts)
+          console.log(parkAlertsArr)
 
-          return parkAlerts;
+          return parkAlertsArr;
         })
 
       } else {
         console.log("There are no alerts for this park!")
-        return "There are no alerts for this park."
+        return parkAlertsArr;
       }
-
-
-
 
     } catch (error){
       console.log(error)

@@ -546,12 +546,6 @@
    "region": "Northeast"
  },
  {
-   "parkCode": "COLP",
-   "parkName": "Colonial Parkway",
-   "parkType": "National Parkway",
-   "region": "Northeast"
- },
- {
    "parkCode": "CONG",
    "parkName": "Congaree National Park",
    "parkType": "National Park",
@@ -1008,12 +1002,6 @@
    "region": "Northeast"
  },
  {
-   "parkCode": "GEMM",
-   "parkName": "George Mason Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
    "parkCode": "GERO",
    "parkName": "George Rogers Clark National Historical Park",
    "parkType": "National Historical Park",
@@ -1434,12 +1422,6 @@
    "region": "Midwest"
  },
  {
-   "parkCode": "KICA",
-   "parkName": "Kings Canyon National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
    "parkCode": "KIMO",
    "parkName": "Kings Mountain National Military Park",
    "parkType": "National Military Park",
@@ -1830,12 +1812,6 @@
    "region": "National Capitol"
  },
  {
-   "parkCode": "NCCO",
-   "parkName": "North Cascades National Park Service Complex",
-   "parkType": "Other Designation",
-   "region": "Pacific West"
- },
- {
    "parkCode": "NEBE",
    "parkName": "New Bedford Whaling National Historical Park",
    "parkType": "National Historical Park",
@@ -2181,12 +2157,6 @@
    "parkCode": "RORI",
    "parkName": "Rosie The Riveter WWII Home Front National Historical Park",
    "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ROVA",
-   "parkName": "Roosevelt-Vanderbilt Headquarters",
-   "parkType": "National Historic Site",
    "region": "Northeast"
  },
  {
@@ -2584,18 +2554,6 @@
    "parkName": "War In The Pacific National Historical Park",
    "parkType": "National Historical Park",
    "region": "Pacific West"
- },
- {
-   "parkCode": "WASP",
-   "parkName": "Warm Springs Apache",
-   "parkType": "Other Designation",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WEAR",
-   "parkName": "Western Arctic National Parklands",
-   "parkType": "National Preserve",
-   "region": "Alaska"
  },
  {
    "parkCode": "WEFA",

@@ -21,7 +21,6 @@ export default class Park {
       console.log('Here are results:')
       console.log(res)
 
-
       // Create the selected park object
       this.name = res.data.data[0].fullName;
       this.summary = res.data.data[0].description;
@@ -31,7 +30,55 @@ export default class Park {
       this.latlong = res.data.data[0].latLong;
     } catch (error) {
       console.log(error);
-      alert('Something went wrong in getting your park!')
+      alert('Something went wrong in getting park!')
+    }
+  }
+
+  async getParkAlerts() {
+    // hoist park alerts array
+    this.parkAlertsArr = [];
+    try {
+      const res = await axios(`${nps.baseUrl}/alerts?parkCode=${this.parkCode}&api_key=${nps.apiKey}`)
+      const alertsArr = res.data.data
+
+      // If there are park alerts
+      if (alertsArr){
+        // Function Constructor for a singular alert
+        const ParkAlert = function(title, description, url){
+          this.title = title,
+          this.description = description,
+          this.url = url
+        }
+
+        // Iterate through each park alert
+        alertsArr.forEach(function(parkAlert){
+          const nextAlert = new ParkAlert(parkAlert.title, parkAlert.description, parkAlert.url)
+
+          //DEV View Alert
+          console.log(nextAlert)
+          console.log('pushing to parkAlerts...')
+
+          // Push alert into parkAlerts array
+          this.parkAlertsArr.push(nextAlert)
+
+          //DEV View Park Alerts
+          console.log(this.parkAlertsArr)
+
+          return this.parkAlertsArr;
+        })
+      } else {
+        console.log("There are no alerts for this park!")
+        // return an empty array
+        return this.parkAlertsArr;
+      }
+
+    } catch (error){
+      console.log(error)
+      alert('Something wrong with getting Park Alerts!')
     }
   }
 }
+
+
+
+

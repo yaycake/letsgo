@@ -1,10 +1,11 @@
-const parkElements = {
+const elements = {
   parkHeader: document.querySelector('.profile_header'),
   parkStates: document.querySelector('.states'),
+  parkAlert: document.querySelector('.alerts_container')
 }
 // Clear previous park results
 export const clearPark = () => {
-  parkElements.parkHeader.innerHTML = ''
+  elements.parkHeader.innerHTML = ''
 }
 // Render Park Header: Title + Summary
 export const renderParkHeader = (park) => {
@@ -20,7 +21,7 @@ export const renderParkHeader = (park) => {
       </div>
     </div>
   `
-  parkElements.parkHeader.insertAdjacentHTML('afterbegin', markup)
+  elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
 }
 
 export const renderParkVisit = (park) => {
@@ -32,5 +33,27 @@ export const renderParkVisit = (park) => {
           <li><p>${park.states}</p></li>
         </ul>
   `
-  parkElements.parkStates.insertAdjacentHTML('afterbegin', statesMarkup)
+  elements.parkStates.insertAdjacentHTML('afterbegin', statesMarkup)
 }
+
+export const renderParkAlerts = (parkAlerts) => {
+  console.log('inside render park alerts')
+  console.log(parkAlerts)
+
+  parkAlerts.forEach(function(alert){
+    const markup = `
+      <div class="alert_text">
+        <a href="${alert.url}" target="_blank">
+          <p><strong>${alert.title}</strong></p>
+          <p>${alert.description}</p>
+        </a>
+      </div>
+    `
+    elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+  })
+}
+
+export const renderNoParkAlerts = () =>{
+  return "No alerts for this park."
+}
+
