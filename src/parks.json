@@ -1,2726 +1,1982 @@
 [
- {
-   "parkCode": "ABLI",
-   "parkName": "Abraham Lincoln Birthplace National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "ACAD",
-   "parkName": "Acadia National Park",
-   "parkType": "National Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ADAM",
-   "parkName": "Adams National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ADNM",
-   "parkName": "Adams National Memorial",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "AFAM",
-   "parkName": "African American Civil War Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "AFBG",
-   "parkName": "African Burial Ground National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "AGFO",
-   "parkName": "Agate Fossil Beds National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "ALAG",
-   "parkName": "Alagnak Wild River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Alaska"
- },
- {
-   "parkCode": "ALCA",
-   "parkName": "Alcatraz Island",
-   "parkType": "Other Designation",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "ALEU",
-   "parkName": "Aleutian World War II National Historic Area",
-   "parkType": "National Historic Site",
-   "region": "Alaska"
- },
- {
-   "parkCode": "ALFL",
-   "parkName": "Alibates Flint Quarries National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ALPO",
-   "parkName": "Allegheny Portage Railroad National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "AMIS",
-   "parkName": "Amistad National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ANAC",
-   "parkName": "Anacostia Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "ANDE",
-   "parkName": "Andersonville National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "ANIA",
-   "parkName": "Aniakchak National Monument and Preserve",
-   "parkType": "National Monument",
-   "region": "Alaska"
- },
- {
-   "parkCode": "ANJO",
-   "parkName": "Andrew Johnson National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "ANTI",
-   "parkName": "Antietam National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Northeast"
- },
- {
-   "parkCode": "APCO",
-   "parkName": "Appomattox Court House National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "APIS",
-   "parkName": "Apostle Islands National Lakeshore",
-   "parkType": "National Lakeshore",
-   "region": "Midwest"
- },
- {
-   "parkCode": "APPA",
-   "parkName": "Appalachian National Scenic Trail",
-   "parkType": "National Scenic Trail",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ARCH",
-   "parkName": "Arches National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ARHO",
-   "parkName": "Arlington House The Robert E. Lee Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ARPO",
-   "parkName": "Arkansas Post National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "ASIS",
-   "parkName": "Assateague Island National Seashore",
-   "parkType": "National Seashore",
-   "region": "Northeast"
- },
- {
-   "parkCode": "AZRU",
-   "parkName": "Aztec Ruins National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BADL",
-   "parkName": "Badlands National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "BAND",
-   "parkName": "Bandelier National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BAWA",
-   "parkName": "Baltimore-Washington National Parkway",
-   "parkType": "National Parkway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BELA",
-   "parkName": "Bering Land Bridge National Preserve",
-   "parkType": "National Preserve",
-   "region": "Alaska"
- },
- {
-   "parkCode": "BEOL",
-   "parkName": "Bent's Old Fort National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BEPA",
-   "parkName": "Bear Paw Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BIBE",
-   "parkName": "Big Bend National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BICA",
-   "parkName": "Bighorn Canyon National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BICY",
-   "parkName": "Big Cypress National Preserve",
-   "parkType": "National Preserve",
-   "region": "Southeast"
- },
- {
-   "parkCode": "BIHO",
-   "parkName": "Big Hole National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BISC",
-   "parkName": "Biscayne National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "BISO",
-   "parkName": "Big South Fork National River and Recreation Area National River",
-   "parkType": "National River",
-   "region": "Southeast"
- },
- {
-   "parkCode": "BITH",
-   "parkName": "Big Thicket National Preserve",
-   "parkType": "National Preserve",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BLCA",
-   "parkName": "Black Canyon Of The Gunnison National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BLRI",
-   "parkName": "Blue Ridge Parkway",
-   "parkType": "National Parkway",
-   "region": "Southeast"
- },
- {
-   "parkCode": "BLUE",
-   "parkName": "Bluestone National Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BOAF",
-   "parkName": "Boston African American National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BOHA",
-   "parkName": "Boston Harbor Islands National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BOST",
-   "parkName": "Boston National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BOWA",
-   "parkName": "Booker T. Washington National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "BRCA",
-   "parkName": "Bryce Canyon National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "BRCR",
-   "parkName": "Brices Cross Roads National Battlefield Site",
-   "parkType": "National Battlefield Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "BRVB",
-   "parkName": "Brown v. Board Of Education National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "BUFF",
-   "parkName": "Buffalo National River",
-   "parkType": "National River",
-   "region": "Midwest"
- },
- {
-   "parkCode": "BUIS",
-   "parkName": "Buck Island Reef National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CABR",
-   "parkName": "Cabrillo National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "CACH",
-   "parkName": "Canyon De Chelly National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CACL",
-   "parkName": "Castle Clinton National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CACO",
-   "parkName": "Cape Cod National Seashore",
-   "parkType": "National Seashore",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CAGR",
-   "parkName": "Casa Grande Ruins National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CAHA",
-   "parkName": "Cape Hatteras National Seashore",
-   "parkType": "National Seashore",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CAHE",
-   "parkName": "Capitol Hill Parks",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "CAKR",
-   "parkName": "Cape Krusenstern National Monument",
-   "parkType": "National Monument",
-   "region": "Alaska"
- },
- {
-   "parkCode": "CALO",
-   "parkName": "Cape Lookout National Seashore",
-   "parkType": "National Seashore",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CAME",
-   "parkName": "Cape Henry National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CANA",
-   "parkName": "Canaveral National Seashore",
-   "parkType": "National Seashore",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CANY",
-   "parkName": "Canyonlands National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CARE",
-   "parkName": "Capitol Reef National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CARI",
-   "parkName": "Cane River Creole National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CARL",
-   "parkName": "Carl Sandburg Home National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CASA",
-   "parkName": "Castillo De San Marcos National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CATO",
-   "parkName": "Catoctin Mountain Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CAVE",
-   "parkName": "Carlsbad Caverns National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CAVO",
-   "parkName": "Capulin Volcano National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CAWO",
-   "parkName": "Carter G. Woodson Home National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "CBPO",
-   "parkName": "Chesapeake Bay Gateways",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "CEBE",
-   "parkName": "Cedar Creek and Belle Grove National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CEBR",
-   "parkName": "Cedar Breaks National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CHAM",
-   "parkName": "Chamizal National Memorial",
-   "parkType": "National Memorial",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CHAT",
-   "parkName": "Chattahoochee River National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CHCH",
-   "parkName": "Chickamauga and Chattanooga National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CHCU",
-   "parkName": "Chaco Culture National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CHIC",
-   "parkName": "Chickasaw National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CHIR",
-   "parkName": "Chiricahua National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CHIS",
-   "parkName": "Channel Islands National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "CHOH",
-   "parkName": "Chesapeake and Ohio Canal National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CHPI",
-   "parkName": "Charles Pinckney National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CHRI",
-   "parkName": "Christiansted National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CHSC",
-   "parkName": "Central High School National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "CIRO",
-   "parkName": "City Of Rocks National Reserve",
-   "parkType": "National Reserve",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "CLBA",
-   "parkName": "Clara Barton National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CLMO",
-   "parkName": "Claude Moore Colonial Farm",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "COGA",
-   "parkName": "Constitution Gardens",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "COLM",
-   "parkName": "Colorado National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "COLO",
-   "parkName": "Colonial National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "COLP",
-   "parkName": "Colonial Parkway",
-   "parkType": "National Parkway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "CONG",
-   "parkName": "Congaree National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CORO",
-   "parkName": "Coronado National Memorial",
-   "parkType": "National Memorial",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "COWP",
-   "parkName": "Cowpens National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CRCO",
-   "parkName": "Crown of the Continent Ecosystem",
-   "parkType": "Other Designation",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CRLA",
-   "parkName": "Crater Lake National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "CRMO",
-   "parkName": "Craters Of The Moon National Monument and Preserve",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "CUGA",
-   "parkName": "Cumberland Gap National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CUIS",
-   "parkName": "Cumberland Island National Seashore",
-   "parkType": "National Seashore",
-   "region": "Southeast"
- },
- {
-   "parkCode": "CURE",
-   "parkName": "Curecanti National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "CUVA",
-   "parkName": "Cuyahoga Valley National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "DABE",
-   "parkName": "David Berger National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "DELA",
-   "parkName": "Delaware National Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "DENA",
-   "parkName": "Denali National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "DEPO",
-   "parkName": "Devils Postpile National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "DESO",
-   "parkName": "DeSoto National Memorial",
-   "parkType": "National Memorial",
-   "region": "Southeast"
- },
- {
-   "parkCode": "DETO",
-   "parkName": "Devils Tower National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "DEVA",
-   "parkName": "Death Valley National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "DEWA",
-   "parkName": "Delaware Water Gap National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Northeast"
- },
- {
-   "parkCode": "DINO",
-   "parkName": "Dinosaur National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "DRTO",
-   "parkName": "Dry Tortugas National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "DWEI",
-   "parkName": "Dwight D. Eisenhower National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "EAPO",
-   "parkName": "East Potomac Park",
-   "parkType": "National Scenic Trail",
-   "region": "Northeast"
- },
- {
-   "parkCode": "EBLA",
-   "parkName": "Ebey's Landing NH Reserve National Reserve",
-   "parkType": "National Reserve",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "EDAL",
-   "parkName": "Edgar Allan Poe National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "EDIS",
-   "parkName": "Thomas Edison National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "EFMO",
-   "parkName": "Effigy Mounds National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "EISE",
-   "parkName": "Eisenhower National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ELIS",
-   "parkName": "Ellis Island National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ELMA",
-   "parkName": "El Malpais National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ELMO",
-   "parkName": "El Morro National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ELRO",
-   "parkName": "Eleanor Roosevelt National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "EUON",
-   "parkName": "Eugene O'Neill National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "EVER",
-   "parkName": "Everglades National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FARM",
-   "parkName": "Farmington National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FEHA",
-   "parkName": "Federal Hall National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FIIS",
-   "parkName": "Fire Island National Seashore",
-   "parkType": "National Seashore",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FILA",
-   "parkName": "First Ladies National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "FLFO",
-   "parkName": "Florissant Fossil Beds National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FLNI",
-   "parkName": "Flight 93 National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FOBO",
-   "parkName": "Fort Bowie National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FOBU",
-   "parkName": "Fossil Butte National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FOCA",
-   "parkName": "Fort Caroline National Memorial",
-   "parkType": "National Memorial",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOCI",
-   "parkName": "Fort Circle Parks",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FODA",
-   "parkName": "Fort Davis National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FODO",
-   "parkName": "Fort Donelson National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FODU",
-   "parkName": "Fort Dupont Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FOFO",
-   "parkName": "Fort Foote Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FOFR",
-   "parkName": "Fort Frederica National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOLA",
-   "parkName": "Fort Laramie National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FOLS",
-   "parkName": "Fort Larned National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "FOMA",
-   "parkName": "Fort Matanzas National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOMC",
-   "parkName": "Fort McHenry NM and Historic Shrine National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FONE",
-   "parkName": "Fort Necessity National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FOPO",
-   "parkName": "Fort Point National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "FOPU",
-   "parkName": "Fort Pulaski National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FORA",
-   "parkName": "Fort Raleigh National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOSC",
-   "parkName": "Fort Scott National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "FOSM",
-   "parkName": "Fort Smith National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "FOST",
-   "parkName": "Fort Stanwix National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FOSU",
-   "parkName": "Fort Sumter National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOTH",
-   "parkName": "Ford's Theatre National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FOUN",
-   "parkName": "Fort Union National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "FOUS",
-   "parkName": "Fort Union Trading Post National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "FOVA",
-   "parkName": "Fort Vancouver National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "FOWA",
-   "parkName": "Fort Washington Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FRDE",
-   "parkName": "Franklin Delano Roosevelt National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FRDO",
-   "parkName": "Frederick Douglass National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "FRHI",
-   "parkName": "Friendship Hill National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FRLA",
-   "parkName": "Frederick Law Olmsted National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FRSC",
-   "parkName": "Francis Scott Key National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "FRSP",
-   "parkName": "Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park National Military Park",
-   "parkType": "National Military Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GAAR",
-   "parkName": "Gates Of The Arctic National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "GARI",
-   "parkName": "Gauley River National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GATE",
-   "parkName": "Gateway National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GEGR",
-   "parkName": "General Grant National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GEMM",
-   "parkName": "George Mason Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "GERO",
-   "parkName": "George Rogers Clark National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "GETT",
-   "parkName": "Gettysburg National Military Park",
-   "parkType": "National Military Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GEWA",
-   "parkName": "George Washington Birthplace National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GICL",
-   "parkName": "Gila Cliff Dwellings National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GLAC",
-   "parkName": "Glacier National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GLBA",
-   "parkName": "Glacier Bay National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "GLCA",
-   "parkName": "Glen Canyon National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GLEC",
-   "parkName": "Glen Echo Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GLOR",
-   "parkName": "Glorieta National Battlefield",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GOGA",
-   "parkName": "Golden Gate National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "GOIS",
-   "parkName": "Governors Island National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GOSP",
-   "parkName": "Golden Spike National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GRBA",
-   "parkName": "Great Basin National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "GRCA",
-   "parkName": "Grand Canyon National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GREE",
-   "parkName": "Greenbelt Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GREG",
-   "parkName": "Great Egg Harbor National Scenic and Recreational River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GRFA",
-   "parkName": "Great Falls Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "GRKO",
-   "parkName": "Grant-Kohrs Ranch National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GRPO",
-   "parkName": "Grand Portage National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "GRSA",
-   "parkName": "Great Sand Dunes National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GRSM",
-   "parkName": "Great Smoky Mountains National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "GRTE",
-   "parkName": "Grand Teton National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GUCO",
-   "parkName": "Guilford Courthouse National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "GUIS",
-   "parkName": "Gulf Islands National Seashore",
-   "parkType": "National Seashore",
-   "region": "Southeast"
- },
- {
-   "parkCode": "GUMO",
-   "parkName": "Guadalupe Mountains National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "GWCA",
-   "parkName": "George Washington Carver National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "GWMP",
-   "parkName": "George Washington Memorial Parkway",
-   "parkType": "National Parkway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HAFE",
-   "parkName": "Harpers Ferry National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HAFO",
-   "parkName": "Hagerman Fossil Beds National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "HAGR",
-   "parkName": "Hamilton Grange National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HAHA",
-   "parkName": "Harmony Hall",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HALE",
-   "parkName": "Haleakala National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "HAMP",
-   "parkName": "Hampton National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HAVO",
-   "parkName": "Hawaii Volcanoes National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "HEHO",
-   "parkName": "Herbert Hoover National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "HOBE",
-   "parkName": "Horseshoe Bend National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "HOCU",
-   "parkName": "Hopewell Culture National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "HOFR",
-   "parkName": "Home Of Franklin D. Roosevelt National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HOFU",
-   "parkName": "Hopewell Furnace National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "HOME",
-   "parkName": "Homestead NM of America National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "HOSP",
-   "parkName": "Hot Springs National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "HOVE",
-   "parkName": "Hovenweep National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "HSTR",
-   "parkName": "Harry S. Truman National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "HUTR",
-   "parkName": "Hubbell Trading Post National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "IATR",
-   "parkName": "Ice Age National Scenic Trail",
-   "parkType": "National Scenic Trail",
-   "region": "Midwest"
- },
- {
-   "parkCode": "INDE",
-   "parkName": "Independence National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "INDU",
-   "parkName": "Indiana Dunes National Lakeshore",
-   "parkType": "National Lakeshore",
-   "region": "Midwest"
- },
- {
-   "parkCode": "ISRO",
-   "parkName": "Isle Royale National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "JAGA",
-   "parkName": "James A. Garfield National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "JAZZ",
-   "parkName": "New Orleans Jazz National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "JECA",
-   "parkName": "Jewel Cave National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "JEFF",
-   "parkName": "Jefferson National Expansion Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "JEFM",
-   "parkName": "Thomas Jefferson Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "JELA",
-   "parkName": "Jean Lafitte National Historical Park and Preserve",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "JICA",
-   "parkName": "Jimmy Carter National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "JODA",
-   "parkName": "John Day Fossil Beds National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "JODR",
-   "parkName": "John D. Rockefeller Jr. Memorial Parkway",
-   "parkType": "National Parkway",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "JOER",
-   "parkName": "John Ericsson National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "JOFI",
-   "parkName": "John Fitzgerald Kennedy National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "JOFK",
-   "parkName": "John F. Kennedy Center for the Performing Arts",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "JOFL",
-   "parkName": "Johnstown Flood National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "JOMU",
-   "parkName": "John Muir National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "JOTR",
-   "parkName": "Joshua Tree National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "KAHO",
-   "parkName": "Kaloko-Honokohau National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "KALA",
-   "parkName": "Kalaupapa National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "KATM",
-   "parkName": "Katmai National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "KEFJ",
-   "parkName": "Kenai Fjords National Park",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "KEMO",
-   "parkName": "Kennesaw Mountain National Battlefield Park",
-   "parkType": "National Battlefield Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "KEPA",
-   "parkName": "Kenilworth Park and Aquatic Gardens",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "KEWE",
-   "parkName": "Keweenaw National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "KICA",
-   "parkName": "Kings Canyon National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "KIMO",
-   "parkName": "Kings Mountain National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "KLGO",
-   "parkName": "Klondike Gold Rush National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "KLSE",
-   "parkName": "Klondike Gold Rush - Seattle Unit National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "KNRI",
-   "parkName": "Knife River Indian Villages National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "KOVA",
-   "parkName": "Kobuk Valley National Park",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "KOWA",
-   "parkName": "Korean War Veterans National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "LABE",
-   "parkName": "Lava Beds National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LACH",
-   "parkName": "Lake Chelan National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LACL",
-   "parkName": "Lake Clark National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "LAKE",
-   "parkName": "Lake Mead National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LAMP",
-   "parkName": "Lamprey Wild and Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "LAMR",
-   "parkName": "Lake Meredith National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "LARO",
-   "parkName": "Lake Roosevelt National Recreation Area",
-   "parkType": "Other Designation",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LAVO",
-   "parkName": "Lassen Volcanic National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LEWI",
-   "parkName": "Lewis and Clark National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "LIBI",
-   "parkName": "Little Bighorn Battlefield National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "LIBO",
-   "parkName": "Lincoln Boyhood National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "LIHO",
-   "parkName": "Lincoln Home National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "LINC",
-   "parkName": "Lincoln Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "LIRI",
-   "parkName": "Little River Canyon National Preserve",
-   "parkType": "National Preserve",
-   "region": "Southeast"
- },
- {
-   "parkCode": "LONG",
-   "parkName": "Longfellow House - Washington's Headquarters National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "LOSA",
-   "parkName": "Lower Saint Croix National Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Midwest"
- },
- {
-   "parkCode": "LOWE",
-   "parkName": "Lowell National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "LYBA",
-   "parkName": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "LYJO",
-   "parkName": "Lyndon B. Johnson National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "MABE",
-   "parkName": "Mary McLeod Bethune Council House National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "MABI",
-   "parkName": "Marsh-Billings-Rockefeller National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MACA",
-   "parkName": "Mammoth Cave National Park",
-   "parkType": "National Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "MAHE",
-   "parkName": "Marin Headlands Sites",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MALL",
-   "parkName": "National Mall",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "MALU",
-   "parkName": "Martin Luther King Jr National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "MANA",
-   "parkName": "Manassas National Battlefield Park",
-   "parkType": "National Battlefield Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MANZ",
-   "parkName": "Manzanar National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MASI",
-   "parkName": "Manhattan Sites",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MAUR",
-   "parkName": "Maurice National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MAVA",
-   "parkName": "Martin Van Buren National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MAWA",
-   "parkName": "Maggie L. Walker National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MCHO",
-   "parkName": "McLoughlin House National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MEHI",
-   "parkName": "Meridian Hill Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "MEVE",
-   "parkName": "Mesa Verde National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "MICU",
-   "parkName": "Mimbres Culture National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "MIIN",
-   "parkName": "Minidoka Internment National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MIMA",
-   "parkName": "Minute Man National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MIMI",
-   "parkName": "Minuteman Missile National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "MISS",
-   "parkName": "Mississippi National River and Recreation Areas National River",
-   "parkType": "National River",
-   "region": "Midwest"
- },
- {
-   "parkCode": "MLKM",
-   "parkName": "Martin Luther King Jr National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "MNRR",
-   "parkName": "Missouri National Recreational River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Midwest"
- },
- {
-   "parkCode": "MOCA",
-   "parkName": "Montezuma Castle National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "MOCR",
-   "parkName": "Moores Creek National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Southeast"
- },
- {
-   "parkCode": "MOJA",
-   "parkName": "Mojave National Preserve",
-   "parkType": "National Preserve",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MONO",
-   "parkName": "Monocacy National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MORA",
-   "parkName": "Mount Rainier National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "MORR",
-   "parkName": "Morristown National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "MORU",
-   "parkName": "Mount Rushmore National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "MUWO",
-   "parkName": "Muir Woods National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "NABR",
-   "parkName": "Natural Bridges National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "NACA",
-   "parkName": "National Capital Parks",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "NACE",
-   "parkName": "National Capital Parks-East",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "NAMA",
-   "parkName": "National Mall and Memorial Parks",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "NATC",
-   "parkName": "Natchez National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "NATR",
-   "parkName": "Natchez Trace Parkway",
-   "parkType": "National Parkway",
-   "region": "Southeast"
- },
- {
-   "parkCode": "NATT",
-   "parkName": "Natchez Trace National Scenic Trail",
-   "parkType": "National Scenic Trail",
-   "region": "Southeast"
- },
- {
-   "parkCode": "NAVA",
-   "parkName": "Navajo National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "NAVY",
-   "parkName": "U.S. Navy Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "NCCO",
-   "parkName": "North Cascades National Park Service Complex",
-   "parkType": "Other Designation",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "NEBE",
-   "parkName": "New Bedford Whaling National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "NEPE",
-   "parkName": "Nez Perce National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "NERI",
-   "parkName": "New River Gorge National River",
-   "parkType": "National River",
-   "region": "Northeast"
- },
- {
-   "parkCode": "NICO",
-   "parkName": "Nicodemus National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "NIMI",
-   "parkName": "Niobrara and Missouri National Scenic and Recreational Rivers",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Midwest"
- },
- {
-   "parkCode": "NIOB",
-   "parkName": "Niobrara National Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Midwest"
- },
- {
-   "parkCode": "NISI",
-   "parkName": "Ninety Six National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "NLEM",
-   "parkName": "National Law Enforcement Officers National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "NOAT",
-   "parkName": "Noatak National Preserve",
-   "parkType": "National Preserve",
-   "region": "Alaska"
- },
- {
-   "parkCode": "NOCA",
-   "parkName": "North Cascades National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "NOCO",
-   "parkName": "North Country National Scenic Trail",
-   "parkType": "National Scenic Trail",
-   "region": "Midwest"
- },
- {
-   "parkCode": "NPNH",
-   "parkName": "National Parks of New York Harbor Management Unit",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "NPSA",
-   "parkName": "National Park of American Samoa National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "OBRI",
-   "parkName": "Obed Wild and Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Southeast"
- },
- {
-   "parkCode": "OCMU",
-   "parkName": "Ocmulgee National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "OLST",
-   "parkName": "The Old Stone House",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "OLYM",
-   "parkName": "Olympic National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "OPOT",
-   "parkName": "Old Post Office Tower",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "ORCA",
-   "parkName": "Oregon Caves National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "ORPI",
-   "parkName": "Organ Pipe Cactus National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "OXHI",
-   "parkName": "Oxon Cove Park and Oxon Hill Run",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "OXRU",
-   "parkName": "Oxon Run National Parkway",
-   "parkType": "National Parkway",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "OZAR",
-   "parkName": "Ozark National Scenic Riverways National River",
-   "parkType": "National River",
-   "region": "Midwest"
- },
- {
-   "parkCode": "PAAL",
-   "parkName": "Palo Alto Battlefield National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PAAV",
-   "parkName": "Pennsylvania Avenue National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "PAGR",
-   "parkName": "Paterson Great Falls National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "PAIS",
-   "parkName": "Padre Island National Seashore",
-   "parkType": "National Seashore",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PARA",
-   "parkName": "Parashant National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PECO",
-   "parkName": "Pecos National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PEFO",
-   "parkName": "Petrified Forest National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PERI",
-   "parkName": "Pea Ridge National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "PETE",
-   "parkName": "Petersburg National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Northeast"
- },
- {
-   "parkCode": "PETR",
-   "parkName": "Petroglyph National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PEVI",
-   "parkName": "Perry's Victory and International Peace Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "PIMA",
-   "parkName": "Hohokam Pima National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "PIMI",
-   "parkName": "Peirce Mill Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "PINN",
-   "parkName": "Pinnacles National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "PIPE",
-   "parkName": "Pipestone National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "PIRO",
-   "parkName": "Pictured Rocks National Lakeshore",
-   "parkType": "National Lakeshore",
-   "region": "Midwest"
- },
- {
-   "parkCode": "PISC",
-   "parkName": "Piscataway Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "PISP",
-   "parkName": "Pipe Spring National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "POCH",
-   "parkName": "Port Chicago Naval Magazine National Memorial",
-   "parkType": "National Memorial",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "POPO",
-   "parkName": "Poverty Point National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "PORE",
-   "parkName": "Point Reyes National Seashore",
-   "parkType": "National Seashore",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "PRPA",
-   "parkName": "President's Park (White House)",
-   "parkType": "National Historic Site",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "PRSF",
-   "parkName": "Presidio of San Francisco",
-   "parkType": "Other Designation",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "PRWI",
-   "parkName": "Prince William Forest Park",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "PUHE",
-   "parkName": "Puukohola Heiau National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "PUHO",
-   "parkName": "Pu'uhonua o Honaunau National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "RABR",
-   "parkName": "Rainbow Bridge National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "REDW",
-   "parkName": "Redwood National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "RICH",
-   "parkName": "Richmond National Battlefield Park",
-   "parkType": "National Battlefield Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "RIGR",
-   "parkName": "Rio Grande Wild and Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "RIRA",
-   "parkName": "River Raisin National Battlefield Park",
-   "parkType": "National Battlefield Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ROCR",
-   "parkName": "Rock Creek Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "ROLA",
-   "parkName": "Ross Lake National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "ROMO",
-   "parkName": "Rocky Mountain National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "RORI",
-   "parkName": "Rosie The Riveter WWII Home Front National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ROVA",
-   "parkName": "Roosevelt-Vanderbilt Headquarters",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "ROWI",
-   "parkName": "Roger Williams National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "RRBH",
-   "parkName": "Ronald Reagan Boyhood Home National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "RUCA",
-   "parkName": "Russell Cave National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "SAAN",
-   "parkName": "San Antonio Missions National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "SACN",
-   "parkName": "Saint Croix National Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Midwest"
- },
- {
-   "parkCode": "SACR",
-   "parkName": "Saint Croix Island International Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAFR",
-   "parkName": "San Francisco Maritime National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "SAGA",
-   "parkName": "Saint-Gaudens National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAGU",
-   "parkName": "Saguaro National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "SAHI",
-   "parkName": "Sagamore Hill National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAIR",
-   "parkName": "Saugus Iron Works National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAJH",
-   "parkName": "San Juan Island National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "SAJU",
-   "parkName": "San Juan National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "SAMA",
-   "parkName": "Salem Maritime National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAMO",
-   "parkName": "Santa Monica Mountains National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "SAND",
-   "parkName": "Sand Creek Massacre National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "SAPA",
-   "parkName": "Saint Paul's Church National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SAPU",
-   "parkName": "Salinas Pueblo Missions National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "SARA",
-   "parkName": "Saratoga National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SARI",
-   "parkName": "Salt River Bay NHP and Ecological Preserve National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "SCBL",
-   "parkName": "Scotts Bluff National Monument",
-   "parkType": "National Monument",
-   "region": "Midwest"
- },
- {
-   "parkCode": "SEKI",
-   "parkName": "Sequoia and Kings Canyon National Parks",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "SEQU",
-   "parkName": "Sequoia National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "SHEN",
-   "parkName": "Shenandoah National Park",
-   "parkType": "National Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SHIL",
-   "parkName": "Shiloh National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "SITK",
-   "parkName": "Sitka National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "SLBE",
-   "parkName": "Sleeping Bear Dunes National Lakeshore",
-   "parkType": "National Lakeshore",
-   "region": "Midwest"
- },
- {
-   "parkCode": "SPAR",
-   "parkName": "Springfield Armory National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "STEA",
-   "parkName": "Steamtown National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "STLI",
-   "parkName": "Statue Of Liberty National Monument",
-   "parkType": "National Monument",
-   "region": "Northeast"
- },
- {
-   "parkCode": "STRI",
-   "parkName": "Stones River National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Southeast"
- },
- {
-   "parkCode": "SUAS",
-   "parkName": "Sudbury Assabet and Concord National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "SUCR",
-   "parkName": "Sunset Crater Volcano National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "SUIT",
-   "parkName": "Suitland Parkway",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "TAPR",
-   "parkName": "Tallgrass Prairie National Preserve",
-   "parkType": "National Preserve",
-   "region": "Midwest"
- },
- {
-   "parkCode": "THIS",
-   "parkName": "Theodore Roosevelt Island National Memorial",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "THKO",
-   "parkName": "Thaddeus Kosciuszko National Memorial",
-   "parkType": "National Memorial",
-   "region": "Northeast"
- },
- {
-   "parkCode": "THRB",
-   "parkName": "Theodore Roosevelt Birthplace National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "THRI",
-   "parkName": "Theodore Roosevelt Inaugural National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "THRO",
-   "parkName": "Theodore Roosevelt National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "THST",
-   "parkName": "Thomas Stone National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "TICA",
-   "parkName": "Timpanogos Cave National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "TIMU",
-   "parkName": "Timucuan Ecological and Historic Preserve",
-   "parkType": "National Preserve",
-   "region": "Southeast"
- },
- {
-   "parkCode": "TONT",
-   "parkName": "Tonto National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "TUAI",
-   "parkName": "Tuskegee Airmen National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "TUIN",
-   "parkName": "Tuskegee Institute National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Southeast"
- },
- {
-   "parkCode": "TUMA",
-   "parkName": "Tumacacori National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "TUPE",
-   "parkName": "Tupelo National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Southeast"
- },
- {
-   "parkCode": "TUZI",
-   "parkName": "Tuzigoot National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ULSG",
-   "parkName": "Ulysses S. Grant National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "UPDE",
-   "parkName": "Upper Delaware National Scenic and Recreation River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "VAFO",
-   "parkName": "Valley Forge National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "VALR",
-   "parkName": "World War II Valor in the Pacific National Monument",
-   "parkType": "National Monument",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "VAMA",
-   "parkName": "Vanderbilt Mansion National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "VICK",
-   "parkName": "Vicksburg National Military Park",
-   "parkType": "National Military Park",
-   "region": "Southeast"
- },
- {
-   "parkCode": "VICR",
-   "parkName": "Virgin Islands Coral Reef National Monument",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "VIIS",
-   "parkName": "Virgin Islands National Park",
-   "parkType": "National Monument",
-   "region": "Southeast"
- },
- {
-   "parkCode": "VIVE",
-   "parkName": "Vietnam Veterans Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "VIWO",
-   "parkName": "Vietnam Womens National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "VOYA",
-   "parkName": "Voyageurs National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WABA",
-   "parkName": "Washita Battlefield National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WACA",
-   "parkName": "Walnut Canyon National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WAHA",
-   "parkName": "Warren G Harding National Memorial",
-   "parkType": "National Memorial",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WALA",
-   "parkName": "Waterton Lakes National Park (Canada)",
-   "parkType": "Other Designation",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WAMO",
-   "parkName": "Washington Monument National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "WAPA",
-   "parkName": "War In The Pacific National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "WASP",
-   "parkName": "Warm Springs Apache",
-   "parkType": "Other Designation",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WEAR",
-   "parkName": "Western Arctic National Parklands",
-   "parkType": "National Preserve",
-   "region": "Alaska"
- },
- {
-   "parkCode": "WEFA",
-   "parkName": "Weir Farm National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
- },
- {
-   "parkCode": "WEPO",
-   "parkName": "West Potomac Park",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "WHHO",
-   "parkName": "White House (President's Park)",
-   "parkType": "Other Designation",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "WHIS",
-   "parkName": "Whiskeytown National Recreation Area",
-   "parkType": "National Recreation Area",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "WHMI",
-   "parkName": "Whitman Mission National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "WHSA",
-   "parkName": "White Sands National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WIBR",
-   "parkName": "Wildcat Brook Wild and Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
-   "parkCode": "WICA",
-   "parkName": "Wind Cave National Park",
-   "parkType": "National Park",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WICL",
-   "parkName": "William Jefferson Clinton Birthplace National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WICR",
-   "parkName": "Wilson's Creek National Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WIHO",
-   "parkName": "William Howard Taft National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Midwest"
- },
- {
-   "parkCode": "WORI",
-   "parkName": "Women's Rights National Historical Park",
-   "parkType": "National Historical Park",
-   "region": "Northeast"
- },
- {
-   "parkCode": "WOTR",
-   "parkName": "Wolf Trap National Park for the Performing Arts",
-   "parkType": "Other Designation",
-   "region": "Northeast"
- },
- {
-   "parkCode": "WRBR",
-   "parkName": "Wright Brothers National Memorial",
-   "parkType": "National Memorial",
-   "region": "Southeast"
- },
- {
-   "parkCode": "WRST",
-   "parkName": "Wrangell - St Elias National Park and Preserve",
-   "parkType": "National Park",
-   "region": "Alaska"
- },
- {
-   "parkCode": "WUPA",
-   "parkName": "Wupatki National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "WWII",
-   "parkName": "World War II Memorial National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
- },
- {
-   "parkCode": "YELL",
-   "parkName": "Yellowstone National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "YONB",
-   "parkName": "Yorktown Battlefield",
-   "parkType": "National Battlefield",
-   "region": "Northeast"
- },
- {
-   "parkCode": "YOSE",
-   "parkName": "Yosemite National Park",
-   "parkType": "National Park",
-   "region": "Pacific West"
- },
- {
-   "parkCode": "YUCH",
-   "parkName": "Yukon-Charley Rivers National Preserve",
-   "parkType": "National Preserve",
-   "region": "Alaska"
- },
- {
-   "parkCode": "YUHO",
-   "parkName": "Yucca House National Monument",
-   "parkType": "National Monument",
-   "region": "Intermountain"
- },
- {
-   "parkCode": "ZION",
-   "parkName": "Zion National Park",
-   "parkType": "National Park",
-   "region": "Intermountain"
- }
+  {
+    "parkCode": "acad",
+
+  },
+  {
+    "parkCode": "adam",
+
+  },
+  {
+    "parkCode": "afam",
+
+  },
+  {
+    "parkCode": "afbg",
+
+  },
+  {
+    "parkCode": "agfo",
+
+  },
+  {
+    "parkCode": "alka",
+
+  },
+  {
+    "parkCode": "alag",
+
+  },
+  {
+    "parkCode": "anch",
+
+  },
+  {
+    "parkCode": "alca",
+
+  },
+  {
+    "parkCode": "aleu",
+
+  },
+  {
+    "parkCode": "alfl",
+
+  },
+  {
+    "parkCode": "alpo",
+
+  },
+  {
+    "parkCode": "amme",
+
+  },
+  {
+    "parkCode": "amis",
+
+  },
+  {
+    "parkCode": "anac",
+
+  },
+  {
+    "parkCode": "ande",
+
+  },
+  {
+    "parkCode": "anjo",
+
+  },
+  {
+    "parkCode": "ania",
+
+  },
+  {
+    "parkCode": "anti",
+
+  },
+  {
+    "parkCode": "apis",
+
+  },
+  {
+    "parkCode": "appa",
+
+  },
+  {
+    "parkCode": "apco",
+
+  },
+  {
+    "parkCode": "armo",
+
+  },
+  {
+    "parkCode": "arch",
+
+  },
+  {
+    "parkCode": "arpo",
+
+  },
+  {
+    "parkCode": "arho",
+
+  },
+  {
+    "parkCode": "asis",
+
+  },
+  {
+    "parkCode": "attr",
+
+  },
+  {
+    "parkCode": "auca",
+
+  },
+  {
+    "parkCode": "azru",
+
+  },
+  {
+    "parkCode": "badl",
+
+  },
+  {
+    "parkCode": "balt",
+
+  },
+  {
+    "parkCode": "bawa",
+
+  },
+  {
+    "parkCode": "band",
+
+  },
+  {
+    "parkCode": "bepa",
+
+  },
+  {
+    "parkCode": "beol",
+
+  },
+  {
+    "parkCode": "bela",
+
+  },
+  {
+    "parkCode": "bibe",
+
+  },
+  {
+    "parkCode": "bicy",
+
+  },
+  {
+    "parkCode": "biho",
+
+  },
+  {
+    "parkCode": "biso",
+
+  },
+  {
+    "parkCode": "bith",
+
+  },
+  {
+    "parkCode": "bica",
+
+  },
+  {
+    "parkCode": "bicr",
+
+  },
+  {
+    "parkCode": "bisc",
+
+  },
+  {
+    "parkCode": "blca",
+
+  },
+  {
+    "parkCode": "blrv",
+
+  },
+  {
+    "parkCode": "blrn",
+
+  },
+  {
+    "parkCode": "blri",
+
+  },
+  {
+    "parkCode": "blue",
+
+  },
+  {
+    "parkCode": "bowa",
+
+  },
+  {
+    "parkCode": "boaf",
+
+  },
+  {
+    "parkCode": "boha",
+
+  },
+  {
+    "parkCode": "bost",
+
+  },
+  {
+    "parkCode": "brcr",
+
+  },
+  {
+    "parkCode": "brvb",
+
+  },
+  {
+    "parkCode": "brca",
+
+  },
+  {
+    "parkCode": "buis",
+
+  },
+  {
+    "parkCode": "buff",
+
+  },
+  {
+    "parkCode": "cabr",
+
+  },
+  {
+    "parkCode": "cali",
+
+  },
+  {
+    "parkCode": "cane",
+
+  },
+  {
+    "parkCode": "cana",
+
+  },
+  {
+    "parkCode": "cari",
+
+  },
+  {
+    "parkCode": "crha",
+
+  },
+  {
+    "parkCode": "cach",
+
+  },
+  {
+    "parkCode": "cany",
+
+  },
+  {
+    "parkCode": "caco",
+
+  },
+  {
+    "parkCode": "caha",
+
+  },
+  {
+    "parkCode": "came",
+
+  },
+  {
+    "parkCode": "cakr",
+
+  },
+  {
+    "parkCode": "calo",
+
+  },
+  {
+    "parkCode": "cahi",
+
+  },
+  {
+    "parkCode": "care",
+
+  },
+  {
+    "parkCode": "cajo",
+
+  },
+  {
+    "parkCode": "cavo",
+
+  },
+  {
+    "parkCode": "carl",
+
+  },
+  {
+    "parkCode": "cave",
+
+  },
+  {
+    "parkCode": "cawo",
+
+  },
+  {
+    "parkCode": "cagr",
+
+  },
+  {
+    "parkCode": "casa",
+
+  },
+  {
+    "parkCode": "cacl",
+
+  },
+  {
+    "parkCode": "camo",
+
+  },
+  {
+    "parkCode": "cato",
+
+  },
+  {
+    "parkCode": "cebr",
+
+  },
+  {
+    "parkCode": "cebe",
+
+  },
+  {
+    "parkCode": "cech",
+
+  },
+  {
+    "parkCode": "chcu",
+
+  },
+  {
+    "parkCode": "cham",
+
+  },
+  {
+    "parkCode": "chva",
+
+  },
+  {
+    "parkCode": "chis",
+
+  },
+  {
+    "parkCode": "chpi",
+
+  },
+  {
+    "parkCode": "chyo",
+
+  },
+  {
+    "parkCode": "chat",
+
+  },
+  {
+    "parkCode": "choh",
+
+  },
+  {
+    "parkCode": "cbpo",
+
+  },
+  {
+    "parkCode": "cbgn",
+
+  },
+  {
+    "parkCode": "chch",
+
+  },
+  {
+    "parkCode": "chic",
+
+  },
+  {
+    "parkCode": "chir",
+
+  },
+  {
+    "parkCode": "chri",
+
+  },
+  {
+    "parkCode": "ciro",
+
+  },
+  {
+    "parkCode": "cwdw",
+
+  },
+  {
+    "parkCode": "clba",
+
+  },
+  {
+    "parkCode": "coal",
+
+  },
+  {
+    "parkCode": "colo",
+
+  },
+  {
+    "parkCode": "colm",
+
+  },
+  {
+    "parkCode": "colt",
+
+  },
+  {
+    "parkCode": "cong",
+
+  },
+  {
+    "parkCode": "coga",
+
+  },
+  {
+    "parkCode": "coro",
+
+  },
+  {
+    "parkCode": "cowp",
+
+  },
+  {
+    "parkCode": "crla",
+
+  },
+  {
+    "parkCode": "crmo",
+
+  },
+  {
+    "parkCode": "xrds",
+
+  },
+  {
+    "parkCode": "cuga",
+
+  },
+  {
+    "parkCode": "cuis",
+
+  },
+  {
+    "parkCode": "cure",
+
+  },
+  {
+    "parkCode": "cuva",
+
+  },
+  {
+    "parkCode": "dabe",
+
+  },
+  {
+    "parkCode": "daav",
+
+  },
+  {
+    "parkCode": "deso",
+
+  },
+  {
+    "parkCode": "deva",
+
+  },
+  {
+    "parkCode": "dele",
+
+  },
+  {
+    "parkCode": "dewa",
+
+  },
+  {
+    "parkCode": "dena",
+
+  },
+  {
+    "parkCode": "depo",
+
+  },
+  {
+    "parkCode": "deto",
+
+  },
+  {
+    "parkCode": "dino",
+
+  },
+  {
+    "parkCode": "drto",
+
+  },
+  {
+    "parkCode": "ebla",
+
+  },
+  {
+    "parkCode": "edal",
+
+  },
+  {
+    "parkCode": "efmo",
+
+  },
+  {
+    "parkCode": "eise",
+
+  },
+  {
+    "parkCode": "elte",
+
+  },
+  {
+    "parkCode": "elca",
+
+  },
+  {
+    "parkCode": "elma",
+
+  },
+  {
+    "parkCode": "elmo",
+
+  },
+  {
+    "parkCode": "elro",
+
+  },
+  {
+    "parkCode": "elis",
+
+  },
+  {
+    "parkCode": "erie",
+
+  },
+  {
+    "parkCode": "esse",
+
+  },
+  {
+    "parkCode": "euon",
+
+  },
+  {
+    "parkCode": "ever",
+
+  },
+  {
+    "parkCode": "fati",
+
+  },
+  {
+    "parkCode": "feha",
+
+  },
+  {
+    "parkCode": "fiis",
+
+  },
+  {
+    "parkCode": "fila",
+
+  },
+  {
+    "parkCode": "frst",
+
+  },
+  {
+    "parkCode": "flni",
+
+  },
+  {
+    "parkCode": "flfo",
+
+  },
+  {
+    "parkCode": "foth",
+
+  },
+  {
+    "parkCode": "fobo",
+
+  },
+  {
+    "parkCode": "foda",
+
+  },
+  {
+    "parkCode": "fodo",
+
+  },
+  {
+    "parkCode": "fodu",
+
+  },
+  {
+    "parkCode": "fofo",
+
+  },
+  {
+    "parkCode": "fofr",
+
+  },
+  {
+    "parkCode": "fola",
+
+  },
+  {
+    "parkCode": "fols",
+
+  },
+  {
+    "parkCode": "foma",
+
+  },
+  {
+    "parkCode": "fomc",
+
+  },
+  {
+    "parkCode": "fomr",
+
+  },
+  {
+    "parkCode": "fone",
+
+  },
+  {
+    "parkCode": "fopo",
+
+  },
+  {
+    "parkCode": "fopu",
+
+  },
+  {
+    "parkCode": "fora",
+
+  },
+  {
+    "parkCode": "fosc",
+
+  },
+  {
+    "parkCode": "fosm",
+
+  },
+  {
+    "parkCode": "fost",
+
+  },
+  {
+    "parkCode": "fosu",
+
+  },
+  {
+    "parkCode": "foun",
+
+  },
+  {
+    "parkCode": "fous",
+
+  },
+  {
+    "parkCode": "fova",
+
+  },
+  {
+    "parkCode": "fowa",
+
+  },
+  {
+    "parkCode": "fobu",
+
+  },
+  {
+    "parkCode": "frde",
+
+  },
+  {
+    "parkCode": "frdo",
+
+  },
+  {
+    "parkCode": "frla",
+
+  },
+  {
+    "parkCode": "frsp",
+
+  },
+  {
+    "parkCode": "frri",
+
+  },
+  {
+    "parkCode": "frhi",
+
+  },
+  {
+    "parkCode": "gaar",
+
+  },
+  {
+    "parkCode": "jeff",
+
+  },
+  {
+    "parkCode": "gate",
+
+  },
+  {
+    "parkCode": "gari",
+
+  },
+  {
+    "parkCode": "gegr",
+
+  },
+  {
+    "parkCode": "gero",
+
+  },
+  {
+    "parkCode": "gewa",
+
+  },
+  {
+    "parkCode": "gwca",
+
+  },
+  {
+    "parkCode": "gwmp",
+
+  },
+  {
+    "parkCode": "gett",
+
+  },
+  {
+    "parkCode": "gicl",
+
+  },
+  {
+    "parkCode": "glba",
+
+  },
+  {
+    "parkCode": "glac",
+
+  },
+  {
+    "parkCode": "glca",
+
+  },
+  {
+    "parkCode": "glec",
+
+  },
+  {
+    "parkCode": "glde",
+
+  },
+  {
+    "parkCode": "goga",
+
+  },
+  {
+    "parkCode": "gosp",
+
+  },
+  {
+    "parkCode": "gois",
+
+  },
+  {
+    "parkCode": "grca",
+
+  },
+  {
+    "parkCode": "grpo",
+
+  },
+  {
+    "parkCode": "grte",
+
+  },
+  {
+    "parkCode": "grko",
+
+  },
+  {
+    "parkCode": "grba",
+
+  },
+  {
+    "parkCode": "greg",
+
+  },
+  {
+    "parkCode": "grfa",
+
+  },
+  {
+    "parkCode": "grsa",
+
+  },
+  {
+    "parkCode": "grsm",
+
+  },
+  {
+    "parkCode": "grsp",
+
+  },
+  {
+    "parkCode": "gree",
+
+  },
+  {
+    "parkCode": "gumo",
+
+  },
+  {
+    "parkCode": "guco",
+
+  },
+  {
+    "parkCode": "guis",
+
+  },
+  {
+    "parkCode": "guge",
+
+  },
+  {
+    "parkCode": "hafo",
+
+  },
+  {
+    "parkCode": "hale",
+
+  },
+  {
+    "parkCode": "hagr",
+
+  },
+  {
+    "parkCode": "hamp",
+
+  },
+  {
+    "parkCode": "haha",
+
+  },
+  {
+    "parkCode": "hafe",
+
+  },
+  {
+    "parkCode": "hart",
+
+  },
+  {
+    "parkCode": "hatu",
+
+  },
+  {
+    "parkCode": "hstr",
+
+  },
+  {
+    "parkCode": "havo",
+
+  },
+  {
+    "parkCode": "heho",
+
+  },
+  {
+    "parkCode": "jame",
+
+  },
+  {
+    "parkCode": "pima",
+
+  },
+  {
+    "parkCode": "hofr",
+
+  },
+  {
+    "parkCode": "home",
+
+  },
+  {
+    "parkCode": "hono",
+
+  },
+  {
+    "parkCode": "hocu",
+
+  },
+  {
+    "parkCode": "hofu",
+
+  },
+  {
+    "parkCode": "hobe",
+
+  },
+  {
+    "parkCode": "hosp",
+
+  },
+  {
+    "parkCode": "hove",
+
+  },
+  {
+    "parkCode": "hutr",
+
+  },
+  {
+    "parkCode": "hurv",
+
+  },
+  {
+    "parkCode": "inup",
+
+  },
+  {
+    "parkCode": "iafl",
+
+  },
+  {
+    "parkCode": "iatr",
+
+  },
+  {
+    "parkCode": "inde",
+
+  },
+  {
+    "parkCode": "indu",
+
+  },
+  {
+    "parkCode": "isro",
+
+  },
+  {
+    "parkCode": "jaga",
+
+  },
+  {
+    "parkCode": "jela",
+
+  },
+  {
+    "parkCode": "jeca",
+
+  },
+  {
+    "parkCode": "jica",
+
+  },
+  {
+    "parkCode": "joda",
+
+  },
+  {
+    "parkCode": "jofi",
+
+  },
+  {
+    "parkCode": "blac",
+
+  },
+  {
+    "parkCode": "jomu",
+
+  },
+  {
+    "parkCode": "jofl",
+
+  },
+  {
+    "parkCode": "jotr",
+
+  },
+  {
+    "parkCode": "jthg",
+
+  },
+  {
+    "parkCode": "juba",
+
+  },
+  {
+    "parkCode": "kala",
+
+  },
+  {
+    "parkCode": "kaho",
+
+  },
+  {
+    "parkCode": "kaww",
+
+  },
+  {
+    "parkCode": "katm",
+
+  },
+  {
+    "parkCode": "kefj",
+
+  },
+  {
+    "parkCode": "keaq",
+
+  },
+  {
+    "parkCode": "kemo",
+
+  },
+  {
+    "parkCode": "kewe",
+
+  },
+  {
+    "parkCode": "kimo",
+
+  },
+  {
+    "parkCode": "klse",
+
+  },
+  {
+    "parkCode": "klgo",
+
+  },
+  {
+    "parkCode": "knri",
+
+  },
+  {
+    "parkCode": "kova",
+
+  },
+  {
+    "parkCode": "kowa",
+
+  },
+  {
+    "parkCode": "lacl",
+
+  },
+  {
+    "parkCode": "lake",
+
+  },
+  {
+    "parkCode": "lamr",
+
+  },
+  {
+    "parkCode": "laro",
+
+  },
+  {
+    "parkCode": "lavo",
+
+  },
+  {
+    "parkCode": "labe",
+
+  },
+  {
+    "parkCode": "lyba",
+
+  },
+  {
+    "parkCode": "lecl",
+
+  },
+  {
+    "parkCode": "lewi",
+
+  },
+  {
+    "parkCode": "libo",
+
+  },
+  {
+    "parkCode": "liho",
+
+  },
+  {
+    "parkCode": "linc",
+
+  },
+  {
+    "parkCode": "libi",
+
+  },
+  {
+    "parkCode": "liri",
+
+  },
+  {
+    "parkCode": "chsc",
+
+  },
+  {
+    "parkCode": "long",
+
+  },
+  {
+    "parkCode": "lowe",
+
+  },
+  {
+    "parkCode": "lode",
+
+  },
+  {
+    "parkCode": "loea",
+
+  },
+  {
+    "parkCode": "lyjo",
+
+  },
+  {
+    "parkCode": "mawa",
+
+  },
+  {
+    "parkCode": "maac",
+
+  },
+  {
+    "parkCode": "maca",
+
+  },
+  {
+    "parkCode": "mana",
+
+  },
+  {
+    "parkCode": "mapr",
+
+  },
+  {
+    "parkCode": "manz",
+
+  },
+  {
+    "parkCode": "mabi",
+
+  },
+  {
+    "parkCode": "mlkm",
+
+  },
+  {
+    "parkCode": "malu",
+
+  },
+  {
+    "parkCode": "mava",
+
+  },
+  {
+    "parkCode": "mamc",
+
+  },
+  {
+    "parkCode": "meve",
+
+  },
+  {
+    "parkCode": "miin",
+
+  },
+  {
+    "parkCode": "mima",
+
+  },
+  {
+    "parkCode": "mimi",
+
+  },
+  {
+    "parkCode": "mide",
+
+  },
+  {
+    "parkCode": "migu",
+
+  },
+  {
+    "parkCode": "mihi",
+
+  },
+  {
+    "parkCode": "miss",
+
+  },
+  {
+    "parkCode": "mnrr",
+
+  },
+  {
+    "parkCode": "moja",
+
+  },
+  {
+    "parkCode": "mono",
+
+  },
+  {
+    "parkCode": "moca",
+
+  },
+  {
+    "parkCode": "mocr",
+
+  },
+  {
+    "parkCode": "mopi",
+
+  },
+  {
+    "parkCode": "morr",
+
+  },
+  {
+    "parkCode": "auto",
+
+  },
+  {
+    "parkCode": "mora",
+
+  },
+  {
+    "parkCode": "moru",
+
+  },
+  {
+    "parkCode": "muwo",
+
+  },
+  {
+    "parkCode": "mush",
+
+  },
+  {
+    "parkCode": "natc",
+
+  },
+  {
+    "parkCode": "natt",
+
+  },
+  {
+    "parkCode": "natr",
+
+  },
+  {
+    "parkCode": "avia",
+
+  },
+  {
+    "parkCode": "nace",
+
+  },
+  {
+    "parkCode": "nama",
+
+  },
+  {
+    "parkCode": "npsa",
+
+  },
+  {
+    "parkCode": "npnh",
+
+  },
+  {
+    "parkCode": "nabr",
+
+  },
+  {
+    "parkCode": "nava",
+
+  },
+  {
+    "parkCode": "nebe",
+
+  },
+  {
+    "parkCode": "neen",
+
+  },
+  {
+    "parkCode": "pine",
+
+  },
+  {
+    "parkCode": "jazz",
+
+  },
+  {
+    "parkCode": "neri",
+
+  },
+  {
+    "parkCode": "nepe",
+
+  },
+  {
+    "parkCode": "nifa",
+
+  },
+  {
+    "parkCode": "nico",
+
+  },
+  {
+    "parkCode": "nisi",
+
+  },
+  {
+    "parkCode": "niob",
+
+  },
+  {
+    "parkCode": "noat",
+
+  },
+  {
+    "parkCode": "noca",
+
+  },
+  {
+    "parkCode": "noco",
+
+  },
+  {
+    "parkCode": "obed",
+
+  },
+  {
+    "parkCode": "ocmu",
+
+  },
+  {
+    "parkCode": "oire",
+
+  },
+  {
+    "parkCode": "okci",
+
+  },
+  {
+    "parkCode": "olsp",
+
+  },
+  {
+    "parkCode": "olym",
+
+  },
+  {
+    "parkCode": "orca",
+
+  },
+  {
+    "parkCode": "oreg",
+
+  },
+  {
+    "parkCode": "orpi",
+
+  },
+  {
+    "parkCode": "ovvi",
+
+  },
+  {
+    "parkCode": "oxhi",
+
+  },
+  {
+    "parkCode": "ozar",
+
+  },
+  {
+    "parkCode": "pais",
+
+  },
+  {
+    "parkCode": "paal",
+
+  },
+  {
+    "parkCode": "para",
+
+  },
+  {
+    "parkCode": "pagr",
+
+  },
+  {
+    "parkCode": "peri",
+
+  },
+  {
+    "parkCode": "peco",
+
+  },
+  {
+    "parkCode": "paav",
+
+  },
+  {
+    "parkCode": "pevi",
+
+  },
+  {
+    "parkCode": "pete",
+
+  },
+  {
+    "parkCode": "pefo",
+
+  },
+  {
+    "parkCode": "petr",
+
+  },
+  {
+    "parkCode": "piro",
+
+  },
+  {
+    "parkCode": "pinn",
+
+  },
+  {
+    "parkCode": "pisp",
+
+  },
+  {
+    "parkCode": "pipe",
+
+  },
+  {
+    "parkCode": "pisc",
+
+  },
+  {
+    "parkCode": "pore",
+
+  },
+  {
+    "parkCode": "poex",
+
+  },
+  {
+    "parkCode": "poch",
+
+  },
+  {
+    "parkCode": "pohe",
+
+  },
+  {
+    "parkCode": "popo",
+
+  },
+  {
+    "parkCode": "wicl",
+
+  },
+  {
+    "parkCode": "whho",
+
+  },
+  {
+    "parkCode": "prsf",
+
+  },
+  {
+    "parkCode": "prwi",
+
+  },
+  {
+    "parkCode": "puho",
+
+  },
+  {
+    "parkCode": "puhe",
+
+  },
+  {
+    "parkCode": "pull",
+
+  },
+  {
+    "parkCode": "rabr",
+
+  },
+  {
+    "parkCode": "reer",
+
+  },
+  {
+    "parkCode": "redw",
+
+  },
+  {
+    "parkCode": "rich",
+
+  },
+  {
+    "parkCode": "rigr",
+
+  },
+  {
+    "parkCode": "rira",
+
+  },
+  {
+    "parkCode": "rist",
+
+  },
+  {
+    "parkCode": "rocr",
+
+  },
+  {
+    "parkCode": "romo",
+
+  },
+  {
+    "parkCode": "rowi",
+
+  },
+  {
+    "parkCode": "roca",
+
+  },
+  {
+    "parkCode": "rori",
+
+  },
+  {
+    "parkCode": "ruca",
+
+  },
+  {
+    "parkCode": "sahi",
+
+  },
+  {
+    "parkCode": "sagu",
+
+  },
+  {
+    "parkCode": "sacr",
+
+  },
+  {
+    "parkCode": "sacn",
+
+  },
+  {
+    "parkCode": "sapa",
+
+  },
+  {
+    "parkCode": "saga",
+
+  },
+  {
+    "parkCode": "sama",
+
+  },
+  {
+    "parkCode": "sapu",
+
+  },
+  {
+    "parkCode": "sari",
+
+  },
+  {
+    "parkCode": "saan",
+
+  },
+  {
+    "parkCode": "safr",
+
+  },
+  {
+    "parkCode": "sajh",
+
+  },
+  {
+    "parkCode": "saju",
+
+  },
+  {
+    "parkCode": "sand",
+
+  },
+  {
+    "parkCode": "safe",
+
+  },
+  {
+    "parkCode": "samo",
+
+  },
+  {
+    "parkCode": "sara",
+
+  },
+  {
+    "parkCode": "sair",
+
+  },
+  {
+    "parkCode": "scrv",
+
+  },
+  {
+    "parkCode": "scbl",
+
+  },
+  {
+    "parkCode": "semo",
+
+  },
+  {
+    "parkCode": "seki",
+
+  },
+  {
+    "parkCode": "shen",
+
+  },
+  {
+    "parkCode": "shvb",
+
+  },
+  {
+    "parkCode": "shil",
+
+  },
+  {
+    "parkCode": "sitk",
+
+  },
+  {
+    "parkCode": "slbe",
+
+  },
+  {
+    "parkCode": "soca",
+
+  },
+  {
+    "parkCode": "spar",
+
+  },
+  {
+    "parkCode": "stsp",
+
+  },
+  {
+    "parkCode": "stli",
+
+  },
+  {
+    "parkCode": "stea",
+
+  },
+  {
+    "parkCode": "stri",
+
+  },
+  {
+    "parkCode": "ston",
+
+  },
+  {
+    "parkCode": "sucr",
+
+  },
+  {
+    "parkCode": "tapr",
+
+  },
+  {
+    "parkCode": "tecw",
+
+  },
+  {
+    "parkCode": "thko",
+
+  },
+  {
+    "parkCode": "qush",
+
+  },
+  {
+    "parkCode": "thrb",
+
+  },
+  {
+    "parkCode": "thri",
+
+  },
+  {
+    "parkCode": "this",
+
+  },
+  {
+    "parkCode": "thro",
+
+  },
+  {
+    "parkCode": "thco",
+
+  },
+  {
+    "parkCode": "edis",
+
+  },
+  {
+    "parkCode": "thje",
+
+  },
+  {
+    "parkCode": "thst",
+
+  },
+  {
+    "parkCode": "tica",
+
+  },
+  {
+    "parkCode": "timu",
+
+  },
+  {
+    "parkCode": "tont",
+
+  },
+  {
+    "parkCode": "tosy",
+
+  },
+  {
+    "parkCode": "trte",
+
+  },
+  {
+    "parkCode": "tule",
+
+  },
+  {
+    "parkCode": "tusk",
+
+  },
+  {
+    "parkCode": "tuma",
+
+  },
+  {
+    "parkCode": "tupe",
+
+  },
+  {
+    "parkCode": "tuai",
+
+  },
+  {
+    "parkCode": "tuin",
+
+  },
+  {
+    "parkCode": "tuzi",
+
+  },
+  {
+    "parkCode": "ulsg",
+
+  },
+  {
+    "parkCode": "upde",
+
+  },
+  {
+    "parkCode": "vall",
+
+  },
+  {
+    "parkCode": "vafo",
+
+  },
+  {
+    "parkCode": "vama",
+
+  },
+  {
+    "parkCode": "vick",
+
+  },
+  {
+    "parkCode": "vive",
+
+  },
+  {
+    "parkCode": "vicr",
+
+  },
+  {
+    "parkCode": "viis",
+
+  },
+  {
+    "parkCode": "voya",
+
+  },
+  {
+    "parkCode": "waco",
+
+  },
+  {
+    "parkCode": "waca",
+
+  },
+  {
+    "parkCode": "wapa",
+
+  },
+  {
+    "parkCode": "wamo",
+
+  },
+  {
+    "parkCode": "waro",
+
+  },
+  {
+    "parkCode": "waba",
+
+  },
+  {
+    "parkCode": "wefa",
+
+  },
+  {
+    "parkCode": "whee",
+
+  },
+  {
+    "parkCode": "whis",
+
+  },
+  {
+    "parkCode": "whsa",
+
+  },
+  {
+    "parkCode": "whmi",
+
+  },
+  {
+    "parkCode": "wiho",
+
+  },
+  {
+    "parkCode": "wicr",
+
+  },
+  {
+    "parkCode": "wica",
+
+  },
+  {
+    "parkCode": "wing",
+
+  },
+  {
+    "parkCode": "wotr",
+
+  },
+  {
+    "parkCode": "wori",
+
+  },
+  {
+    "parkCode": "wwii",
+
+  },
+  {
+    "parkCode": "valr",
+
+  },
+  {
+    "parkCode": "wrst",
+
+  },
+  {
+    "parkCode": "wrbr",
+
+  },
+  {
+    "parkCode": "wupa",
+
+  },
+  {
+    "parkCode": "yell",
+
+  },
+  {
+    "parkCode": "york",
+
+  },
+  {
+    "parkCode": "yose",
+
+  },
+  {
+    "parkCode": "yuho",
+
+  },
+  {
+    "parkCode": "yuch",
+
+  },
+  {
+    "parkCode": "zion",
+
+  }
 ]
