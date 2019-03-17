@@ -3,9 +3,6 @@ import * as parkView from './views/parkView';
 import axios from 'axios';
 import parkCodes from '../data/parks.json'
 
-// National Parks Service API Key:
-// LMCWhYBZ0nL2NEDRcXJGidsSEZRyzLxfu19EiQSE
-
 // Global state of the app
 const state = {};
 
@@ -35,6 +32,7 @@ const controlPark = async () => {
   try {
     await state.park.getPark();
 
+
     console.log('heres a park:')
     console.log(state.park)
   }catch (error) {
@@ -48,13 +46,11 @@ const controlPark = async () => {
   // Check for Park Alerts
   try {
       await state.park.getParkAlerts();
-
-
-
     } catch (error){
       console.log(error)
     }
 
+    //Dev View Park alerts
     console.log("print park alerts")
     console.log(state.park.parkAlerts)
 

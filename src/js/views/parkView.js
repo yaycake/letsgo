@@ -13,7 +13,6 @@ export const renderParkHeader = (park) => {
 
   const splitTitle = splitParkTitle(park.name)
 
-
   const markup = `
     <div class="profile_title_summary">
       <div class="park_title">
@@ -27,21 +26,6 @@ export const renderParkHeader = (park) => {
       </div>
     </div>
   `
-
-
-
-  // const markup = `
-  //   <div class="profile_title_summary">
-  //     <div class="park_title">
-  //       <h1>${park.name}</h1>
-  //     </div>
-  //     <div class="park_summary">
-  //       <h4>
-  //         ${park.summary}
-  //       </h4>
-  //     </div>
-  //   </div>
-  // `
   elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
 }
 
@@ -60,23 +44,12 @@ export const renderParkVisit = (park) => {
 // SPLIT AND BUILD PARK TITLE
 
 const splitParkTitle = (parkTitle) => {
-
-  console.log(parkTitle)
-
   const regex = new RegExp('/(national)/', 'i');
   const split = parkTitle.split('National')
-
-  console.log('print split')
-  console.log(split)
-
   const title = {
     parkName: split[0],
     parkSubname: `National ${split[1]}`
   }
-
-  console.log("Printing title:")
-  console.log(title)
-
   return title
 }
 
@@ -98,10 +71,8 @@ export const renderParkAlerts = (parkAlerts) => {
     } else {
       const markup = `
         <div class="alert_text">
-
             <p><strong>${alert.title}</strong></p>
             <p>${alert.description}</p>
-
         </div>
       `
       elements.parkAlert.insertAdjacentHTML('beforeend', markup)

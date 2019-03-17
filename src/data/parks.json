@@ -612,12 +612,6 @@
    "region": "Midwest"
  },
  {
-   "parkCode": "DELA",
-   "parkName": "Delaware National Scenic River National Wild And Scenic River",
-   "parkType": "National Wild and Scenic River & Riverway",
-   "region": "Northeast"
- },
- {
    "parkCode": "DENA",
    "parkName": "Denali National Park and Preserve",
    "parkType": "National Park",
@@ -1342,12 +1336,6 @@
    "parkName": "John D. Rockefeller Jr. Memorial Parkway",
    "parkType": "National Parkway",
    "region": "Intermountain"
- },
- {
-   "parkCode": "JOER",
-   "parkName": "John Ericsson National Memorial",
-   "parkType": "National Memorial",
-   "region": "National Capitol"
  },
  {
    "parkCode": "JOFI",
@@ -2542,12 +2530,6 @@
    "parkName": "War In The Pacific National Historical Park",
    "parkType": "National Historical Park",
    "region": "Pacific West"
- },
- {
-   "parkCode": "WEFA",
-   "parkName": "Weir Farm National Historic Site",
-   "parkType": "National Historic Site",
-   "region": "Northeast"
  },
  {
    "parkCode": "WEPO",

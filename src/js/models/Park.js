@@ -6,6 +6,7 @@ export default class Park {
   constructor (parkCode){
     this.parkCode = parkCode;
     this.parkAlertsArr = [];
+    this.parkLatLong = {};
   }
 
   async getPark() {
@@ -29,7 +30,21 @@ export default class Park {
         this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
         this.weather = res.data.data[0].weatherInfo;
-        this.latlong = res.data.data[0].latLong;
+
+        console.log(res.data.data[0].latLong)
+        console.log("Building lat long:")
+
+        // ### BUILD LAT latLong
+        const latLongArr = res.data.data[0].latLong.split(" ");
+        this.parkLatLong = {
+          latitude: latLongArr[0].split(":")[1],
+          longitude: latLongArr[1].split(":")[1]
+        }
+
+        // this.parkLatLong = res.data.data[0].latLong;
+
+        console.log('LAT LONG:')
+        console.log(this.parkLatLong)
       } else if (res.data.total == 0) {
         // ReLoad API response into a variable
         const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
