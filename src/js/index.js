@@ -1,7 +1,7 @@
 import Park from './models/Park';
-import ParkAlerts from './models/ParkAlerts';
+
 import * as parkView from './views/parkView';
-import * as parkalertsView from './views/parkalertsView';
+
 import axios from 'axios';
 import parkCodes from '../data/parks.json'
 
@@ -43,19 +43,14 @@ const controlPark = async () => {
     console.log(error)
     alert('Error Getting A Park!')
   }
-  // Check for Park Alerts
+
+  //DEV View
   console.log('calling for park alerts!')
 
+  // Check for Park Alerts
   try {
       await state.park.getParkAlerts();
 
-
-    if (state.park.parkAlertsArr){
-      console.log('should be rendering alerts')
-      parkView.renderParkAlerts(state.park.parkAlertsArr)
-    } else {
-      parkView.renderNoParkAlerts()
-    }
 
 
     } catch (error){
@@ -71,38 +66,18 @@ const controlPark = async () => {
 
   // render park view on ui
   parkView.renderParkHeader(state.park);
-  parkView.renderParkVisit(state.park)
+  parkView.renderParkVisit(state.park);
+
+
+  if (state.park.parkAlertsArr){
+        console.log('should be rendering alerts')
+        parkView.renderParkAlerts(state.park.parkAlertsArr)
+      } else {
+        parkView.renderNoParkAlerts()
+      }
+
 
 }
-
-// const controlParkAlerts = async () =>{
-
-//     state.parkalerts = new ParkAlerts(state.park.parkcode);
-
-//     try {
-//       await state.park.getParkAlerts();
-
-//       if (state.park.parkAlertsArr){
-//       console.log('should be rendering alerts')
-//       parkalertsView.renderParkAlerts(state.park.parkAlertsArr)
-//     } else {
-//       parkalertsView.renderNoParkAlerts();
-//     }
-
-
-
-//     } catch (error){
-//       console.log(error)
-//     }
-
-//     console.log("print park alerts")
-//     console.log(state.parkAlertsArr)
-
-
-
-
-// }
-
 
 
 

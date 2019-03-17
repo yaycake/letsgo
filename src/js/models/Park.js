@@ -5,6 +5,7 @@ import { nps } from './base';
 export default class Park {
   constructor (parkCode){
     this.parkCode = parkCode;
+    this.parkAlertsArr = [];
   }
 
   async getPark() {
@@ -13,21 +14,28 @@ export default class Park {
       console.log("Query Sent:")
       console.log(this.parkCode)
 
-      // const npsBaseUrl = 'http://api.nps.gov/api/v1/'
-      // const apiKey = 'LMCWhYBZ0nL2NEDRcXJGidsSEZRyzLxfu19EiQSE'
+      // Load API response into a variable
       const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
 
       // DEV View Results of API Call
       console.log('Here are results:')
       console.log(res)
 
-      // Create the selected park object
-      this.name = res.data.data[0].fullName;
-      this.summary = res.data.data[0].description;
-      this.parkcode = res.data.data[0].parkCode;
-      this.states = res.data.data[0].states;
-      this.weather = res.data.data[0].weatherInfo;
-      this.latlong = res.data.data[0].latLong;
+
+      if (res.data.total == 1){
+         // Create the selected park object
+        this.name = res.data.data[0].fullName;
+        this.summary = res.data.data[0].description;
+        this.parkcode = res.data.data[0].parkCode;
+        this.states = res.data.data[0].states;
+        this.weather = res.data.data[0].weatherInfo;
+        this.latlong = res.data.data[0].latLong;
+      } else if (res.data.total == 0) {
+        // ReLoad API response into a variable
+        const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
+      }
+
+
     } catch (error) {
       console.log(error);
       alert('Something went wrong in getting park!')
@@ -35,37 +43,56 @@ export default class Park {
   }
 
   async getParkAlerts() {
-    // hoist park alerts array
-    this.parkAlertsArr = [];
+
+    // Function Constructor for a singular alert
+    const ParkAlert = function(title, description, url){
+      this.title = title,
+      this.description = description,
+      this.url = url
+    }
+
     try {
       const res = await axios(`${nps.baseUrl}/alerts?parkCode=${this.parkCode}&api_key=${nps.apiKey}`)
-      const alertsArr = res.data.data
 
-      // If there are park alerts
-      if (alertsArr){
-        // Function Constructor for a singular alert
-        const ParkAlert = function(title, description, url){
-          this.title = title,
-          this.description = description,
-          this.url = url
-        }
 
-        // Iterate through each park alert
-        alertsArr.forEach(function(parkAlert){
+      // If there are park alerts:
+      if (res.data.total > 0){
+
+        let alertsArray = [];
+
+        // 1. Iterate through each park alert
+        res.data.data.forEach(function(parkAlert){
+
+
+
+          // #####
+
           const nextAlert = new ParkAlert(parkAlert.title, parkAlert.description, parkAlert.url)
 
-          //DEV View Alert
+          //DEV View Each Alert
           console.log(nextAlert)
           console.log('pushing to parkAlerts...')
 
-          // Push alert into parkAlerts array
-          this.parkAlertsArr.push(nextAlert)
+          // 2. Push alert into parkAlerts array
+          alertsArray.push(nextAlert)
 
           //DEV View Park Alerts
+          console.log("this is alertArray:")
+          console.log(alertsArray)
+
+        })
+
+          this.parkAlertsArr = alertsArray;
+
+          //DEV View this.parkalertarr
+
+          console.log("This is this.parkAlertsArr:")
           console.log(this.parkAlertsArr)
 
-          return this.parkAlertsArr;
-        })
+          // #####
+
+
+        // Otherwise, if there are no alerts
       } else {
         console.log("There are no alerts for this park!")
         // return an empty array
