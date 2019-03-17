@@ -3,16 +3,22 @@ const elements = {
   parkStates: document.querySelector('.states'),
   parkAlert: document.querySelector('.alerts_container')
 }
+
 // Clear previous park results
 export const clearPark = () => {
   elements.parkHeader.innerHTML = ''
 }
 // Render Park Header: Title + Summary
 export const renderParkHeader = (park) => {
+
+  const splitTitle = splitParkTitle(park.name)
+
+
   const markup = `
     <div class="profile_title_summary">
       <div class="park_title">
-        <h1>${park.name}</h1>
+        <h1>${splitTitle.parkName}</h1>
+        <h2>${splitTitle.parkSubname}</h2>
       </div>
       <div class="park_summary">
         <h4>
@@ -21,6 +27,21 @@ export const renderParkHeader = (park) => {
       </div>
     </div>
   `
+
+
+
+  // const markup = `
+  //   <div class="profile_title_summary">
+  //     <div class="park_title">
+  //       <h1>${park.name}</h1>
+  //     </div>
+  //     <div class="park_summary">
+  //       <h4>
+  //         ${park.summary}
+  //       </h4>
+  //     </div>
+  //   </div>
+  // `
   elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
 }
 
@@ -36,20 +57,55 @@ export const renderParkVisit = (park) => {
   elements.parkStates.insertAdjacentHTML('afterbegin', statesMarkup)
 }
 
+// SPLIT AND BUILD PARK TITLE
+
+const splitParkTitle = (parkTitle) => {
+
+  console.log(parkTitle)
+
+  const regex = new RegExp('/(national)/', 'i');
+  const split = parkTitle.split('National')
+
+  console.log('print split')
+  console.log(split)
+
+  const title = {
+    parkName: split[0],
+    parkSubname: `National ${split[1]}`
+  }
+
+  console.log("Printing title:")
+  console.log(title)
+
+  return title
+}
+
 export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
   console.log(parkAlerts)
 
   parkAlerts.forEach(function(alert){
-    const markup = `
-      <div class="alert_text">
-        <a href="${alert.url}" target="_blank">
-          <p><strong>${alert.title}</strong></p>
-          <p>${alert.description}</p>
-        </a>
-      </div>
-    `
-    elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+    if (alert.url){
+      const markup = `
+        <div class="alert_text">
+          <a class="alert_link" href="${alert.url}" target="_blank">
+            <p><strong>${alert.title}</strong></p>
+            <p>${alert.description}</p>
+          </a>
+        </div>
+      `
+      elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+    } else {
+      const markup = `
+        <div class="alert_text">
+
+            <p><strong>${alert.title}</strong></p>
+            <p>${alert.description}</p>
+
+        </div>
+      `
+      elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+    }
   })
 }
 

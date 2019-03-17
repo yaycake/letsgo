@@ -1,7 +1,5 @@
 import Park from './models/Park';
-
 import * as parkView from './views/parkView';
-
 import axios from 'axios';
 import parkCodes from '../data/parks.json'
 
@@ -60,14 +58,9 @@ const controlPark = async () => {
     console.log("print park alerts")
     console.log(state.park.parkAlerts)
 
-
-
-
-
   // render park view on ui
   parkView.renderParkHeader(state.park);
   parkView.renderParkVisit(state.park);
-
 
   if (state.park.parkAlertsArr){
         console.log('should be rendering alerts')

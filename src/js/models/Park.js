@@ -63,10 +63,6 @@ export default class Park {
         // 1. Iterate through each park alert
         res.data.data.forEach(function(parkAlert){
 
-
-
-          // #####
-
           const nextAlert = new ParkAlert(parkAlert.title, parkAlert.description, parkAlert.url)
 
           //DEV View Each Alert
@@ -81,16 +77,11 @@ export default class Park {
           console.log(alertsArray)
 
         })
+        this.parkAlertsArr = alertsArray;
 
-          this.parkAlertsArr = alertsArray;
-
-          //DEV View this.parkalertarr
-
-          console.log("This is this.parkAlertsArr:")
-          console.log(this.parkAlertsArr)
-
-          // #####
-
+        //DEV View this.parkalertarr
+        console.log("This is this.parkAlertsArr:")
+        console.log(this.parkAlertsArr)
 
         // Otherwise, if there are no alerts
       } else {
