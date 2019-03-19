@@ -64,10 +64,34 @@ const controlPark = async () => {
       } else {
         parkView.renderNoParkAlerts()
       }
-
-
 }
 
+
+
+ // - - - - - Tab-able Let's Go Content
+
+// add event listener to letsgo Menu
+// when clicked, hide all target content
+// if target matches X, show X id content
+
+
+ const letsgoTab = {
+  menu: document.querySelector('.letsgo_menu')
+  content: document.getElementsByClassName("letsgo_content"),
+  links: document.getElementsByClassName("tablinks")
+ }
+
+
+
+
+ function openActivity(e, activityName) {
+  console.log('open activity time!');
+  let i;
+   for (i = 0; i < letsgoTab.content.length; i++){
+    content(i).style.display="none";
+  }
+  document.getElementById(activityName).style.display = "block"
+ }
 
 
 

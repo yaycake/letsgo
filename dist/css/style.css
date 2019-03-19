@@ -141,7 +141,6 @@ button > h4 {
   width: 100px;
   height: 100px;
   background-color: white;
-
 }
 
 .visit_states_fees {
@@ -184,6 +183,21 @@ button > h4 {
 .letsgo_menu > h3 {
   margin: auto 3rem;
 
+}
+
+.letsgo_menu > button {
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  color: white;
+}
+
+.letsgo_menu > button:hover {
+  border-bottom: 3px solid white;
+}
+
+.letsgo_content {
+  list-style: none;
+  display: none;
 }
 
 
