@@ -25,7 +25,7 @@ export default class Park {
 
       if (res.data.total == 1){
          // Create the selected park object
-        this.name = res.data.data[0].fullName;
+        this.name = res.data.data[0].fullname;
         this.summary = res.data.data[0].description;
         this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
@@ -35,7 +35,7 @@ export default class Park {
         console.log("Building lat long:")
 
         // Build park.latLong
-        const latLongArr = res.data.data[0].latLong.split(" ");
+        const latLongArr = res.data.data[0].latlong.split(" ");
         this.latLong = {
           latitude: latLongArr[0].split(":")[1],
           longitude: latLongArr[1].split(":")[1]

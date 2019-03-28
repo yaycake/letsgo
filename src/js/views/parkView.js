@@ -10,8 +10,13 @@ export const clearPark = () => {
 }
 // Render Park Header: Title + Summary
 export const renderParkHeader = (park) => {
+  console.log("in renderParkHeader: About to split park title:")
 
+  console.log(park)
   const splitTitle = splitParkTitle(park.name)
+
+  console.log(`here is splitTitle: ${splitTitle}`)
+
 
   const markup = `
     <div class="profile_title_summary">

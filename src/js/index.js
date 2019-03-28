@@ -75,23 +75,21 @@ const controlPark = async () => {
 // if target matches X, show X id content
 
 
- const letsgoTab = {
-  menu: document.querySelector('.letsgo_menu')
+const letsgoTab = {
+  menu: document.querySelector('.letsgo_menu'),
   content: document.getElementsByClassName("letsgo_content"),
   links: document.getElementsByClassName("tablinks")
  }
 
+letsgoTab.menu.addEventListener('click', e=> {
+  console.log(e)
 
+  // Have to figure out how to clear & hide other tabs
 
-
- function openActivity(e, activityName) {
-  console.log('open activity time!');
-  let i;
-   for (i = 0; i < letsgoTab.content.length; i++){
-    content(i).style.display="none";
-  }
-  document.getElementById(activityName).style.display = "block"
- }
+  let openTab = e.target.innerHTML.toLowerCase()
+  console.log(`this is openTab variable: ${openTab}`)
+  document.getElementById(openTab).style.display = "block"
+})
 
 
 
