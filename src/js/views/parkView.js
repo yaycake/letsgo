@@ -1,5 +1,5 @@
 const elements = {
-  parkHeader: document.querySelector('.profile_header'),
+  parkHeader: document.querySelector('.park_header'),
   parkStates: document.querySelector('.states'),
   parkAlert: document.querySelector('.alerts_container')
 }

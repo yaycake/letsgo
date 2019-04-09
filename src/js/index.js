@@ -75,19 +75,20 @@ const controlPark = async () => {
 // if target matches X, show X id content
 
 
-const letsgoTab = {
-  menu: document.querySelector('.letsgo_menu'),
-  content: document.getElementsByClassName("letsgo_content"),
+const parkActivities = {
+  menu: document.querySelector('.tab_menu'),
+  content: document.getElementsByClassName("activity_content"),
   links: document.getElementsByClassName("tablinks")
  }
 
-letsgoTab.menu.addEventListener('click', e=> {
+parkActivities.menu.addEventListener('click', e=> {
   console.log(e)
 
   // Have to figure out how to clear & hide other tabs
 
   let openTab = e.target.innerHTML.toLowerCase()
   console.log(`this is openTab variable: ${openTab}`)
+
   document.getElementById(openTab).style.display = "block"
 })
 

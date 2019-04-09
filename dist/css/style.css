@@ -4,6 +4,7 @@
 body {
   margin: 0;
   color: white;
+  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -11,15 +12,15 @@ body {
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  /*text-shadow: 5px 5px 10px rgba(0,0,0,.5);*/
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 h3 {
@@ -35,17 +36,115 @@ h4, p {
   font-family: 'Nunito', sans-serif;
   font-weight:light;
 }
+/*- - - - Park profile*/
 
+.nav_bar {
+ /* position: fixed;
+  top: 0;*/
+  padding-left: 2rem;
+  height: 100px;
+}
+
+.nav_title {
+  border-bottom:1px solid whitesmoke;
+  padding-bottom: .5rem;
+}
+
+.underline {
+
+  width: 100%:;
+}
+
+.body_grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 95%;
+}
+
+.park_image {
+  grid-column: 1/span 1;
+  background-color: whitesmoke;
+  margin-top: 3rem;
+  height: 95%;
+  width: 100%;
+}
+
+.park_profile {
+  grid-column: 2/span 1;
+
+  display: grid;
+  grid-template-rows: 3;
+  grid-gap: 2rem;
+}
+
+.profile_header {
+  grid-row: 1;
+}
+
+
+/*- - - - - park profile menu*/
+.park_menu {
+  grid-row: 2;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.park_menu_item {
+  width: 100%;
+  border:1px solid whitesmoke;
+}
+
+
+
+.park_activities {
+  grid-row: 3;
+}
+
+
+
+/*- - - - - park activities*/
+
+.tab_menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  color: white;
+}
+
+
+/*.activity_content {
+  list-style: none;
+  display: none;
+}*/
+
+
+/*- - - - - - footer grid*/
+
+.footer {
+  padding-right:2rem;
+}
+.footer_title {
+  border-bottom:1px solid whitesmoke;
+  padding-bottom: .5rem;
+  text-align: right;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*
 .block_font {
   font-family: 'Oswald', sans-serif;
 }
 
 .text_font {
   font-family: 'Nunito', sans-serif;
-}
+}*/
 
 /*- - - - Header*/
-
+/*
 header {
   display: flex;
   flex-direction: row;
@@ -118,10 +217,10 @@ button > h4 {
 
 .image3 {
   grid-column: 3;
-}
+}*/
 
 /*- - - - Profile Details*/
-
+/*
 
 .profile_details {
   margin-top: 3rem;
@@ -134,7 +233,6 @@ button > h4 {
 .visit_icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-gap: 30px;*/
 }
 
 .icon {
@@ -168,10 +266,10 @@ button > h4 {
 .alert_text {
   width: 80%;
 }
-
+*/
 
 /*- - - letsgo Container*/
-.letsgo_container {
+/*.letsgo_container {
   grid-column: 2;
 }
 
@@ -199,6 +297,6 @@ button > h4 {
   list-style: none;
   display: none;
 }
-
+*/
 
 
