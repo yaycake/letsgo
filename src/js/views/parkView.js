@@ -1,7 +1,7 @@
 const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkStates: document.querySelector('.states'),
-  parkAlert: document.querySelector('.alerts_container')
+  parkAlert: document.querySelector('.alerts_ticker_move')
 }
 
 // Clear previous park results
@@ -65,17 +65,16 @@ export const renderParkAlerts = (parkAlerts) => {
   parkAlerts.forEach(function(alert){
     if (alert.url){
       const markup = `
-        <div class="alert_text">
+        <div class="alert_item">
           <a class="alert_link" href="${alert.url}" target="_blank">
-            <p><strong>${alert.title}</strong></p>
-            <p>${alert.description}</p>
+            <strong>${alert.title}</strong>: ${alert.description}
           </a>
         </div>
       `
       elements.parkAlert.insertAdjacentHTML('beforeend', markup)
     } else {
       const markup = `
-        <div class="alert_text">
+        <div class="alert_item">
             <p><strong>${alert.title}</strong></p>
             <p>${alert.description}</p>
         </div>
