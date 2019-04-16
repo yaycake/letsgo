@@ -59,11 +59,11 @@ const controlPark = async () => {
   parkView.renderParkVisit(state.park);
 
   if (state.park.parkAlertsArr){
-        console.log('should be rendering alerts')
-        parkView.renderParkAlerts(state.park.parkAlertsArr)
-      } else {
-        parkView.renderNoParkAlerts()
-      }
+    console.log('should be rendering alerts')
+    parkView.renderParkAlerts(state.park.parkAlertsArr)
+  } else {
+    parkView.renderNoParkAlerts()
+  }
 }
 
 

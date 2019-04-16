@@ -1,7 +1,8 @@
 const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkStates: document.querySelector('.states'),
-  parkAlert: document.querySelector('.alerts_ticker_move')
+  // parkAlert: document.querySelector('.alerts_ticker_move')
+  parkAlert: document.querySelector('.ticker_wrap')
 }
 
 // Clear previous park results
@@ -67,7 +68,7 @@ export const renderParkAlerts = (parkAlerts) => {
       const markup = `
         <div class="alert_item">
           <a class="alert_link" href="${alert.url}" target="_blank">
-            <strong>${alert.title}</strong>: ${alert.description}
+            ${alert.title}: ${alert.description}
           </a>
         </div>
       `
@@ -75,8 +76,7 @@ export const renderParkAlerts = (parkAlerts) => {
     } else {
       const markup = `
         <div class="alert_item">
-            <p><strong>${alert.title}</strong></p>
-            <p>${alert.description}</p>
+            ${alert.title}:${alert.description}
         </div>
       `
       elements.parkAlert.insertAdjacentHTML('beforeend', markup)
@@ -85,6 +85,11 @@ export const renderParkAlerts = (parkAlerts) => {
 }
 
 export const renderNoParkAlerts = () =>{
-  return "No alerts for this park."
+  const markup = `
+    <div class="alert_item">
+      No Alerts For This Park
+    </div>
+  `
+  elements.parkAlert.insertAdjacentHTML('beforeend', markup)
 }
 

@@ -53,7 +53,7 @@ ul {
 }
 
 .nav_title {
-  border-bottom:1px solid whitesmoke;
+  border-bottom: 1.5px solid whitesmoke;
   padding-bottom: .5rem;
 }
 
@@ -127,39 +127,98 @@ ul {
 }*/
 
 /*- - - - - - - alerts ticker*/
-@keyframes ticker {
+/*@keyframes ticker {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100%, 0, 0); }
   }
+*/
+
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 
 .alerts_container {
+  margin-top: 2rem;
   width: 100%;
   overflow: hidden;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
-.ticker-wrap {
+.alert_link {
+  text-decoration: none;
+  color: white!important;
+}
+
+.ticker_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
   width: 100%;
-  padding-left: 100%;
-  background-color: #eee;
+  padding-right: 100%;
+  box-sizing: content-box;
+  /*background-color: #eee;*/
+  height: 3rem;
+  /*border:1px solid blue;*/
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function:linear;
+  animation-timing-function: linear;
+
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
 }
 
-.alerts_ticker-move {
+/*.alerts_ticker-move {
   display: inline-block;
   white-space: nowrap;
   padding-right: 100%;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 10s;
-}
+  animation-duration: 30s;
+
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  -webkit-animation-duration: 30s;
+
+}*/
 
 .ticker-move:hover{
   animation-play-state: paused;
 }
 .alert-item{
   display: inline-block;
-  padding: 0 2rem;
-  color: white;
+  /*padding: 0 2rem;*/
+  color: orange;
 }
 
 /*- - - - - - footer grid*/
