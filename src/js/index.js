@@ -68,7 +68,7 @@ const controlPark = async () => {
 
 
 
- // - - - - - Tab-able Let's Go Content
+ // - - - - - Tab-able Activities Content
 
 // add event listener to letsgo Menu
 // when clicked, hide all target content
