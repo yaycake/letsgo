@@ -2,7 +2,12 @@ const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkStates: document.querySelector('.states'),
   // parkAlert: document.querySelector('.alerts_ticker_move')
-  parkAlert: document.querySelector('.ticker_wrap')
+  parkAlert: document.querySelector('.ticker_wrap'),
+
+  activityMenu: document.querySelector('.tab_menu'),
+  activityContent: document.getElementsByClassName("activity_content"),
+  activityLinks: document.getElementsByClassName("tablinks")
+
 }
 
 // Clear previous park results
@@ -92,4 +97,26 @@ export const renderNoParkAlerts = () =>{
   `
   elements.parkAlert.insertAdjacentHTML('beforeend', markup)
 }
+
+
+export const viewTabContent = ( activity ) => {
+  console.log("you're in ViewTabContent!")
+  console.log(activity)
+
+  let i
+
+  for (i = 0; i < elements.activityContent.length; i++) {
+    elements.activityContent[i].style.display = "none";
+  }
+
+  // for (i=0; i < elements.activityLinks.length; i++){
+  //   elements.activityLinks[i].className = elements.activityLinks[i].className.replace(" active", "");
+  // }
+
+  document.getElementById(activity).style.display = "block"
+
+
+}
+
+
 

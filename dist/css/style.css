@@ -135,6 +135,9 @@ ul {
   display: none;
 }
 
+.active_content_tab {
+  display: block;
+}
 
 
 @-webkit-keyframes ticker {

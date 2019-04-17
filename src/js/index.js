@@ -75,21 +75,50 @@ const controlPark = async () => {
 // if target matches X, show X id content
 
 
-const parkActivities = {
+const activityElements = {
   menu: document.querySelector('.tab_menu'),
   content: document.getElementsByClassName("activity_content"),
   links: document.getElementsByClassName("tablinks")
  }
 
-parkActivities.menu.addEventListener('click', e=> {
+
+// const parkTab = (e, contentName ) => {
+//   var i, openTab
+
+//   for (i = 0; i < parkActivities.content.length; i++) {
+//     parkActivities.content[i].style.display = "none";
+//   }
+
+//   for (i=0; i < parkActivities.links.length; i++){
+//     parkActivities.links[i].className = parkActivities.links[i].className.replace(" active", "");
+//   }
+
+//   document.getElementById(${contentName}).style.display = "block";
+//   evt.currentTarget.className += " active";
+
+
+// }
+
+
+document.querySelector('.tab_menu').addEventListener('click', e => {
   console.log(e)
 
   // Have to figure out how to clear & hide other tabs
 
-  let openTab = e.target.innerHTML.toLowerCase()
-  console.log(`this is openTab variable: ${openTab}`)
+  // let openTab = e.target.innerHTML.toLowerCase()
+  // console.log(`this is openTab variable: ${openTab}`)
 
-  document.getElementById(openTab).style.display = "block"
+  // parkTab(e, openTab)
+
+  if (e.target.matches('.hiking, .hiking *')){
+    parkView.viewTabContent('hiking')
+  } else if (e.target.matches('.climbing, .climbing *')){
+    parkView.viewTabContent('climbing')
+  } else if (e.target.matches('.camping, .camping *')){
+    parkView.viewTabContent('camping')
+  }
+
+  // parkView.viewTabContent(openTab)
 })
 
 
