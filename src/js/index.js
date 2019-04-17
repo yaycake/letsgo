@@ -70,45 +70,12 @@ const controlPark = async () => {
 
  // - - - - - Tab-able Activities Content
 
-// add event listener to letsgo Menu
-// when clicked, hide all target content
-// if target matches X, show X id content
-
-
-const activityElements = {
-  menu: document.querySelector('.tab_menu'),
-  content: document.getElementsByClassName("activity_content"),
-  links: document.getElementsByClassName("tablinks")
- }
-
-
-// const parkTab = (e, contentName ) => {
-//   var i, openTab
-
-//   for (i = 0; i < parkActivities.content.length; i++) {
-//     parkActivities.content[i].style.display = "none";
-//   }
-
-//   for (i=0; i < parkActivities.links.length; i++){
-//     parkActivities.links[i].className = parkActivities.links[i].className.replace(" active", "");
-//   }
-
-//   document.getElementById(${contentName}).style.display = "block";
-//   evt.currentTarget.className += " active";
-
-
-// }
-
+// console.log('before default click')
+// document.getElementById('defaultActivity').click();
+parkView.defaultTabOpen();
 
 document.querySelector('.tab_menu').addEventListener('click', e => {
   console.log(e)
-
-  // Have to figure out how to clear & hide other tabs
-
-  // let openTab = e.target.innerHTML.toLowerCase()
-  // console.log(`this is openTab variable: ${openTab}`)
-
-  // parkTab(e, openTab)
 
   if (e.target.matches('.hiking, .hiking *')){
     parkView.viewTabContent('hiking')

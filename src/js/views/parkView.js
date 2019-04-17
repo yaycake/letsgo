@@ -98,10 +98,14 @@ export const renderNoParkAlerts = () =>{
   elements.parkAlert.insertAdjacentHTML('beforeend', markup)
 }
 
+export const defaultTabOpen = () => {
+  document.querySelector('.hiking_content').style.display= "block"
+}
 
 export const viewTabContent = ( activity ) => {
   console.log("you're in ViewTabContent!")
   console.log(activity)
+
 
   let i
 
