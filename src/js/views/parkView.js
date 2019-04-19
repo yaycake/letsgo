@@ -1,5 +1,7 @@
 const elements = {
   parkHeader: document.querySelector('.park_header'),
+  parkBody: document.querySelector('.body_grid'),
+
   parkStates: document.querySelector('.states'),
   // parkAlert: document.querySelector('.alerts_ticker_move')
   parkAlert: document.querySelector('.ticker_wrap'),
@@ -38,6 +40,14 @@ export const renderParkHeader = (park) => {
     </div>
   `
   elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
+}
+
+export const renderParkImage = (park) => {
+  const markup = `
+    <div class="park_image" style="background:url(${park.imageUrl}); background-position: center; background-size: cover;">
+    </div>
+  `
+  elements.parkBody.insertAdjacentHTML('afterbegin', markup)
 }
 
 export const renderParkVisit = (park) => {

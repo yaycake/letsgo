@@ -3,10 +3,11 @@ import axios from 'axios';
 import { nps } from './base';
 
 export default class Park {
-  constructor (parkCode){
+  constructor (parkCode, imageUrl){
     this.parkCode = parkCode;
     this.parkAlertsArr = [];
     this.latLong = {};
+    this.imageUrl = imageUrl
   }
 
   async getPark() {
@@ -27,7 +28,7 @@ export default class Park {
          // Create the selected park object
         this.name = res.data.data[0].fullName;
         this.summary = res.data.data[0].description;
-        this.parkcode = res.data.data[0].parkCode;
+        // this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
         this.weather = res.data.data[0].weatherInfo;
 

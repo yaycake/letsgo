@@ -8,117 +8,133 @@
   <title>Let's Go | National Park Profiles</title>
 
   <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
- <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Mono:400,400i,700,700i" rel="stylesheet">
+
 
 </head>
+
 <body>
 
-  <!-- - - - - section one -->
-  <div class="section__1">
-    <!-- - - - - grid background images-->
-    <div class="grid-col-20">
-    <!--   <div class="section__1-image-top" style="background-image: url('https://placegoat.com/900/900');">
-      </div> -->
-      <div class="section__1-image-left" style="background-image: url('https://placegoat.com/600/600');">
-      </div>
-      <div class="section__1-image-right" style="background-image: url('https://placegoat.com/400/400');">
+
+
+<!-- - - - - - - park rehaul -->
+
+<div class="nav_bar">
+  <h3 class="nav_title">National Park Profiles</h3>
+</div>
+
+
+
+  <!-- - - - - - - Park Profile Begins -->
+
+  <div class="profile_page_wrapper">
+
+    <div class="body_grid">
+      <div class="park_image"></div>
+      <div class="park_profile">
+        <div class="park_header">
+
+        <!-- - - - - - - ~~~ -->
+        <!-- <div class="profile_title_summary">
+          <div class="park_title">
+            <h1>YELLOWSTONE</h1>
+            <h2>National Park</h2>
+          </div>
+          <div class="park_summary">
+            <h4>
+              Visit Yellowstone and experience the world's first national park. Marvel at a volcano's hidden power rising up in colorful hot springs, mudpots, and geysers. Explore mountains, forests, and lakes to watch wildlife and witness the drama of the natural world unfold.
+            </h4>
+          </div>
+        </div> -->
+        <!-- - - - - - - ~~~ -->
+
+        </div>
+        <div class="park_menu">
+          <div class="park_weather park_menu_item">Weather</div>
+          <div class="map park_menu_item"> Directions </div>
+          <div class="states park_menu_item">
+            <!-- <div class="states_title">
+              <h3>States</h3>
+            </div>
+            <ul class="states_list">
+              <li><p>Idaho</p></li>
+              <li><p>Montana</p></li>
+              <li><p>Wyoming</p></li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="park_activities">
+          <div class="tab_menu">
+            <button class="tablinks hiking" id="defaultActivity"><h4>Hiking</h4></button>
+            <button class="tablinks climbing"><h4>Climbing</h4></button>
+            <button class="tablinks camping"><h4>Camping</h4></button>
+          </div>
+
+          <ul class="hiking_content activity_content" id="hiking">
+            <li>
+              <strong>Bridge Bay Campground-Natural Bridge Trail</strong>
+              <p>"A great stroll for Bridge Bay campers to a wonderful 30-foot natural stone bridge."
+              0.7 Miles  | Difficulty: Green |  Lake Village, WY
+              </p>
+          </li>
+          </ul>
+
+          <ul class="mountain_content activity_content" id="climbing">
+          <li>
+            <a href="https://www.mountainproject.com/route/105748391/calypso" target="_blank">
+
+              <strong> Calypso </strong>
+               <p>
+                <span>Type: trad</span> | <span>4 Stars</span> | <span>5.6 Rating</span>
+                <span>Pitches: 3</span>
+              </p>
+            </a>
+          </li>
+          </ul>
+
+          <ul class="camping_content activity_content" id="camping" >
+            <li>
+              <p>
+                <strong> Igloo Creek </strong>
+                <span>7 Campsites </span> | <span>Primitive Camping Areas</span> | <span>Fire Policy: Keep campfires small and within fire ring provided.</span>
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- - - - - - section one grid religious verse  -->
+
+
+
   </div>
 
-  <div class="section__1-title">
-      <span class="section__1-title park_title"><h1>Yellow Stone</h1></span>
-      <!-- <span class="section__1-title national_park"><h1>National Park</h1></span> -->
-    </div>
 
-  <!-- - - - - - - next section -->
+ <div class="park_alerts alerts_container">
+            <div class="ticker_wrap">
+            <!-- <div class="alerts_ticker_move"> -->
+              <div class="alert_item">Park Alerts:</div>
+      <!-- </div> -->
+            </div>
+          </div>
 
-<div class="section__2">
-  <div class="grid-col-20">
-    <div class="section__2-image-left" style="background-image: url('https://placegoat.com/900/900')">
-    </div>
 
-    <div class="section__2-profile-text">
-      <div class="profile-summary">
-        <h4>
-          <p>Visit Yellowstone and experience the world's first national park. Marvel at a volcano's hidden power rising up in colorful hot springs, mudpots, and geysers. Explore mountains, forests, and lakes to watch wildlife and witness the drama of the natural world unfold. Discover the history that led to the conservation of our national treasures 'for the benefit and enjoyment of the people.</p>
-        </h4>
 
-      </div>
-      <div class="profile-states">
-        <h4 class="profile_header">States</h4>
-        <p>Idaho, Montana, and Wyoming</p>
-      </div>
-      <div class="profile-alerts">
-        <h4 class="profile_header">Alerts</h4>
-        <p>Some destinations are unavailable because of construction related to the Canyon Overlooks and Trails Restoration Project.
-        The road between Roaring Mountain and Willow Park is under construction. Expect delays up to 30 minutes and night closures June 11–September 10 from 10pm–7am (excluding Saturday nights).</p>
-      </div>
-      <div class="profile-fees">
-        <h4 class="profile_header">Entrance Fees</h4>
-        <p>
-          Annual Pass: $60
-          7 Day: $30
-          7 Day (motorcycle or snowmobile: $25)
-        </p>
+  <div class="footer">
 
-      </div>
-    </div>
+      <div class="underline"></div>
+      <h3 class="footer_title">Let's Go Somewhere else</h3>
+
   </div>
-</div>
 
-
-<div class="section__3">
-   <div class="grid-col-20">
-      <div class="section__3-image-left" style="background-image: url('https://placegoat.com/600/600');"></div>
-      <div class="section__3-image-right" style="background-image: url('https://placegoat.com/600/600');"></div>
-   </div>
-</div>
-
-<div class="letsgo_title">
- <h1>Let's Go</h1>
-</div>
-
-<div class="section__4">
-  <div class="grid-col-20">
-    <div class="letsgo-menu">
-      <div><p>Hiking</p></div>
-      <div><p>Climbing</p></div>
-      <div><p>Weather</p></div>
-    </div>
-    <div class="letsgo-menu-content">
-      <div>
-        <p>
-          Bridge Bay Campground-Natural Bridge Trail
-          "A great stroll for Bridge Bay campers to a wonderful 30-foot natural stone bridge."
-          0.7 Miles  | Difficulty: Green |  Lake Village, WY
-        </p>
-      </div>
-      <div>
-        <p>
-          Bridge Bay Campground-Natural Bridge Trail
-          "A great stroll for Bridge Bay campers to a wonderful 30-foot natural stone bridge."
-          0.7 Miles  | Difficulty: Green |  Lake Village, WY
-        </p>
-      </div>
-      <div>
-        <p>
-          Bridge Bay Campground-Natural Bridge Trail
-          "A great stroll for Bridge Bay campers to a wonderful 30-foot natural stone bridge."
-          0.7 Miles  | Difficulty: Green |  Lake Village, WY
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="section__5">
-
-</div>
-
-<!-- <script src="../dist/js/bundle.js"></script> -->
 <script type="text/javascript" src="js/bundle.js"></script></body>
-</html>
+
+
+
+
