@@ -1,4 +1,6 @@
 import Park from './models/Park';
+import Climb from './models/Climb';
+
 import * as parkView from './views/parkView';
 import axios from 'axios';
 
@@ -30,17 +32,12 @@ const controlPark = async () => {
     return parkList[randomPark]
   }
 
-
-
   // 2. Take park code and call park API
   let queryPark = randomParkQuery();
-
   state.park = new Park(queryPark.code, queryPark.image_url)
 
   try {
     await state.park.getPark();
-
-
     console.log('heres a park:')
     console.log(state.park)
 
@@ -48,6 +45,17 @@ const controlPark = async () => {
     console.log(error)
     alert('Error Getting A Park!')
   }
+
+  // try to render climbs
+
+  try {
+    await state.park.getClimbs(state.park.latitude, state.park.longitude)
+  }catch (error){
+    console.log(error)
+    console.log('problem with calling climbs in controlPark')
+  }
+
+
 
   //DEV View
   console.log('calling for park alerts!')
@@ -68,20 +76,20 @@ const controlPark = async () => {
   parkView.renderParkHeader(state.park);
   parkView.renderParkVisit(state.park);
 
+  parkView.renderMountainContent(state.park.climbsArray)
+
   if (state.park.parkAlertsArr){
     console.log('should be rendering alerts')
     parkView.renderParkAlerts(state.park.parkAlertsArr)
   } else {
     parkView.renderNoParkAlerts()
   }
+
+
 }
-
-
 
  // - - - - - Tab-able Activities Content
 
-// console.log('before default click')
-// document.getElementById('defaultActivity').click();
 parkView.defaultTabOpen();
 
 document.querySelector('.tab_menu').addEventListener('click', e => {
@@ -94,8 +102,6 @@ document.querySelector('.tab_menu').addEventListener('click', e => {
   } else if (e.target.matches('.camping, .camping *')){
     parkView.viewTabContent('camping')
   }
-
-  // parkView.viewTabContent(openTab)
 })
 
 

@@ -1,6 +1,8 @@
 import parkCodes from '../../data/parks.json';
 import axios from 'axios';
 import { nps } from './base';
+import { mountain } from './base';
+import { shuffle } from './base'
 
 export default class Park {
   constructor (parkCode, imageUrl){
@@ -8,6 +10,7 @@ export default class Park {
     this.parkAlertsArr = [];
     this.latLong = {};
     this.imageUrl = imageUrl
+    this.climbsArray = [];
   }
 
   async getPark() {
@@ -106,6 +109,35 @@ export default class Park {
       alert('Something wrong with getting Park Alerts!')
     }
   }
+
+
+  async getClimbs() {
+    try {
+      console.log("getting climbs")
+      // console.log( `LAT:: ${this.latLong.latitude}`)
+      // console.log( `LON:: ${this.latLong.longitude}`)
+      const res = await axios (`${mountain.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${mountain.apiKey}`)
+
+      console.log('Here are the climbs')
+      console.log(res)
+
+      let routes = res.data.routes;
+      if (routes.length > 0){
+        this.climbsArray = shuffle(routes).slice(0,3);
+        console.log(`HERE ARE RANDO CLIMBS: ${this.climbsArray}`)
+        // console.log(`climbs ONE: ${this.climbsArray[0]["name"]}`)
+        // out of the total # of results, select 3 random (indexes)
+      } else {
+        console.log('No Climbs Near Here!')
+      }
+    } catch (error) {
+      console.log(error);
+      alert('Something Went Wrong In Getting Climbs')
+    }
+  }
+
+
+
 }
 
 

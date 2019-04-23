@@ -8,8 +8,8 @@ const elements = {
 
   activityMenu: document.querySelector('.tab_menu'),
   activityContent: document.getElementsByClassName("activity_content"),
-  activityLinks: document.getElementsByClassName("tablinks")
-
+  activityLinks: document.getElementsByClassName("tablinks"),
+  mountainContent: document.querySelector('.mountain_content')
 }
 
 // Clear previous park results
@@ -115,19 +115,39 @@ export const defaultTabOpen = () => {
 export const viewTabContent = ( activity ) => {
   console.log("you're in ViewTabContent!")
   console.log(activity)
-
-
-  let i
-
+  let i;
   for (i = 0; i < elements.activityContent.length; i++) {
     elements.activityContent[i].style.display = "none";
   }
-
   // for (i=0; i < elements.activityLinks.length; i++){
   //   elements.activityLinks[i].className = elements.activityLinks[i].className.replace(" active", "");
   // }
-
   document.getElementById(activity).style.display = "block"
+}
+
+export const renderMountainContent = (climbsArray) => {
+  if (climbsArray.length > 0){
+    let i;
+    for (i = 0; i < climbsArray.length; i ++){
+      const markup = `
+        <li>
+          <a href="${climbsArray[i]["url"]}""  target="_blank">
+            <strong> ${climbsArray[i]["name"]} </strong>
+             <p>
+              <span>Type: ${climbsArray[i]["type"]} </span> | <span>${climbsArray[i]["stars"]}  Stars</span> | <span>${climbsArray[i]["rating"]}  Rating</span>
+              <span>Pitches: ${climbsArray[i]["pitches"]} </span>
+            </p>
+          </a>
+        </li>
+      `
+      elements.mountainContent.insertAdjacentHTML('beforeend', markup)
+    }
+  } else {
+    const markup = `
+      <li>No Climbs Nearby; Go Hiking!</li>
+    `
+    elements.mountainContent.insertAdjacentHTML('beforeend', markup)
+  }
 
 
 }
