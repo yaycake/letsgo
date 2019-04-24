@@ -37,6 +37,8 @@ const controlPark = async () => {
 
   state.park = new Park(queryPark.code, queryPark.image_url)
 
+  // GET Park
+
   try {
     await state.park.getPark();
     console.log('heres a park:')
@@ -47,7 +49,7 @@ const controlPark = async () => {
     alert('Error Getting A Park!')
   }
 
-  // try to render climbs
+  // GET Park Climbs
 
   try {
     await state.park.getClimbs()
@@ -56,7 +58,7 @@ const controlPark = async () => {
     console.log('problem with calling climbs in controlPark')
   }
 
-  // try to render hikes
+  // GET park hikes
   try {
     await state.park.getHikes();
   }catch (error){
@@ -66,12 +68,24 @@ const controlPark = async () => {
   //DEV View
   console.log('calling for park alerts!')
 
-  // Check for Park Alerts
+  // GET Park Alerts
   try {
       await state.park.getParkAlerts();
   } catch (error){
     console.log(error)
   }
+
+  // GET park weather
+   
+  try {
+    await state.park.getWeather();
+  }catch(error) {
+    console.log(error)
+  }
+
+  // gete Park Map link 
+
+  state.park.getMapLink();
 
     //Dev View Park alerts
     console.log("print park alerts")
@@ -84,20 +98,15 @@ const controlPark = async () => {
 
   // render park mountain /climbs content
   parkView.renderMountainContent(state.park.climbsArray)
-
   parkView.renderHikesContent(state.park.hikesArray)
+
+  // render park directions link 
+  parkView.renderMapLink(state.park.mapLink)
 
   // render any park alerts
   parkView.renderParkAlerts(state.park.parkAlertsArr)
 
-
-  // render park weather 
-  try {
-    await state.park.getWeather();
-  }catch(error) {
-    console.log(error)
-  }
-
+ // render park weather 
   parkView.renderWeather(state.park.weather);
 }
 

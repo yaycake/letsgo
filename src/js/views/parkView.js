@@ -12,7 +12,9 @@ const elements = {
   mountainContent: document.querySelector('.mountain_content'), 
 
   hikingContent: document.querySelector('.hiking_content'), 
-  parkWeather: document.querySelector('.park_weather')
+  parkWeather: document.querySelector('.park_weather'),
+
+  parkMapLink: document.querySelector('.park_map')
 }
 
 // Clear previous park results
@@ -193,7 +195,7 @@ export const renderWeather = (weather) => {
   console.log(`We're in weather: ${weather}`)
 
   const markup = `
-    <div class = "weather_icon" style="background: url('${weather.icon}'); background-position: center; background-size: 75%">
+    <div class = "weather_icon" style="background: url('${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
       <div class="min_temp">
         ${Math.ceil(weather["minTemp"])}
       </div>
@@ -213,4 +215,14 @@ export const renderWeather = (weather) => {
 }
 
 
+export const renderMapLink = (mapLink) => {
+  console.log(`In renderMapLink: ${mapLink}`)
+  const markup = `
+  <a href="${mapLink}" target="_blank">
+    Directions
+  </a>
+  `
 
+  console.log(elements.parkMapLink)
+  elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
+}

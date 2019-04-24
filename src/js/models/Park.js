@@ -4,7 +4,8 @@ import { nps } from './base';
 import { mountain } from './base';
 import { shuffle } from './base';
 import { hikes } from './base';
-import { weather } from './base'
+import { weather } from './base';
+import { map } from './base';
 
 export default class Park {
   constructor (parkCode, imageUrl){
@@ -15,6 +16,7 @@ export default class Park {
     this.climbsArray = [];
     this.hikesArray = [];
     this.weather = {};
+    this.mapLink = ``;
   }
 
   async getPark() {
@@ -157,6 +159,16 @@ export default class Park {
       console.log(error);
       alert('Something Went Wrong In Getting Climbs')
     }
+  }
+
+  getMapLink(){
+
+    console.log( `in getMapLink`)
+    const locationName = this.name.replace(/\s+/g, '+').toLowerCase();
+
+    this.mapLink = `${map.baseUrl}${locationName}`
+
+    console.log(`this is the maplink: ${this.mapLink}`)
   }
 
   async getWeather() {
