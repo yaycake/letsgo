@@ -105,6 +105,41 @@ ul {
   grid-row: 3;
 }
 
+.weather_icon {
+  position: relative;
+  height: 80%;
+  width: 60%;
+  margin: 0 auto;
+}
+.min_temp {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.current_temp {
+  position: absolute;
+  left: 10px; 
+  top: 10px;
+}
+
+.max_temp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.unit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.weather_desc {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
 /*- - - - - park activities*/
 
 .tab_menu {

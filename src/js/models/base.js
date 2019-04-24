@@ -21,6 +21,14 @@ export const mountain = {
   apiKey: '200425757-163d23741dd8f4d89d80ae4fe5d6f4a7'
 }
 
+
+// Open Weather API Elements 
+
+export const weather = {
+  baseUrl: 'http://api.openweathermap.org/data/2.5/weather?lat=',
+  apiKey: '917d6a82c4105f35a2603057a2c9b4d1',
+  unit: '&units=imperial'
+}
 // https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=40.03&lon=-105.25&key=200425757-163d23741dd8f4d89d80ae4fe5d6f4a7
 // https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=34.41461863&lon=-85.61734327&key=200425757-163d23741dd8f4d89d80ae4fe5d6f4a7
 

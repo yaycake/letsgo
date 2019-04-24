@@ -11,7 +11,8 @@ const elements = {
   activityLinks: document.getElementsByClassName("tablinks"),
   mountainContent: document.querySelector('.mountain_content'), 
 
-  hikingContent: document.querySelector('.hiking_content')
+  hikingContent: document.querySelector('.hiking_content'), 
+  parkWeather: document.querySelector('.park_weather')
 }
 
 // Clear previous park results
@@ -186,8 +187,29 @@ export const renderMountainContent = (climbsArray) => {
     `
     elements.mountainContent.insertAdjacentHTML('beforeend', markup)
   }
+}
 
+export const renderWeather = (weather) => {
+  console.log(`We're in weather: ${weather}`)
 
+  const markup = `
+    <div class = "weather_icon" style="background: url('${weather.icon}'); background-position: center; background-size: 75%">
+      <div class="min_temp">
+        ${Math.ceil(weather["minTemp"])}
+      </div>
+      <div class="current_temp">
+        ${Math.ceil(weather["currentTemp"])}
+      </div>
+      <div class="max_temp">
+      ${Math.ceil(weather["maxTemp"])}
+      </div>
+      <div class="unit">
+        F
+      </div>
+    </div>
+    <div class="weather_desc"> ${weather["description"]}</div>
+  `
+  elements.parkWeather.insertAdjacentHTML('afterbegin', markup)
 }
 
 

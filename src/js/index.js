@@ -89,6 +89,16 @@ const controlPark = async () => {
 
   // render any park alerts
   parkView.renderParkAlerts(state.park.parkAlertsArr)
+
+
+  // render park weather 
+  try {
+    await state.park.getWeather();
+  }catch(error) {
+    console.log(error)
+  }
+
+  parkView.renderWeather(state.park.weather);
 }
 
  // - - - - - Tab-able Activities Content

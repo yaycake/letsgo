@@ -4,6 +4,7 @@ import { nps } from './base';
 import { mountain } from './base';
 import { shuffle } from './base';
 import { hikes } from './base';
+import { weather } from './base'
 
 export default class Park {
   constructor (parkCode, imageUrl){
@@ -13,6 +14,7 @@ export default class Park {
     this.imageUrl = imageUrl
     this.climbsArray = [];
     this.hikesArray = [];
+    this.weather = {};
   }
 
   async getPark() {
@@ -35,7 +37,7 @@ export default class Park {
         this.summary = res.data.data[0].description;
         // this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
-        this.weather = res.data.data[0].weatherInfo;
+        // this.weather = res.data.data[0].weatherInfo;
 
         console.log(res.data.data[0].latLong)
         console.log("Building lat long:")
@@ -157,7 +159,28 @@ export default class Park {
     }
   }
 
+  async getWeather() {
+    try {
+      console.log("getting weather")
 
+      const res = await axios (`${weather.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&appid=${weather.apiKey}${weather.unit}`)
+      
+      console.log(res)
+
+
+      this.weather = {
+        currentTemp: res.data["main"]["temp"],
+        minTemp: res.data["main"]["temp_min"],
+        maxTemp: res.data["main"]["temp_max"],
+        description: res.data["weather"][0]["description"], 
+        icon: `http://openweathermap.org/img/w/${res.data["weather"][0]["icon"]}.png`
+      }
+
+      console.log (this.weather)
+    }catch (error){
+
+    }
+  }
 
 }
 
