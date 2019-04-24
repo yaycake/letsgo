@@ -34,6 +34,7 @@ const controlPark = async () => {
 
   // 2. Take park code and call park API
   let queryPark = randomParkQuery();
+
   state.park = new Park(queryPark.code, queryPark.image_url)
 
   try {
@@ -49,13 +50,18 @@ const controlPark = async () => {
   // try to render climbs
 
   try {
-    await state.park.getClimbs(state.park.latitude, state.park.longitude)
+    await state.park.getClimbs()
   }catch (error){
     console.log(error)
     console.log('problem with calling climbs in controlPark')
   }
 
-
+  // try to render hikes
+  try {
+    await state.park.getHikes();
+  }catch (error){
+    console.log(error)
+  }
 
   //DEV View
   console.log('calling for park alerts!')
@@ -63,29 +69,26 @@ const controlPark = async () => {
   // Check for Park Alerts
   try {
       await state.park.getParkAlerts();
-    } catch (error){
-      console.log(error)
-    }
+  } catch (error){
+    console.log(error)
+  }
 
     //Dev View Park alerts
     console.log("print park alerts")
     console.log(state.park.parkAlerts)
 
-  // render park view on ui
+  // render park info
   parkView.renderParkImage(state.park);
   parkView.renderParkHeader(state.park);
   parkView.renderParkVisit(state.park);
 
+  // render park mountain /climbs content
   parkView.renderMountainContent(state.park.climbsArray)
 
-  if (state.park.parkAlertsArr){
-    console.log('should be rendering alerts')
-    parkView.renderParkAlerts(state.park.parkAlertsArr)
-  } else {
-    parkView.renderNoParkAlerts()
-  }
+  parkView.renderHikesContent(state.park.hikesArray)
 
-
+  // render any park alerts
+  parkView.renderParkAlerts(state.park.parkAlertsArr)
 }
 
  // - - - - - Tab-able Activities Content

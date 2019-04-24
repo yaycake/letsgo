@@ -2,7 +2,8 @@ import parkCodes from '../../data/parks.json';
 import axios from 'axios';
 import { nps } from './base';
 import { mountain } from './base';
-import { shuffle } from './base'
+import { shuffle } from './base';
+import { hikes } from './base';
 
 export default class Park {
   constructor (parkCode, imageUrl){
@@ -11,6 +12,7 @@ export default class Park {
     this.latLong = {};
     this.imageUrl = imageUrl
     this.climbsArray = [];
+    this.hikesArray = [];
   }
 
   async getPark() {
@@ -41,9 +43,10 @@ export default class Park {
         // Build park.latLong
         const latLongArr = res.data.data[0].latLong.split(" ");
         this.latLong = {
-          latitude: latLongArr[0].split(":")[1],
+          latitude: latLongArr[0].split(":")[1].replace(/,\s*$/, ""),
           longitude: latLongArr[1].split(":")[1]
         }
+
       } else if (res.data.total == 0) {
         // ReLoad API response into a variable
         const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
@@ -110,12 +113,32 @@ export default class Park {
     }
   }
 
+  async getHikes() {
+    try {
+      console.log("Getting hikes")
+
+      const res = await axios (`${hikes.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${hikes.apiKey}`)
+
+      let trails = res.data.trails;
+
+      if (trails.length > 0) {
+        this.hikesArray = shuffle(trails).slice(0,5);
+      } else {
+        console.log("No Hikes Near Here")
+      }
+
+      console.log(res)
+    } catch (error){
+      console.log(error)
+    }
+  }
+
 
   async getClimbs() {
     try {
       console.log("getting climbs")
-      // console.log( `LAT:: ${this.latLong.latitude}`)
-      // console.log( `LON:: ${this.latLong.longitude}`)
+      console.log(`Heres the latitude:${this.latLong.latitude}`)
+
       const res = await axios (`${mountain.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${mountain.apiKey}`)
 
       console.log('Here are the climbs')
@@ -123,10 +146,8 @@ export default class Park {
 
       let routes = res.data.routes;
       if (routes.length > 0){
-        this.climbsArray = shuffle(routes).slice(0,3);
+        this.climbsArray = shuffle(routes).slice(0,5);
         console.log(`HERE ARE RANDO CLIMBS: ${this.climbsArray}`)
-        // console.log(`climbs ONE: ${this.climbsArray[0]["name"]}`)
-        // out of the total # of results, select 3 random (indexes)
       } else {
         console.log('No Climbs Near Here!')
       }

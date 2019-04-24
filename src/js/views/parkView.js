@@ -9,7 +9,9 @@ const elements = {
   activityMenu: document.querySelector('.tab_menu'),
   activityContent: document.getElementsByClassName("activity_content"),
   activityLinks: document.getElementsByClassName("tablinks"),
-  mountainContent: document.querySelector('.mountain_content')
+  mountainContent: document.querySelector('.mountain_content'), 
+
+  hikingContent: document.querySelector('.hiking_content')
 }
 
 // Clear previous park results
@@ -78,25 +80,37 @@ export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
   console.log(parkAlerts)
 
-  parkAlerts.forEach(function(alert){
-    if (alert.url){
-      const markup = `
-        <div class="alert_item">
-          <a class="alert_link" href="${alert.url}" target="_blank">
-            ${alert.title}: ${alert.description}
-          </a>
-        </div>
-      `
-      elements.parkAlert.insertAdjacentHTML('beforeend', markup)
-    } else {
-      const markup = `
-        <div class="alert_item">
-            ${alert.title}:${alert.description}
-        </div>
-      `
-      elements.parkAlert.insertAdjacentHTML('beforeend', markup)
-    }
-  })
+  if (parkAlerts > 0){
+
+    parkAlerts.forEach(function(alert){
+      if (alert.url){
+        const markup = `
+          <div class="alert_item">
+            <a class="alert_link" href="${alert.url}" target="_blank">
+              ${alert.title}: ${alert.description}
+            </a>
+          </div>
+        `
+        elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+      } else {
+        const markup = `
+          <div class="alert_item">
+              ${alert.title}:${alert.description}
+          </div>
+        `
+        elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+      }
+    })
+
+  } else {
+    // const markup = `
+    //   <div class="alert_item">
+    //     No Alerts For This Park; Enjoy Your Visit!
+    //   </div>
+    // `
+    // elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+  }
+
 }
 
 export const renderNoParkAlerts = () =>{
@@ -124,7 +138,31 @@ export const viewTabContent = ( activity ) => {
   // }
   document.getElementById(activity).style.display = "block"
 }
+export const renderHikesContent = (hikesArray) => {
+  if (hikesArray.length > 0) {
+    let i; 
+    for (i =0; i < hikesArray.length; i ++) {
+      const markup = `
+        <li>
+          <strong>${hikesArray[i]["name"]}</strong>
+          <p>${hikesArray[i]["summary"]}
+          ${hikesArray[i]["length"]} Miles  | Difficulty: ${hikesArray[i]["difficulty"]} |  ${hikesArray[i]["location"]}
+          </p>
+        </li>
+      `;
 
+      elements.hikingContent.insertAdjacentHTML('beforeend', markup)
+    }
+  } else {
+    const markup = `
+    <li>
+      Not a lot of hikes nearby. 
+    </li>
+  `;
+
+  elements.hikingContent.insertAdjacentHTML('beforeend', markup)
+  }
+}
 export const renderMountainContent = (climbsArray) => {
   if (climbsArray.length > 0){
     let i;
@@ -133,11 +171,11 @@ export const renderMountainContent = (climbsArray) => {
         <li>
           <a href="${climbsArray[i]["url"]}""  target="_blank">
             <strong> ${climbsArray[i]["name"]} </strong>
-             <p>
-              <span>Type: ${climbsArray[i]["type"]} </span> | <span>${climbsArray[i]["stars"]}  Stars</span> | <span>${climbsArray[i]["rating"]}  Rating</span>
-              <span>Pitches: ${climbsArray[i]["pitches"]} </span>
-            </p>
           </a>
+          Type: ${climbsArray[i]["type"]} |
+          ${climbsArray[i]["stars"]} Stars |
+          ${climbsArray[i]["rating"]} Rating |
+          Pitches: ${climbsArray[i]["pitches"]}
         </li>
       `
       elements.mountainContent.insertAdjacentHTML('beforeend', markup)

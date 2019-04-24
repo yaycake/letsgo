@@ -7,6 +7,13 @@ export const nps = {
   apiKey: 'LMCWhYBZ0nL2NEDRcXJGidsSEZRyzLxfu19EiQSE',
 }
 
+// Hiking Project API Elements
+
+export const hikes = {
+  baseUrl: 'https://www.hikingproject.com/data/get-trails?lat=',
+  apiKey:'200425757-c325319a97193bd94e8a27064e2a1479'
+}
+
 // Mountain Project API Elements
 
 export const mountain = {
