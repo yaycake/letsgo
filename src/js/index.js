@@ -83,9 +83,6 @@ const controlPark = async () => {
     console.log(error)
   }
 
-  // gete Park Map link 
-
-  state.park.getMapLink();
 
     //Dev View Park alerts
     console.log("print park alerts")
@@ -94,14 +91,17 @@ const controlPark = async () => {
   // render park info
   parkView.renderParkImage(state.park);
   parkView.renderParkHeader(state.park);
-  parkView.renderParkVisit(state.park);
+  // parkView.renderParkVisit(state.park);
 
   // render park mountain /climbs content
   parkView.renderMountainContent(state.park.climbsArray)
   parkView.renderHikesContent(state.park.hikesArray)
 
-  // render park directions link 
-  parkView.renderMapLink(state.park.mapLink)
+  // GET Park Map link & render park map embed
+
+  state.park.getMapLink();
+
+  parkView.renderMapEmbed(state.park.mapLink)
 
   // render any park alerts
   parkView.renderParkAlerts(state.park.parkAlertsArr)

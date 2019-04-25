@@ -36,6 +36,12 @@ export const map = {
   baseUrl: 'https://www.google.com/maps/search/?api=1&query='
 }
 
+export const google = {
+  // 'https://www.google.com/maps/embed/v1/MODE?key=YOUR_API_KEY&parameters'
+  baseUrl: 'https://www.google.com/maps/embed/v1/view?key=',
+  apiKey: 'AIzaSyCHhNj2rQKpG23qUDRVZCI0AuO_NJEwGPc'
+}
+
 // shuffle array in place for random selection 
 export const shuffle = (array) => {
   let i = 0;

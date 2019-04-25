@@ -6,6 +6,7 @@ import { shuffle } from './base';
 import { hikes } from './base';
 import { weather } from './base';
 import { map } from './base';
+import { google } from './base';
 
 export default class Park {
   constructor (parkCode, imageUrl){
@@ -18,6 +19,17 @@ export default class Park {
     this.weather = {};
     this.mapLink = ``;
   }
+
+
+  // splitParkTitle(parkTitle){
+  //   const regex = new RegExp('/(national)/', 'i');
+  //   const split = parkTitle.split('National')
+  //   const title = {
+  //     parkName: split[0],
+  //     parkSubname: `National ${split[1]}`
+  //   }
+  //   return title
+  // }
 
   async getPark() {
     try {
@@ -35,7 +47,8 @@ export default class Park {
 
       if (res.data.total == 1){
          // Create the selected park object
-        this.name = res.data.data[0].fullName;
+        this.name = res.data.data[0].fullName.split('National')[0];
+        this.parkType = res.data.data[0].fullName.split('National')[1];
         this.summary = res.data.data[0].description;
         // this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
@@ -162,12 +175,22 @@ export default class Park {
   }
 
   getMapLink(){
-
     console.log( `in getMapLink`)
-    const locationName = this.name.replace(/\s+/g, '+').toLowerCase();
+    const locationName = this.name.replace(/\s+/g, '+').toLowerCase()
 
-    this.mapLink = `${map.baseUrl}${locationName}`
+    // if location is more than one word
 
+    // if (this.name.split("").length > 0){
+    //   const locationName = this.name.replace(/\s+/g, '+').toLowerCase();
+
+    //   console.log(`This is the location name: ${locationName}`)
+    // } else {
+    //   const locationName = this.name.toLowerCase();
+    //   console.log(`This is the location name: ${locationName}`)
+    // }
+    
+
+    this.mapLink = `${google.baseUrl}${google.apiKey}&center=${this.latLong.latitude},${this.latLong.longitude}&zoom=18&maptype=satellite`
     console.log(`this is the maplink: ${this.mapLink}`)
   }
 

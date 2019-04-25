@@ -26,16 +26,16 @@ export const renderParkHeader = (park) => {
   console.log("in renderParkHeader: About to split park title:")
 
   console.log(park)
-  const splitTitle = splitParkTitle(park.name)
+  // const splitTitle = splitParkTitle(park.name)
 
-  console.log(`here is splitTitle: ${splitTitle}`)
+  // console.log(`here is splitTitle: ${splitTitle}`)
 
 
   const markup = `
     <div class="profile_title_summary">
       <div class="park_title">
-        <h1>${splitTitle.parkName}</h1>
-        <h2>${splitTitle.parkSubname}</h2>
+        <h1>${park.name}</h1>
+        <h2>${park.parkType}</h2>
       </div>
       <div class="park_summary">
         <h4>
@@ -55,29 +55,29 @@ export const renderParkImage = (park) => {
   elements.parkBody.insertAdjacentHTML('afterbegin', markup)
 }
 
-export const renderParkVisit = (park) => {
-  const statesMarkup = `
-    <div class="states_title">
-          <h3>States</h3>
-        </div>
-        <ul class="states_list">
-          <li><p>${park.states}</p></li>
-        </ul>
-  `
-  elements.parkStates.insertAdjacentHTML('afterbegin', statesMarkup)
-}
+// export const renderParkVisit = (park) => {
+//   const statesMarkup = `
+//     <div class="states_title">
+//           <h3>States</h3>
+//         </div>
+//         <ul class="states_list">
+//           <li><p>${park.states}</p></li>
+//         </ul>
+//   `
+//   elements.parkStates.insertAdjacentHTML('afterbegin', statesMarkup)
+// }
 
 // SPLIT AND BUILD PARK TITLE
 
-const splitParkTitle = (parkTitle) => {
-  const regex = new RegExp('/(national)/', 'i');
-  const split = parkTitle.split('National')
-  const title = {
-    parkName: split[0],
-    parkSubname: `National ${split[1]}`
-  }
-  return title
-}
+// const splitParkTitle = (parkTitle) => {
+//   const regex = new RegExp('/(national)/', 'i');
+//   const split = parkTitle.split('National')
+//   const title = {
+//     parkName: split[0],
+//     parkSubname: `National ${split[1]}`
+//   }
+//   return title
+// }
 
 export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
@@ -215,14 +215,30 @@ export const renderWeather = (weather) => {
 }
 
 
-export const renderMapLink = (mapLink) => {
-  console.log(`In renderMapLink: ${mapLink}`)
-  const markup = `
-  <a href="${mapLink}" target="_blank">
-    Directions
-  </a>
-  `
+// export const renderMapLink = (mapLink) => {
+//   console.log(`In renderMapLink: ${mapLink}`)
+//   const markup = `
+//   <a href="${mapLink}" target="_blank">
+//     Directions
+//   </a>
+//   `
 
-  console.log(elements.parkMapLink)
+//   console.log(elements.parkMapLink)
+//   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
+// }
+
+export const renderMapEmbed = (link) => {
+
+  console.log("Im in renderMapEmbed!")
+
+  console.log(`this is the link: ${link}`)
+  const markup = `
+  <iframe
+  width="300"
+  height="250"
+  frameborder="0" style="border:0"
+  src="${link}" allowfullscreen>
+  </iframe>
+  `
   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
 }
