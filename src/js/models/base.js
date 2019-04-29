@@ -7,6 +7,12 @@ export const nps = {
   apiKey: 'LMCWhYBZ0nL2NEDRcXJGidsSEZRyzLxfu19EiQSE',
 }
 
+// National Park Camping Elements 
+
+export const camps = {
+  baseUrl: 'https://developer.nps.gov/api/v1/campgrounds?parkcode='
+}
+
 // Hiking Project API Elements
 
 export const hikes = {
@@ -31,7 +37,6 @@ export const weather = {
 }
 
 // Google Map Link 
-
 export const map = {
   baseUrl: 'https://www.google.com/maps/search/?api=1&query='
 }
@@ -39,7 +44,8 @@ export const map = {
 export const google = {
   // 'https://www.google.com/maps/embed/v1/MODE?key=YOUR_API_KEY&parameters'
   baseUrl: 'https://www.google.com/maps/embed/v1/view?key=',
-  apiKey: 'AIzaSyCHhNj2rQKpG23qUDRVZCI0AuO_NJEwGPc'
+  apiKey: 'AIzaSyCHhNj2rQKpG23qUDRVZCI0AuO_NJEwGPc', 
+  zoom: 10
 }
 
 // shuffle array in place for random selection 

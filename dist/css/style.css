@@ -110,6 +110,8 @@ ul {
 }
 .park_activities {
   grid-row: 3;
+  height: 20rem;
+  /* border:1px solid gold; */
 }
 
 .weather_icon {
@@ -175,6 +177,13 @@ ul {
 
 .activity_content {
   display: none;
+
+  height: 14rem;
+  overflow: scroll;
+  border: 1px solid pink;
+
+}
+
 }
 
 .active_content_tab {

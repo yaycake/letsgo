@@ -58,6 +58,15 @@ const controlPark = async () => {
     console.log('problem with calling climbs in controlPark')
   }
 
+  // get Park Camps
+  
+  try {
+    await state.park.getCamps()
+  }catch (error) {
+    console.log(error)
+    console.log("problem with calling camps in controlPark")
+  }
+
   // GET park hikes
   try {
     await state.park.getHikes();
@@ -93,9 +102,10 @@ const controlPark = async () => {
   parkView.renderParkHeader(state.park);
   // parkView.renderParkVisit(state.park);
 
-  // render park mountain /climbs content
+  // render park mountain /climbs/camp content
   parkView.renderMountainContent(state.park.climbsArray)
   parkView.renderHikesContent(state.park.hikesArray)
+  parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
 
   // GET Park Map link & render park map embed
 

@@ -12,6 +12,8 @@ const elements = {
   mountainContent: document.querySelector('.mountain_content'), 
 
   hikingContent: document.querySelector('.hiking_content'), 
+
+  campingContent: document.querySelector('.camping_content'),
   parkWeather: document.querySelector('.park_weather'),
 
   parkMapLink: document.querySelector('.park_map')
@@ -83,10 +85,13 @@ export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
   console.log(parkAlerts)
 
-  if (parkAlerts > 0){
+  if (parkAlerts.length > 0){
 
+    console.log("AYE THERE BE PARK ALERTS")
     parkAlerts.forEach(function(alert){
+      
       if (alert.url){
+        console.log("RENDERING PARK ALERT + URL")
         const markup = `
           <div class="alert_item">
             <a class="alert_link" href="${alert.url}" target="_blank">
@@ -96,6 +101,7 @@ export const renderParkAlerts = (parkAlerts) => {
         `
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       } else {
+        console.log("RENDERING PARK ALERT NO URL")
         const markup = `
           <div class="alert_item">
               ${alert.title}:${alert.description}
@@ -106,12 +112,12 @@ export const renderParkAlerts = (parkAlerts) => {
     })
 
   } else {
-    // const markup = `
-    //   <div class="alert_item">
-    //     No Alerts For This Park; Enjoy Your Visit!
-    //   </div>
-    // `
-    // elements.parkAlert.insertAdjacentHTML('beforeend', markup)
+    const markup = `
+      <div class="alert_item">
+        No Alerts For This Park; Enjoy Your Visit!
+      </div>
+    `
+    elements.parkAlert.insertAdjacentHTML('beforeend', markup)
   }
 
 }
@@ -188,6 +194,29 @@ export const renderMountainContent = (climbsArray) => {
       <li>No Climbs Nearby; Go Hiking!</li>
     `
     elements.mountainContent.insertAdjacentHTML('beforeend', markup)
+  }
+}
+
+export const renderCampingContent = (campsArray, currentParkCode) => {
+  console.log("inside rendercamping content")
+  
+  if (campsArray.length > 0){
+    let i;
+    for (i=0; i <campsArray.length; i++){
+      const markup = `
+        <li>
+        <a href="https://www.nps.gov/${currentParkCode}/planyourvisit/index.htm" target="_blank">
+          <p>
+            <strong> ${campsArray[i]["name"]}</strong>
+            <span>Fire Policy: ${campsArray[i]["description"]}</span>
+             | <span>${campsArray[i]["weatheroverview"]}</span> | 
+          </p>
+          </a>
+        </li>
+      `
+
+      elements.campingContent.insertAdjacentHTML('beforeend', markup)
+    }
   }
 }
 

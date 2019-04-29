@@ -6,6 +6,7 @@ import { shuffle } from './base';
 import { hikes } from './base';
 import { weather } from './base';
 import { map } from './base';
+import { camps } from './base';
 import { google } from './base';
 
 export default class Park {
@@ -18,6 +19,7 @@ export default class Park {
     this.hikesArray = [];
     this.weather = {};
     this.mapLink = ``;
+    this.campsArray = [];
   }
 
 
@@ -73,6 +75,27 @@ export default class Park {
     } catch (error) {
       console.log(error);
       alert('Something went wrong in getting park!')
+    }
+  }
+
+  async getCamps() {
+    try {
+      const res = await axios(`${camps.baseUrl}${this.parkCode}&api_key=${nps.apiKey}`)
+
+      console.log(res)
+      let campsites = res.data.data
+
+      console.log(`HERE R camps: ${campsites}`)
+      console.log(campsites.first)
+      if (campsites.length > 0) {
+        this.campsArray = shuffle(campsites).slice(0,5);
+      } else {
+        console.log("No Camps Near Here")
+      }
+
+    } catch (error) {
+      console.log(error)
+      console.log('trouble in getting camps!')
     }
   }
 
@@ -190,7 +213,7 @@ export default class Park {
     // }
     
 
-    this.mapLink = `${google.baseUrl}${google.apiKey}&center=${this.latLong.latitude},${this.latLong.longitude}&zoom=18&maptype=satellite`
+    this.mapLink = `${google.baseUrl}${google.apiKey}&center=${this.latLong.latitude},${this.latLong.longitude}&zoom=${google.zoom}&maptype=satellite`
     console.log(`this is the maplink: ${this.mapLink}`)
   }
 
@@ -201,7 +224,6 @@ export default class Park {
       const res = await axios (`${weather.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&appid=${weather.apiKey}${weather.unit}`)
       
       console.log(res)
-
 
       this.weather = {
         currentTemp: res.data["main"]["temp"],
