@@ -40,9 +40,9 @@ export const renderParkHeader = (park) => {
         <h2>${park.parkType}</h2>
       </div>
       <div class="park_summary">
-        <h4>
+        <p>
           ${park.summary}
-        </h4>
+        </p>
       </div>
     </div>
   `
@@ -215,12 +215,13 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
       const markup = `
         <li>
         <a href="https://www.nps.gov/${currentParkCode}/planyourvisit/index.htm" target="_blank">
+        // <span class="item_title"><strong> ${campsArray[i]["name"]}</strong></span>
+        </a>
           <p class="item_text">
-            <span class="item_title"><strong> ${campsArray[i]["name"]}</strong></span>
+            
             <span>${campsArray[i]["description"]}</span>
-             | <span>${campsArray[i]["weatheroverview"]}</span> | 
           </p>
-          </a>
+          
         </li>
       `
 

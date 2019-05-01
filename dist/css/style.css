@@ -178,6 +178,7 @@ button:focus {
   flex-direction: row;
   align-items: baseline;
   align-content: center;
+  padding-bottom: 1rem;
 }
 .activity_label{
   margin: 0;
@@ -197,6 +198,7 @@ button:focus {
   display: none;
   height: 14rem;
   overflow: scroll;
+  margin-top: 2rem;
   /* border: 1px solid pink; */
 
 }
@@ -303,6 +305,7 @@ li > a {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  cursor: pointer;
 }
 .icon_arrow {
   margin-left: 1rem;

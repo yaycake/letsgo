@@ -141,4 +141,9 @@ document.querySelector('.tab_menu').addEventListener('click', e => {
 })
 
 
+// - - - - - - - - Lets Go Somewhere Else
 
+document.getElementById('letsgo').addEventListener('click', e =>{
+  console.log(e)
+  window.location.reload(false)
+})
