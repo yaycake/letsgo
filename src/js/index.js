@@ -123,16 +123,20 @@ const controlPark = async () => {
  // - - - - - Tab-able Activities Content
 
 parkView.defaultTabOpen();
+parkView.activeTabButton('hiking')
 
 document.querySelector('.tab_menu').addEventListener('click', e => {
   console.log(e)
 
   if (e.target.matches('.hiking, .hiking *')){
     parkView.viewTabContent('hiking')
+    parkView.activeTabButton('hiking')
   } else if (e.target.matches('.climbing, .climbing *')){
     parkView.viewTabContent('climbing')
+    parkView.activeTabButton('climbing')
   } else if (e.target.matches('.camping, .camping *')){
     parkView.viewTabContent('camping')
+    parkView.activeTabButton('camping')
   }
 })
 

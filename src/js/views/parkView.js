@@ -142,10 +142,17 @@ export const viewTabContent = ( activity ) => {
   for (i = 0; i < elements.activityContent.length; i++) {
     elements.activityContent[i].style.display = "none";
   }
-  // for (i=0; i < elements.activityLinks.length; i++){
-  //   elements.activityLinks[i].className = elements.activityLinks[i].className.replace(" active", "");
-  // }
   document.getElementById(activity).style.display = "block"
+}
+
+export const activeTabButton = (activity) => {
+  console.log("you're in ActiveTabButton!")
+  console.log(activity)
+  let i;
+  for (i=0; i < elements.activityLinks.length; i ++){
+    elements.activityLinks[i].style.borderBottom = "none"
+  }
+  document.querySelector(`.${activity}`).style.borderBottom="2px solid whitesmoke"
 }
 export const renderHikesContent = (hikesArray) => {
   if (hikesArray.length > 0) {
@@ -153,8 +160,8 @@ export const renderHikesContent = (hikesArray) => {
     for (i =0; i < hikesArray.length; i ++) {
       const markup = `
         <li>
-          <strong>${hikesArray[i]["name"]}</strong>
-          <p>${hikesArray[i]["summary"]}
+          <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span>
+          <p class="item_text">${hikesArray[i]["summary"]}
           ${hikesArray[i]["length"]} Miles  | Difficulty: ${hikesArray[i]["difficulty"]} |  ${hikesArray[i]["location"]}
           </p>
         </li>
@@ -179,12 +186,14 @@ export const renderMountainContent = (climbsArray) => {
       const markup = `
         <li>
           <a href="${climbsArray[i]["url"]}""  target="_blank">
-            <strong> ${climbsArray[i]["name"]} </strong>
+            <span class="item_title"><strong> ${climbsArray[i]["name"]} </strong></span>
           </a>
+          <p class="item_text">
           Type: ${climbsArray[i]["type"]} |
           ${climbsArray[i]["stars"]} Stars |
           ${climbsArray[i]["rating"]} Rating |
           Pitches: ${climbsArray[i]["pitches"]}
+          </p>
         </li>
       `
       elements.mountainContent.insertAdjacentHTML('beforeend', markup)
@@ -206,9 +215,9 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
       const markup = `
         <li>
         <a href="https://www.nps.gov/${currentParkCode}/planyourvisit/index.htm" target="_blank">
-          <p>
-            <strong> ${campsArray[i]["name"]}</strong>
-            <span>Fire Policy: ${campsArray[i]["description"]}</span>
+          <p class="item_text">
+            <span class="item_title"><strong> ${campsArray[i]["name"]}</strong></span>
+            <span>${campsArray[i]["description"]}</span>
              | <span>${campsArray[i]["weatheroverview"]}</span> | 
           </p>
           </a>
@@ -217,6 +226,15 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
 
       elements.campingContent.insertAdjacentHTML('beforeend', markup)
     }
+  } else {
+    const markup = `
+        <li>
+          No camping; maybe 
+          <a href="https://www.bbcgoodfood.com/recipes/collection/picnic" target="_blank">plan a picnic!</a>
+        </li>
+      `
+
+      elements.campingContent.insertAdjacentHTML('beforeend', markup)
   }
 }
 
@@ -224,21 +242,9 @@ export const renderWeather = (weather) => {
   console.log(`We're in weather: ${weather}`)
 
   const markup = `
-    <div class = "weather_icon" style="background: url('${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
-      <div class="min_temp">
-        ${Math.ceil(weather["minTemp"])}
-      </div>
-      <div class="current_temp">
-        ${Math.ceil(weather["currentTemp"])}
-      </div>
-      <div class="max_temp">
-      ${Math.ceil(weather["maxTemp"])}
-      </div>
-      <div class="unit">
-        F
-      </div>
+    <div class = "weather_icon" style="background: url('img/${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
     </div>
-    <div class="weather_desc"> ${weather["description"]}</div>
+    <div class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]}</div>
   `
   elements.parkWeather.insertAdjacentHTML('afterbegin', markup)
 }
@@ -264,7 +270,7 @@ export const renderMapEmbed = (link) => {
   const markup = `
   <iframe
   width="300"
-  height="250"
+  height="150"
   frameborder="0" style="border:0"
   src="${link}" allowfullscreen>
   </iframe>

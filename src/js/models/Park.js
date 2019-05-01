@@ -230,7 +230,7 @@ export default class Park {
         minTemp: res.data["main"]["temp_min"],
         maxTemp: res.data["main"]["temp_max"],
         description: res.data["weather"][0]["description"], 
-        icon: `http://openweathermap.org/img/w/${res.data["weather"][0]["icon"]}.png`
+        icon: `${res.data["weather"][0]["icon"]}.png`
       }
 
       console.log (this.weather)
