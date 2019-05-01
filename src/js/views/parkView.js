@@ -1,21 +1,15 @@
 const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkBody: document.querySelector('.body_grid'),
-
   parkStates: document.querySelector('.states'),
-  // parkAlert: document.querySelector('.alerts_ticker_move')
   parkAlert: document.querySelector('.ticker_wrap'),
-
   activityMenu: document.querySelector('.tab_menu'),
   activityContent: document.getElementsByClassName("activity_content"),
   activityLinks: document.getElementsByClassName("tablinks"),
   mountainContent: document.querySelector('.mountain_content'), 
-
   hikingContent: document.querySelector('.hiking_content'), 
-
   campingContent: document.querySelector('.camping_content'),
   parkWeather: document.querySelector('.park_weather'),
-
   parkMapLink: document.querySelector('.park_map')
 }
 
@@ -278,3 +272,4 @@ export const renderMapEmbed = (link) => {
   `
   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
 }
+

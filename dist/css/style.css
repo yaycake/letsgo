@@ -6,6 +6,7 @@ body {
   background-position: center;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -44,16 +45,22 @@ ul {
 /*- - - - Park profile*/
 
 .nav_bar {
- /* position: fixed;
-  top: 0;*/
+ position: fixed;
+  top: 0;
   padding-left: 2rem;
-  height: 3rem;
-  width: 90%:;
+  height: 4rem;
+  width: 90%;
+  background: black;
+
 }
 
 .nav_title {
   border-bottom: 1.5px solid whitesmoke;
   padding-bottom: .5rem;
+}
+
+.profile_page_wrapper {
+  margin-top: 5rem;
 }
 
 .underline {
@@ -255,6 +262,7 @@ li > a {
   padding-left: 100%;
   box-sizing: content-box;
   /*font-family: 'Ubuntu Mono', monospace;*/
+  margin-bottom: 8rem;
 }
 
 
@@ -296,6 +304,11 @@ li > a {
 
 .footer {
   padding-right:2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: black;
+  height: 6rem;
   
 }
 .footer_title {
