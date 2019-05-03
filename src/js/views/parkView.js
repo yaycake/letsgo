@@ -1,7 +1,9 @@
-const elements = {
+import { fadeIn } from '../models/base';
+
+export const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkBody: document.querySelector('.body_grid'),
-  parkStates: document.querySelector('.states'),
+  // parkStates: document.querySelector('.states'),
   parkAlert: document.querySelector('.ticker_wrap'),
   activityMenu: document.querySelector('.tab_menu'),
   activityContent: document.getElementsByClassName("activity_content"),
@@ -23,9 +25,7 @@ export const renderParkHeader = (park) => {
 
   console.log(park)
   // const splitTitle = splitParkTitle(park.name)
-
   // console.log(`here is splitTitle: ${splitTitle}`)
-
 
   const markup = `
     <div class="profile_title_summary">
@@ -41,6 +41,8 @@ export const renderParkHeader = (park) => {
     </div>
   `
   elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
+
+  
 }
 
 export const renderParkImage = (park) => {
@@ -49,7 +51,12 @@ export const renderParkImage = (park) => {
     </div>
   `
   elements.parkBody.insertAdjacentHTML('afterbegin', markup)
+  elements["parkImage"] = document.querySelector('.park_image')
 }
+
+// export const selectParkImage = () => {
+//   elements.parkImage = document.querySelector('.park_image')
+// }
 
 // export const renderParkVisit = (park) => {
 //   const statesMarkup = `
@@ -113,7 +120,7 @@ export const renderParkAlerts = (parkAlerts) => {
     `
     elements.parkAlert.insertAdjacentHTML('beforeend', markup)
   }
-
+  
 }
 
 export const renderNoParkAlerts = () =>{

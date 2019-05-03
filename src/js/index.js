@@ -3,9 +3,11 @@ import Climb from './models/Climb';
 
 import * as parkView from './views/parkView';
 import axios from 'axios';
-
 import parkCodes from '../data/parks.json';
 import parkList from '../data/parksList.json';
+import { fadeIn } from './models/base'
+
+import { elements } from './views/parkView'
 
 // Global state of the app
 const state = {};
@@ -98,13 +100,18 @@ const controlPark = async () => {
     console.log(state.park.parkAlerts)
 
   // render park info
-  parkView.renderParkImage(state.park);
+  parkView.renderParkImage(state.park)
+  fadeIn(elements.parkImage, 25);
+
+
   parkView.renderParkHeader(state.park);
-  // parkView.renderParkVisit(state.park);
+  fadeIn(elements.parkHeader, 25);
+
 
   // render park mountain /climbs/camp content
   parkView.renderMountainContent(state.park.climbsArray)
   parkView.renderHikesContent(state.park.hikesArray)
+  fadeIn(elements.hikingContent, 25);
   parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
 
   // GET Park Map link & render park map embed
@@ -112,12 +119,14 @@ const controlPark = async () => {
   state.park.getMapLink();
 
   parkView.renderMapEmbed(state.park.mapLink)
+  fadeIn(elements.parkMapLink, 25);
 
   // render any park alerts
   parkView.renderParkAlerts(state.park.parkAlertsArr)
 
  // render park weather 
   parkView.renderWeather(state.park.weather);
+  fadeIn(elements.parkWeather, 25);
 }
 
  // - - - - - Tab-able Activities Content

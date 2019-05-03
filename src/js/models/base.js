@@ -1,4 +1,4 @@
-
+import { elements } from '../views/parkView'
 
 // National Park Service API Elements
 
@@ -62,4 +62,21 @@ export const shuffle = (array) => {
     array[j] = temp
   }
   return array
+}
+
+export const fadeIn = (el, time) => {
+
+  // console.dir(el)
+
+  var op = 0.1 ;
+  el.style.display = "block";
+
+  var timer = setInterval(function (){
+    if (op>= 1){
+      clearInterval(timer);
+    }
+
+    el.style.opacity = op;
+    el.style.filter = 'alpha(opacity=' + op * 100 + ")";
+    op += op * 0.1;}, time);
 }

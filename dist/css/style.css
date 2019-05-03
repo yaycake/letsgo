@@ -85,7 +85,7 @@ ul {
 
 .park_profile {
   grid-column: 2/span 1;
-
+  padding-right: 2rem;
   display: grid;
   grid-template-rows: 3;
   grid-gap: 2rem;
@@ -124,7 +124,7 @@ ul {
 }
 
 .weather_icon {
-  position: relative;
+  /* position: relative; */
   height: 80%;
   width: 60%;
   margin: 0 auto;
