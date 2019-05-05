@@ -68,11 +68,25 @@ ul {
   width: 100%:;
 }
 
+
+
+
 .body_grid {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   width: 95%;
+}
+
+.park_title > h1 {
+  margin-bottom: 0;
+}
+.park_title > h2 {
+  margin-top:1rem;
+}
+
+.park_summary > p {
+  padding-right: 2rem;
 }
 
 .park_image {

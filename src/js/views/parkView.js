@@ -44,8 +44,6 @@ export const renderParkHeader = (park) => {
     </div>
   `
   elements.parkHeader.insertAdjacentHTML('afterbegin', markup)
-
-  
 }
 
 export const renderParkImage = (park) => {
@@ -171,7 +169,6 @@ export const renderHikesContent = (hikesArray) => {
           </p>
         </li>
       `;
-
       elements.hikingContent.insertAdjacentHTML('beforeend', markup)
     }
   } else {
@@ -199,6 +196,15 @@ export const renderMountainContent = (climbsArray) => {
   if (climbsArray.length > 0){
     let i;
     for (i = 0; i < climbsArray.length; i ++){
+
+      const locationString = climbsArray[i]["location"].reverse().join(', ')
+      console.log(locationString)
+      // let f; 
+      // let locationString = "";
+      // for (f = 0; f <locationArray.length; f++){
+      //   locationString.pop(locationArray[i])
+      // }
+      
       const markup = `
         <li>
           <a href="${climbsArray[i]["url"]}""  target="_blank">
@@ -207,8 +213,8 @@ export const renderMountainContent = (climbsArray) => {
           <p class="item_text">
           Type: ${climbsArray[i]["type"]} |
           ${climbsArray[i]["stars"]} Stars |
-          ${climbsArray[i]["rating"]} Rating |
-          Pitches: ${climbsArray[i]["pitches"]}
+          ${climbsArray[i]["rating"]} Rating | ${locationString}
+         
           </p>
         </li>
       `

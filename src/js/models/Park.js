@@ -50,7 +50,12 @@ export default class Park {
       if (res.data.total == 1){
          // Create the selected park object
         this.name = res.data.data[0].fullName.split('National')[0];
-        this.parkType = res.data.data[0].fullName.split('National')[1];
+        
+         if (res.data.data[0].fullName.split('National')[1]){
+          this.parkType = res.data.data[0].fullName.split('National')[1]
+        } else {
+          this.parkType = "";
+        };
         this.summary = res.data.data[0].description;
         // this.parkcode = res.data.data[0].parkCode;
         this.states = res.data.data[0].states;
@@ -70,8 +75,6 @@ export default class Park {
         // ReLoad API response into a variable
         const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
       }
-
-
     } catch (error) {
       console.log(error);
       alert('Something went wrong in getting park!')
@@ -107,11 +110,8 @@ export default class Park {
       this.description = description,
       this.url = url
     }
-
     try {
       const res = await axios(`${nps.baseUrl}/alerts?parkCode=${this.parkCode}&api_key=${nps.apiKey}`)
-
-
       // If there are park alerts:
       if (res.data.total > 0){
 
