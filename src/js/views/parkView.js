@@ -9,8 +9,11 @@ export const elements = {
   activityContent: document.getElementsByClassName("activity_content"),
   activityLinks: document.getElementsByClassName("tablinks"),
   mountainContent: document.querySelector('.mountain_content'), 
+  climbingTab: document.querySelector('.climbing'),
   hikingContent: document.querySelector('.hiking_content'), 
+  hikingTab: document.querySelector('.hiking'),
   campingContent: document.querySelector('.camping_content'),
+  campingTab: document.querySelector('.camping'),
   parkWeather: document.querySelector('.park_weather'),
   parkMapLink: document.querySelector('.park_map')
 }
@@ -177,10 +180,21 @@ export const renderHikesContent = (hikesArray) => {
       Not a lot of hikes nearby. 
     </li>
   `;
-
   elements.hikingContent.insertAdjacentHTML('beforeend', markup)
   }
+  renderHikesTablink();
 }
+
+const renderHikesTablink = () => {
+  const markup = `
+  <img src="img/icon_hike.png" alt="" class="activity_icon">
+  <h3 class="activity_label">Hiking</h3>
+  `
+  elements.hikingTab.insertAdjacentHTML('afterbegin', markup)
+ 
+}
+
+
 export const renderMountainContent = (climbsArray) => {
   if (climbsArray.length > 0){
     let i;
@@ -206,6 +220,15 @@ export const renderMountainContent = (climbsArray) => {
     `
     elements.mountainContent.insertAdjacentHTML('beforeend', markup)
   }
+  renderClimbsTablink();
+}
+
+const renderClimbsTablink = () => {
+  const markup = `
+  <img src="img/icon_climb.png" alt="" class="activity_icon">
+              <h3 class="activity_label">Climbing</h3>
+  `
+  elements.climbingTab.insertAdjacentHTML('afterbegin', markup)
 }
 
 export const renderCampingContent = (campsArray, currentParkCode) => {
@@ -239,6 +262,15 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
 
       elements.campingContent.insertAdjacentHTML('beforeend', markup)
   }
+  renderCampsTablink();
+}
+
+const renderCampsTablink = () => {
+  const markup = `
+  <img src="img/icon_camp.png" alt="" class="activity_icon">
+  <h3 class="activity_label">Camping</h3>
+  `
+  elements.campingTab.insertAdjacentHTML('afterbegin', markup)
 }
 
 export const renderWeather = (weather) => {

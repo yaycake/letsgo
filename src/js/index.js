@@ -85,6 +85,8 @@ const controlPark = async () => {
     console.log(error)
   }
   
+  
+
   //Render Park Map
   parkView.renderMapEmbed(state.park.mapLink)
   fadeIn(elements.parkMapLink, 25);
@@ -96,6 +98,7 @@ const controlPark = async () => {
   // Render Park Hikes
   parkView.renderHikesContent(state.park.hikesArray)
   fadeIn(elements.hikingContent, 25);
+  parkView.activeTabButton('hiking')
   // Render Camping Content
   parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
   // Render Park Climbs
@@ -111,7 +114,7 @@ const controlPark = async () => {
  // - - - - - Tab-able Activities Content
 
 parkView.defaultTabOpen();
-parkView.activeTabButton('hiking')
+
 
 document.querySelector('.tab_menu').addEventListener('click', e => {
   console.log(e)
