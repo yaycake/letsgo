@@ -161,7 +161,8 @@ export const renderHikesContent = (hikesArray) => {
     for (i =0; i < hikesArray.length; i ++) {
       const markup = `
         <li>
-          <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span>
+          <a href="${hikesArray[i]["url"]}" target="_blank">
+          <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span> </a>
           <p class="item_text">${hikesArray[i]["summary"]}
           ${hikesArray[i]["length"]} Miles  | Difficulty: ${hikesArray[i]["difficulty"]} |  ${hikesArray[i]["location"]}
           </p>

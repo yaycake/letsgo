@@ -1,12 +1,10 @@
 import Park from './models/Park';
 import Climb from './models/Climb';
-
 import * as parkView from './views/parkView';
 import axios from 'axios';
 import parkCodes from '../data/parks.json';
 import parkList from '../data/parksList.json';
-import { fadeIn } from './models/base'
-
+import { fadeIn } from './models/base';
 import { elements } from './views/parkView'
 
 // Global state of the app
@@ -24,35 +22,26 @@ window.addEventListener('load', ()=> {
 const controlPark = async () => {
 
   parkView.clearPark();
-   // 1. Select a random parkcode
+   // Select a random parkcode
   const randomParkQuery = () => {
     const randomPark = Math.floor(Math.random() * Math.floor(parkList.length))
-
-    //DEV View random value
-    console.log(randomPark)
-
     return parkList[randomPark]
   }
-
-  // 2. Take park code and call park API
   let queryPark = randomParkQuery();
 
   state.park = new Park(queryPark.code, queryPark.image_url)
 
-  // GET Park
-
+  // GET A Park
   try {
     await state.park.getPark();
     console.log('heres a park:')
     console.log(state.park)
-
   }catch (error) {
     console.log(error)
     alert('Error Getting A Park!')
   }
 
   // GET Park Climbs
-
   try {
     await state.park.getClimbs()
   }catch (error){
@@ -60,10 +49,9 @@ const controlPark = async () => {
     console.log('problem with calling climbs in controlPark')
   }
 
-  // get Park Camps
-  
+  // GET Park Camps
   try {
-    await state.park.getCamps()
+    await state.park.getCamps();
   }catch (error) {
     console.log(error)
     console.log("problem with calling camps in controlPark")
@@ -76,57 +64,48 @@ const controlPark = async () => {
     console.log(error)
   }
 
-  //DEV View
-  console.log('calling for park alerts!')
-
   // GET Park Alerts
   try {
-      await state.park.getParkAlerts();
+    await state.park.getParkAlerts();
   } catch (error){
     console.log(error)
   }
 
-  // GET park weather
-   
+  // GET Park Weather
   try {
     await state.park.getWeather();
   }catch(error) {
     console.log(error)
   }
 
-
-    //Dev View Park alerts
-    console.log("print park alerts")
-    console.log(state.park.parkAlerts)
-
-  // render park info
-  parkView.renderParkImage(state.park)
-  fadeIn(elements.parkImage, 25);
-
-
-  parkView.renderParkHeader(state.park);
-  fadeIn(elements.parkHeader, 25);
-
-
-  // render park mountain /climbs/camp content
-  parkView.renderMountainContent(state.park.climbsArray)
-  parkView.renderHikesContent(state.park.hikesArray)
-  fadeIn(elements.hikingContent, 25);
-  parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
-
-  // GET Park Map link & render park map embed
-
-  state.park.getMapLink();
-
+  // GET Park Map
+  try {
+    await state.park.getMapLink();
+  } catch(error) {
+    console.log(error)
+  }
+  
+  //Render Park Map
   parkView.renderMapEmbed(state.park.mapLink)
   fadeIn(elements.parkMapLink, 25);
-
-  // render any park alerts
-  parkView.renderParkAlerts(state.park.parkAlertsArr)
-
- // render park weather 
+  // Render Park Weather 
   parkView.renderWeather(state.park.weather);
   fadeIn(elements.parkWeather, 25);
+  // Render Park Alerts
+  parkView.renderParkAlerts(state.park.parkAlertsArr)
+  // Render Park Hikes
+  parkView.renderHikesContent(state.park.hikesArray)
+  fadeIn(elements.hikingContent, 25);
+  // Render Camping Content
+  parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
+  // Render Park Climbs
+  parkView.renderMountainContent(state.park.climbsArray)
+  // Render Park Image
+  parkView.renderParkImage(state.park)
+  fadeIn(elements.parkImage, 25);
+  // Render Park Header
+  parkView.renderParkHeader(state.park);
+  fadeIn(elements.parkHeader, 25);
 }
 
  // - - - - - Tab-able Activities Content
@@ -136,7 +115,6 @@ parkView.activeTabButton('hiking')
 
 document.querySelector('.tab_menu').addEventListener('click', e => {
   console.log(e)
-
   if (e.target.matches('.hiking, .hiking *')){
     parkView.viewTabContent('hiking')
     parkView.activeTabButton('hiking')
