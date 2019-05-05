@@ -165,7 +165,7 @@ export const renderHikesContent = (hikesArray) => {
           <a href="${hikesArray[i]["url"]}" target="_blank">
           <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span> </a>
           <p class="item_text">${hikesArray[i]["summary"]}
-          ${hikesArray[i]["length"]} Miles  | Difficulty: ${hikesArray[i]["difficulty"]} |  ${hikesArray[i]["location"]}
+          ${hikesArray[i]["length"]} Miles  | ${parseHikeLevel(hikesArray[i]["difficulty"])} |  ${hikesArray[i]["location"]}
           </p>
         </li>
       `;
@@ -185,10 +185,25 @@ export const renderHikesContent = (hikesArray) => {
 const renderHikesTablink = () => {
   const markup = `
   <img src="img/icon_hike.png" alt="" class="activity_icon">
-  <h3 class="activity_label">Hiking</h3>
+  <p class="activity_label">Hiking</p>
   `
   elements.hikingTab.insertAdjacentHTML('afterbegin', markup)
- 
+}
+
+const parseHikeLevel = (color) => {
+  if (color == "green"){
+    return "No obstacles; flat ground"
+  } else if (color == "greenBlue"){
+    return "Some uneven terrain, but mostly flat"
+  } else if (color == "blue") {
+    return "Uneven terrain and small inclines"
+  } else if (color == "blueBlack"){
+    return "Moderate inclines and some exciting obstacles, like rocks or roots "
+  } else if (color == "black"){
+    return "Tricky and steep terrain: not for beginners"
+  } else {
+    return "Experts only: potentially hazardous terrain; very steep"
+  }
 }
 
 
@@ -232,7 +247,7 @@ export const renderMountainContent = (climbsArray) => {
 const renderClimbsTablink = () => {
   const markup = `
   <img src="img/icon_climb.png" alt="" class="activity_icon">
-              <h3 class="activity_label">Climbing</h3>
+  <p class="activity_label">Climbing</p>
   `
   elements.climbingTab.insertAdjacentHTML('afterbegin', markup)
 }
@@ -274,7 +289,7 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
 const renderCampsTablink = () => {
   const markup = `
   <img src="img/icon_camp.png" alt="" class="activity_icon">
-  <h3 class="activity_label">Camping</h3>
+  <p class="activity_label">Camping</p>
   `
   elements.campingTab.insertAdjacentHTML('afterbegin', markup)
 }

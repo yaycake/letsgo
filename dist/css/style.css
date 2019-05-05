@@ -189,6 +189,10 @@ ul {
   color: whitesmoke;
 }
 
+.activity_label {
+  font-weight: bolder;
+}
+
 button:focus {
   outline: none;
 }
