@@ -15,7 +15,8 @@ export const elements = {
   campingContent: document.querySelector('.camping_content'),
   campingTab: document.querySelector('.camping'),
   parkWeather: document.querySelector('.park_weather'),
-  parkMapLink: document.querySelector('.park_map')
+  parkMapLink: document.querySelector('.park_map'), 
+  loader: document.querySelector('.loader')
 }
 
 // Clear previous park results

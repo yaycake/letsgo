@@ -137,3 +137,24 @@ document.getElementById('letsgo').addEventListener('click', e =>{
   console.log(e)
   window.location.reload(false)
 })
+
+
+// - - - - - - - - - - Loading Animation
+
+const onReady = (callback) => {
+  var intervalId = window.setInterval(function(){
+    if (parkView.elements.parkHeader != undefined ) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000)
+}
+
+const setVisible = (selector, visible) => {
+  selector.style.opacity = visible ? 1 : 0;
+}
+
+onReady(function(){
+  setVisible(parkView.elements.parkBody, true);
+  setVisible(parkView.elements.loader, false)
+})
