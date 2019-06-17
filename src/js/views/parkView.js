@@ -92,6 +92,12 @@ export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
   console.log(parkAlerts)
 
+  const alerticon = `
+    <img class="icon_alert" src="img/icon_alert.png">
+  `
+
+  elements.parkAlert.insertAdjacentHTML('afterbegin', alerticon)
+
   if (parkAlerts.length > 0){
 
     console.log("AYE THERE BE PARK ALERTS")
@@ -99,6 +105,7 @@ export const renderParkAlerts = (parkAlerts) => {
       
       if (alert.url){
         console.log("RENDERING PARK ALERT + URL")
+        
         const markup = `
           <div class="alert_item">
             <a class="alert_link" href="${alert.url}" target="_blank">
@@ -106,6 +113,7 @@ export const renderParkAlerts = (parkAlerts) => {
             </a>
           </div>
         `
+        
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       } else {
         console.log("RENDERING PARK ALERT NO URL")
@@ -219,11 +227,6 @@ export const renderMountainContent = (climbsArray) => {
 
       const locationString = climbsArray[i]["location"].reverse().join(', ')
       console.log(locationString)
-      // let f; 
-      // let locationString = "";
-      // for (f = 0; f <locationArray.length; f++){
-      //   locationString.pop(locationArray[i])
-      // }
       
       const markup = `
         <li>
