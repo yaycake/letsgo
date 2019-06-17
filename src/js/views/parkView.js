@@ -15,7 +15,11 @@ export const elements = {
   campingContent: document.querySelector('.camping_content'),
   campingTab: document.querySelector('.camping'),
   parkWeather: document.querySelector('.park_weather'),
-  parkMapLink: document.querySelector('.park_map'), 
+  // parkMapLink: document.querySelector('.park_map'), 
+  mapTab: document.querySelector('.mapping'),
+  parkMapLink: document.getElementById('map'),
+
+
   loader: document.querySelector('.loader')
 }
 
@@ -319,6 +323,16 @@ export const renderWeather = (weather) => {
 //   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
 // }
 
+const renderMapTablink = () => {
+  console.log("in renderMapTabLink")
+  const markup = `
+  <img src="img/icon_camp.png" alt="" class="activity_icon">
+  <p class="activity_label">Map</p>
+  `
+  elements.mapTab.insertAdjacentHTML('afterbegin', markup)
+}
+
+
 export const renderMapEmbed = (link) => {
 
   console.log("Im in renderMapEmbed!")
@@ -333,5 +347,7 @@ export const renderMapEmbed = (link) => {
   </iframe>
   `
   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
+
+  renderMapTablink();
 }
 

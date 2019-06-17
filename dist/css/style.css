@@ -65,7 +65,7 @@ ul {
 
 .underline {
 
-  width: 100%:;
+  width: 100%;
 }
 
 
@@ -177,7 +177,7 @@ ul {
 
 .tab_menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
   font-family: ;
   color: white;

@@ -89,7 +89,7 @@ const controlPark = async () => {
 
   //Render Park Map
   parkView.renderMapEmbed(state.park.mapLink)
-  fadeIn(elements.parkMapLink, 25);
+  // fadeIn(elements.parkMapLink, 25);
   // Render Park Weather 
   parkView.renderWeather(state.park.weather);
   fadeIn(elements.parkWeather, 25);
@@ -103,6 +103,8 @@ const controlPark = async () => {
   parkView.renderCampingContent(state.park.campsArray, state.park.parkCode)
   // Render Park Climbs
   parkView.renderMountainContent(state.park.climbsArray)
+
+
   // Render Park Image
   parkView.renderParkImage(state.park)
   fadeIn(elements.parkImage, 25);
@@ -127,6 +129,9 @@ document.querySelector('.tab_menu').addEventListener('click', e => {
   } else if (e.target.matches('.camping, .camping *')){
     parkView.viewTabContent('camping')
     parkView.activeTabButton('camping')
+  } else if (e.target.matches('.mapping, .mapping *')){
+    parkView.viewTabContent('map')
+    parkView.activeTabButton('mapping')
   }
 })
 
