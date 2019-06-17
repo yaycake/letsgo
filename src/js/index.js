@@ -139,7 +139,7 @@ document.getElementById('letsgo').addEventListener('click', e =>{
 })
 
 
-// - - - - - - - - - - Loading Animation
+// - - - - - - - - - - Loading Animation Before Page Loads
 
 const onReady = (callback) => {
   var intervalId = window.setInterval(function(){
