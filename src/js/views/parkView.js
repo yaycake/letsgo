@@ -15,7 +15,11 @@ export const elements = {
   campingContent: document.querySelector('.camping_content'),
   campingTab: document.querySelector('.camping'),
   parkWeather: document.querySelector('.park_weather'),
-  parkMapLink: document.querySelector('.park_map'), 
+  // parkMapLink: document.querySelector('.park_map'), 
+  mapTab: document.querySelector('.mapping'),
+  parkMapLink: document.getElementById('map'),
+
+
   loader: document.querySelector('.loader')
 }
 
@@ -186,7 +190,7 @@ export const renderHikesContent = (hikesArray) => {
 const renderHikesTablink = () => {
   const markup = `
   <img src="img/icon_hike.png" alt="" class="activity_icon">
-  <p class="activity_label">Hiking</p>
+  <span class="activity_label">Hiking</span>
   `
   elements.hikingTab.insertAdjacentHTML('afterbegin', markup)
 }
@@ -248,7 +252,7 @@ export const renderMountainContent = (climbsArray) => {
 const renderClimbsTablink = () => {
   const markup = `
   <img src="img/icon_climb.png" alt="" class="activity_icon">
-  <p class="activity_label">Climbing</p>
+  <span class="activity_label">Climbing</span>
   `
   elements.climbingTab.insertAdjacentHTML('afterbegin', markup)
 }
@@ -290,7 +294,7 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
 const renderCampsTablink = () => {
   const markup = `
   <img src="img/icon_camp.png" alt="" class="activity_icon">
-  <p class="activity_label">Camping</p>
+  <span class="activity_label">Camping</span>
   `
   elements.campingTab.insertAdjacentHTML('afterbegin', markup)
 }
@@ -298,12 +302,22 @@ const renderCampsTablink = () => {
 export const renderWeather = (weather) => {
   console.log(`We're in weather: ${weather}`)
 
+  // const markup = `
+  //   <div class = "weather_icon" style="background: url('img/${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
+  //   </div>
+  //   <div class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]}</div>
+  // `
+
   const markup = `
-    <div class = "weather_icon" style="background: url('img/${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
+    <div class="park_weather">
+      <p>Current Conditions: </p>
+      <img src="img/${weather.icon}" alt="weather" class="weather_icon">
+      <p class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]} </p>
     </div>
-    <div class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]}</div>
   `
-  elements.parkWeather.insertAdjacentHTML('afterbegin', markup)
+  // elements.parkWeather.insertAdjacentHTML('afterbegin', markup)
+
+  elements.parkHeader.insertAdjacentHTML('beforeend', markup)
 }
 
 
@@ -319,6 +333,16 @@ export const renderWeather = (weather) => {
 //   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
 // }
 
+const renderMapTablink = () => {
+  console.log("in renderMapTabLink")
+  const markup = `
+  <img src="img/icon_map.png" alt="" class="activity_icon">
+  <span class="activity_label">Map</span>
+  `
+  elements.mapTab.insertAdjacentHTML('afterbegin', markup)
+}
+
+
 export const renderMapEmbed = (link) => {
 
   console.log("Im in renderMapEmbed!")
@@ -326,12 +350,14 @@ export const renderMapEmbed = (link) => {
   console.log(`this is the link: ${link}`)
   const markup = `
   <iframe
-  width="300"
-  height="150"
+  width="500"
+  height="400"
   frameborder="0" style="border:0"
   src="${link}" allowfullscreen>
   </iframe>
   `
   elements.parkMapLink.insertAdjacentHTML('afterbegin', markup)
+
+  renderMapTablink();
 }
 
