@@ -31,8 +31,12 @@ h4 {
   font-size: 18px;
 }
 
-p {
+h5 {
   font-size: 16px;
+}
+
+p {
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -184,6 +188,7 @@ button:focus {
 
 .item_title {
   font-weight: bolder;
+  font-size:16px;
 }
 
 .item_text {
@@ -239,7 +244,8 @@ li > a {
 
 .ticker_wrap {
   padding-top: 1rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
   /*width: 100%;*/
   padding-right: 100vw;
@@ -257,8 +263,8 @@ li > a {
   -webkit-animation-name: ticker;
   animation-name: ticker;
 
-  -webkit-animation-duration: 60s;
-  animation-duration: 60s;
+  -webkit-animation-duration: 80s;
+  animation-duration: 80s;
 }
 
 .alert_link {
@@ -296,6 +302,12 @@ li > a {
   margin-right: 1rem;
   width: 32px;
   height: 32px;
+}
+
+.icon_alert {
+  width: 32px;
+  height: 32px;
+  margin: 0 1rem;
 }
 
 
