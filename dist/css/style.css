@@ -11,8 +11,6 @@ body {
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
-  /*text-transform: uppercase;*/
-  /*text-shadow: 5px 5px 10px rgba(0,0,0,.5);*/
 }
 
 h1 {
@@ -51,7 +49,6 @@ ul {
   height: 4rem;
   width: 90%;
   background: black;
-
 }
 
 .nav_title {
@@ -64,18 +61,15 @@ ul {
 }
 
 .underline {
-
   width: 100%;
 }
-
-
-
 
 .body_grid {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
+  height: 100vh;
   margin-left:2rem;
 }
 
@@ -102,8 +96,8 @@ ul {
   grid-column: 2/span 1;
   padding-right: 2rem;
   display: grid;
-  grid-template-rows: 3;
-  grid-gap: 2rem;
+  grid-template-rows: 2;
+  grid-gap: 1rem;
 }
 
 .profile_header {
@@ -113,64 +107,30 @@ ul {
 
 /*- - - - - park profile menu*/
 .park_menu {
-  grid-row: 2;
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
 }
 
 .park_menu_item {
   width: 100%;
-  /* border:1px solid whitesmoke; */
-  height: 150px;
 }
 
 .park_weather {
-  grid-column: 1/ span 1;
+  display: flex!important;
+  flex-direction: row;
+  align-items: center;
 }
 
 .park_map {
   grid-column: 2/span 1;
 }
 .park_activities {
-  grid-row: 3;
-  height: 20rem;
-  /* border:1px solid gold; */
 }
 
 .weather_icon {
-  /* position: relative; */
-  height: 80%;
-  width: 60%;
-  margin: 0 auto;
+  margin: 0 1 rem;
+  width: 48px;
 }
-/* .min_temp {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-.current_temp {
-  position: absolute;
-  left: 10px; 
-  top: 10px;
-} */
-
-/* .max_temp {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.unit {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-} */
 
 .weather_desc {
-  text-align: center;
-  margin: 0 auto;
   text-transform: capitalize;
 }
 /*- - - - - park activities*/
@@ -190,9 +150,7 @@ ul {
   color: whitesmoke;
 }
 
-.activity_label {
-  font-weight: bolder;
-}
+
 
 button:focus {
   outline: none;
@@ -201,32 +159,27 @@ button:focus {
 .tablinks {
   background-color: black;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   align-content: center;
-  padding-bottom: 1rem;
 }
 .activity_label{
-  margin: 0;
+  margin: .5rem 0;
+  font-size: 14px;
+  letter-spacing: .5px;
+  /* text-transform: uppercase; */
 }
 
 .activity_icon {
   width: 36px;
   height: 36px;
-  margin-right: 1rem;
 }
-/* .tab_links > h3{
-  font-weight: bolder;
-  margin: 1rem;
-} */
 
 .activity_content {
   display: none;
-  height: 14rem;
+  /* height: 14rem; */
   overflow: scroll;
   margin-top: 2rem;
-  /* border: 1px solid pink; */
-
 }
 
 .item_title {
@@ -245,7 +198,6 @@ button:focus {
 li > a {
   color: whitesmoke;
 }
-
 
 @-webkit-keyframes ticker {
   0% {
@@ -274,7 +226,7 @@ li > a {
 }
 
 .alerts_container {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   /*width: 100%;*/
   overflow: hidden;
   /*border:1px solid red;*/

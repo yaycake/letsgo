@@ -92,7 +92,7 @@ const controlPark = async () => {
   // fadeIn(elements.parkMapLink, 25);
   // Render Park Weather 
   parkView.renderWeather(state.park.weather);
-  fadeIn(elements.parkWeather, 25);
+  // fadeIn(elements.parkWeather, 25);
   // Render Park Alerts
   parkView.renderParkAlerts(state.park.parkAlertsArr)
   // Render Park Hikes
