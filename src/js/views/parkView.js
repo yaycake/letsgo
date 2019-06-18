@@ -106,19 +106,19 @@ export const renderParkAlerts = (parkAlerts) => {
         console.log("RENDERING PARK ALERT + URL")
         
         const markup = `
-          <div class="alert_item">
+          <p class="alert_item">
             <a class="alert_link" href="${alert.url}" target="_blank" rel="noopener">
               ${alert.title}: ${alert.description}
             </a>
-          </div>
+          </p>
         `
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       } else {
         console.log("RENDERING PARK ALERT NO URL")
         const markup = `
-          <div class="alert_item">
+          <p class="alert_item">
               ${alert.title}:${alert.description}
-          </div>
+          </p>
         `
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       }
@@ -126,9 +126,9 @@ export const renderParkAlerts = (parkAlerts) => {
 
   } else {
     const markup = `
-      <div class="alert_item">
+      <p class="alert_item">
         No Alerts For This Park; Enjoy Your Visit!
-      </div>
+      </p>
     `
     elements.parkAlert.insertAdjacentHTML('beforeend', markup)
   }
@@ -136,9 +136,9 @@ export const renderParkAlerts = (parkAlerts) => {
 
 export const renderNoParkAlerts = () =>{
   const markup = `
-    <div class="alert_item">
+    <p class="alert_item">
       No Alerts For This Park
-    </div>
+    </p>
   `
   elements.parkAlert.insertAdjacentHTML('beforeend', markup)
 }
@@ -174,8 +174,10 @@ export const renderHikesContent = (hikesArray) => {
         <li>
           <a href="${hikesArray[i]["url"]}" target="_blank" rel="noopener">
           <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span> </a>
-          <p class="item_text">${hikesArray[i]["summary"]}
-          ${hikesArray[i]["length"]} Miles  | ${parseHikeLevel(hikesArray[i]["difficulty"])} |  ${hikesArray[i]["location"]}
+          <p class="item_text no_margin_text">
+          <span>${hikesArray[i]["summary"]}</span>
+          <span><img class="icon_small" src="img/icon_distance.png" alt="distance">${hikesArray[i]["length"]} Miles </span>
+          <span> <img src="img/icon_terrain.png" class="icon_small" alt="distance">${parseHikeLevel(hikesArray[i]["difficulty"])} <img src="img/icon_map.png" class="icon_small" alt="distance">${hikesArray[i]["location"]} </span>
           </p>
         </li>
       `;
@@ -184,7 +186,7 @@ export const renderHikesContent = (hikesArray) => {
   } else {
     const markup = `
     <li>
-      Not a lot of hikes nearby. 
+      <p>Not a lot of hikes nearby.</p>
     </li>
   `;
   elements.hikingContent.insertAdjacentHTML('beforeend', markup)
@@ -231,10 +233,9 @@ export const renderMountainContent = (climbsArray) => {
             <span class="item_title"><strong> ${climbsArray[i]["name"]} </strong></span>
           </a>
           <p class="item_text">
-          Type: ${climbsArray[i]["type"]} |
-          ${climbsArray[i]["stars"]} Stars |
-          ${climbsArray[i]["rating"]} Rating | ${locationString}
-         
+            <img class="icon_small" src="img/icon_type.png" alt="type">${climbsArray[i]["type"]} |
+            <img class="icon_small" src="img/icon_stars.png" alt="stars"> ${climbsArray[i]["stars"]}
+            <img class="icon_small" src="img/icon_rate.png" alt="rate"> ${climbsArray[i]["rating"]} Rating | ${locationString}
           </p>
         </li>
       `
@@ -242,7 +243,7 @@ export const renderMountainContent = (climbsArray) => {
     }
   } else {
     const markup = `
-      <li>No Climbs Nearby; Go Hiking!</li>
+      <li><p>No Climbs Nearby; Go Hiking!</p></li>
     `
     elements.mountainContent.insertAdjacentHTML('beforeend', markup)
   }
@@ -281,8 +282,10 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
   } else {
     const markup = `
         <li>
+          <p>
           No camping; maybe 
           <a href="https://www.bbcgoodfood.com/recipes/collection/picnic" target="_blank" rel="noopener">plan a picnic!</a>
+          </p>
         </li>
       `
 
@@ -350,7 +353,7 @@ export const renderMapEmbed = (link) => {
   console.log(`this is the link: ${link}`)
   const markup = `
   <iframe
-  width="500"
+  width="100%"
   height="400"
   frameborder="0" style="border:0"
   src="${link}" allowfullscreen>
@@ -366,6 +369,9 @@ export const renderLoader = () => {
   setTimeout(showPage, 2500);
 }
 const showPage=()=> {
+  // document.getElementById("load").style.display = "none";
+  // document.getElementById("pagebody").style.display = "grid";
+
   document.getElementById("load").style.display = "none";
   document.getElementById("pagebody").style.display = "grid";
 }

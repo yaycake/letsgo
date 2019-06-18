@@ -36,15 +36,22 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Open Sans', sans-serif;
 }
 
+.no_margin_text {
+  margin: 0;
+}
 ul {
   list-style: none;
   padding: 0;
 }
-
+.icon_small {
+  width: 20px;
+  height: 20px;
+  margin: 0 .25rem;
+}
 .icon_loading {
   width: 100px;
 }
@@ -60,7 +67,6 @@ ul {
   position: absolute;
   /* left: 50%;
   top: 50%; */
-
   top: 0;
   bottom: 0;
   right: 0;
@@ -92,14 +98,23 @@ ul {
  position: fixed;
   top: 0;
   padding-left: 2rem;
-  height: 4rem;
-  width: 90%;
+  display: flex;
+  align-items: center;
+  width: 100%;
   background: black;
 }
 
 .nav_title {
-  border-bottom: 1.5px solid whitesmoke;
-  padding-bottom: .5rem;
+  /* border-bottom: 1.5px solid whitesmoke; */
+  margin-bottom: 0;
+}
+
+.nav_line{
+  height: 1.5px;
+  width: 88%;
+  background-color: whitesmoke;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .profile_page_wrapper {
@@ -114,17 +129,18 @@ ul {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  width: 90%;
-  /* height: 100vh; */
-  margin-left:2rem;
-  padding: 4rem 0;
+  /* width: 90%; */
+  height: 85vh;
+  margin:3.25rem 2rem 0 0;
+  overflow:auto;
+  /* border:1px solid blue; */
 }
 
 .park_title > h1 {
-  margin-bottom: 0;
+  margin: 0;
 }
 .park_title > h2 {
-  margin-top:1rem;
+  margin:1rem 0;
 }
 
 .park_summary > p {
@@ -135,16 +151,21 @@ ul {
   grid-column: 1/span 1;
   background-color: whitesmoke;
   margin-top: 2rem;
-  height: 95%;
-  width: 100%;
+  /* height: 80vh; */
+  border-radius: 3px;
+  width: 95%;
+  margin-left:2rem;
 }
 
 .park_profile {
   grid-column: 2/span 1;
-  padding-right: 2rem;
+  padding-right: 1rem;
   display: grid;
   grid-template-rows: 2;
   grid-gap: 1rem;
+  /* height: 80vh;
+  overflow: auto; */
+  padding-top: 2rem;
 }
 
 .profile_header {
@@ -191,7 +212,7 @@ ul {
 }
 
 .tab_menu > button {
-  background-color: black;
+  background-color:  rgba(0,0,0,0);
   border: none;
   /* border-bottom: 2px solid whitesmoke; */
   color: whitesmoke;
@@ -212,7 +233,7 @@ button:focus {
 }
 .activity_label{
   margin: .5rem 0;
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: .5px;
   /* text-transform: uppercase; */
 }
@@ -224,14 +245,21 @@ button:focus {
 
 .activity_content {
   display: none;
-  /* height: 14rem; */
+  height: 16rem;
   overflow: scroll;
-  margin-top: 2rem;
+  margin-bottom: 0;
+  width: 90%;
+  /* margin-top:1rem; */
+}
+
+.activity_content >li {
+  margin-top:.5rem;
+  margin-bottom: 1rem;
 }
 
 .item_title {
   font-weight: bolder;
-  font-size:16px;
+  font-size:14px;
 }
 
 .item_text {
@@ -281,7 +309,7 @@ li > a {
   padding-left: 100%;
   box-sizing: content-box;
   /*font-family: 'Ubuntu Mono', monospace;*/
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -291,10 +319,10 @@ li > a {
   align-items: center;
   white-space: nowrap;
   /*width: 100%;*/
-  padding-right: 100vw;
+  padding-right: 50vw;
   box-sizing: content-box;
   /*background-color: #eee;*/
-  height: 3rem;
+  height: 1.5rem;
   /*border:1px solid blue;*/
 
   -webkit-animation-iteration-count: infinite;
@@ -306,8 +334,8 @@ li > a {
   -webkit-animation-name: ticker;
   animation-name: ticker;
 
-  -webkit-animation-duration: 80s;
-  animation-duration: 80s;
+  -webkit-animation-duration: 50s;
+  animation-duration: 30s;
 }
 
 .alert_link {
@@ -328,17 +356,27 @@ li > a {
   bottom: 0;
   width: 100vw;
   background: black;
-  height: 6rem;
-  
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer_line {
+  height: 1.5px;
+  width: 80%;
+  background-color: whitesmoke;
+  margin-bottom: .5rem;
+  margin-right: 1rem;
 }
 .footer_title {
-  border-bottom:1.5px solid whitesmoke;
+  /* border-bottom:1.5px solid whitesmoke; */
   padding-bottom: .5rem;
   text-align: right;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   cursor: pointer;
+  margin: 0;
 }
 .icon_arrow {
   margin-left: 1rem;
@@ -354,3 +392,33 @@ li > a {
 }
 
 
+
+@media screen and (max-width: 600px){
+  .nav_bar {
+    height: 5rem;
+  }
+  .body_grid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+  }
+  .park_profile {
+    padding: 0 1rem;
+    margin-top:2rem;
+  }
+  .park_image{
+    height: 60vh;
+    width:100%;
+    margin-left: 0;
+  }
+  .tab_menu {
+    grid-gap: 2rem;
+  }
+  .footer {
+    height: 6rem;
+  }
+}
