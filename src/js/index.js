@@ -13,7 +13,10 @@ const state = {};
 // On Window Load, begin Park
 window.addEventListener('load', ()=> {
   controlPark();
+  parkView.renderLoader();
 })
+
+
 
 // * * * * * * * * * *
 // Parks Controller
@@ -144,22 +147,3 @@ document.getElementById('letsgo').addEventListener('click', e =>{
 })
 
 
-// - - - - - - - - - - Loading Animation Before Page Loads
-
-const onReady = (callback) => {
-  var intervalId = window.setInterval(function(){
-    if (parkView.elements.parkHeader != undefined ) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 1000)
-}
-
-const setVisible = (selector, visible) => {
-  selector.style.opacity = visible ? 1 : 0;
-}
-
-onReady(function(){
-  setVisible(parkView.elements.parkBody, true);
-  setVisible(parkView.elements.loader, false)
-})

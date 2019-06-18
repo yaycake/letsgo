@@ -1,5 +1,6 @@
 import { fadeIn } from '../models/base';
 
+
 export const elements = {
   parkHeader: document.querySelector('.park_header'),
   parkBody: document.querySelector('.body_grid'),
@@ -53,7 +54,7 @@ export const renderParkHeader = (park) => {
 
 export const renderParkImage = (park) => {
   const markup = `
-    <div class="park_image" style="background:url(${park.imageUrl}); background-position: center; background-size: cover;">
+    <div class="park_image" alt="park image" style="background:url(${park.imageUrl}); background-position: center; background-size: cover;">
     </div>
   `
   elements.parkBody.insertAdjacentHTML('afterbegin', markup)
@@ -91,11 +92,9 @@ export const renderParkImage = (park) => {
 export const renderParkAlerts = (parkAlerts) => {
   console.log('inside render park alerts')
   console.log(parkAlerts)
-
   const alerticon = `
-    <img class="icon_alert" src="img/icon_alert.png">
+    <img class="icon_alert" alt="alerticon" src="img/icon_alert.png">
   `
-
   elements.parkAlert.insertAdjacentHTML('afterbegin', alerticon)
 
   if (parkAlerts.length > 0){
@@ -108,12 +107,11 @@ export const renderParkAlerts = (parkAlerts) => {
         
         const markup = `
           <div class="alert_item">
-            <a class="alert_link" href="${alert.url}" target="_blank">
+            <a class="alert_link" href="${alert.url}" target="_blank" rel="noopener">
               ${alert.title}: ${alert.description}
             </a>
           </div>
         `
-        
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       } else {
         console.log("RENDERING PARK ALERT NO URL")
@@ -134,7 +132,6 @@ export const renderParkAlerts = (parkAlerts) => {
     `
     elements.parkAlert.insertAdjacentHTML('beforeend', markup)
   }
-  
 }
 
 export const renderNoParkAlerts = () =>{
@@ -175,7 +172,7 @@ export const renderHikesContent = (hikesArray) => {
     for (i =0; i < hikesArray.length; i ++) {
       const markup = `
         <li>
-          <a href="${hikesArray[i]["url"]}" target="_blank">
+          <a href="${hikesArray[i]["url"]}" target="_blank" rel="noopener">
           <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span> </a>
           <p class="item_text">${hikesArray[i]["summary"]}
           ${hikesArray[i]["length"]} Miles  | ${parseHikeLevel(hikesArray[i]["difficulty"])} |  ${hikesArray[i]["location"]}
@@ -197,7 +194,7 @@ export const renderHikesContent = (hikesArray) => {
 
 const renderHikesTablink = () => {
   const markup = `
-  <img src="img/icon_hike.png" alt="" class="activity_icon">
+  <img src="img/icon_hike.png" alt="hikingicon" class="activity_icon">
   <span class="activity_label">Hiking</span>
   `
   elements.hikingTab.insertAdjacentHTML('afterbegin', markup)
@@ -230,7 +227,7 @@ export const renderMountainContent = (climbsArray) => {
       
       const markup = `
         <li>
-          <a href="${climbsArray[i]["url"]}""  target="_blank">
+          <a href="${climbsArray[i]["url"]}""  target="_blank" rel="noopener">
             <span class="item_title"><strong> ${climbsArray[i]["name"]} </strong></span>
           </a>
           <p class="item_text">
@@ -254,7 +251,7 @@ export const renderMountainContent = (climbsArray) => {
 
 const renderClimbsTablink = () => {
   const markup = `
-  <img src="img/icon_climb.png" alt="" class="activity_icon">
+  <img src="img/icon_climb.png" alt="climbingicon" class="activity_icon">
   <span class="activity_label">Climbing</span>
   `
   elements.climbingTab.insertAdjacentHTML('afterbegin', markup)
@@ -268,7 +265,7 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
     for (i=0; i <campsArray.length; i++){
       const markup = `
         <li>
-        <a href="https://www.nps.gov/${currentParkCode}/planyourvisit/index.htm" target="_blank">
+        <a href="https://www.nps.gov/${currentParkCode}/planyourvisit/index.htm" target="_blank" rel="noopener">
         // <span class="item_title"><strong> ${campsArray[i]["name"]}</strong></span>
         </a>
           <p class="item_text">
@@ -285,7 +282,7 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
     const markup = `
         <li>
           No camping; maybe 
-          <a href="https://www.bbcgoodfood.com/recipes/collection/picnic" target="_blank">plan a picnic!</a>
+          <a href="https://www.bbcgoodfood.com/recipes/collection/picnic" target="_blank" rel="noopener">plan a picnic!</a>
         </li>
       `
 
@@ -296,7 +293,7 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
 
 const renderCampsTablink = () => {
   const markup = `
-  <img src="img/icon_camp.png" alt="" class="activity_icon">
+  <img src="img/icon_camp.png" alt="campingicon" class="activity_icon">
   <span class="activity_label">Camping</span>
   `
   elements.campingTab.insertAdjacentHTML('afterbegin', markup)
@@ -314,7 +311,7 @@ export const renderWeather = (weather) => {
   const markup = `
     <div class="park_weather">
       <p>Current Conditions: </p>
-      <img src="img/${weather.icon}" alt="weather" class="weather_icon">
+      <img src="img/${weather.icon}" alt="weathericon" class="weather_icon">
       <p class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]} </p>
     </div>
   `
@@ -339,7 +336,7 @@ export const renderWeather = (weather) => {
 const renderMapTablink = () => {
   console.log("in renderMapTabLink")
   const markup = `
-  <img src="img/icon_map.png" alt="" class="activity_icon">
+  <img src="img/icon_map.png" alt="mapicon" class="activity_icon">
   <span class="activity_label">Map</span>
   `
   elements.mapTab.insertAdjacentHTML('afterbegin', markup)
@@ -364,3 +361,11 @@ export const renderMapEmbed = (link) => {
   renderMapTablink();
 }
 
+
+export const renderLoader = () => {
+  setTimeout(showPage, 2500);
+}
+const showPage=()=> {
+  document.getElementById("load").style.display = "none";
+  document.getElementById("pagebody").style.display = "grid";
+}
