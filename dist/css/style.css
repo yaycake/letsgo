@@ -128,8 +128,14 @@ ul {
 .nav_title {
   /* border-bottom: 1.5px solid whitesmoke; */
   margin-bottom: 0;
-  text-shadow:2px 2px 4px rgba(0,0,0,.5)
+  text-shadow:2px 2px 4px rgba(0,0,0,.5);
+  transition: all .5s ease-in-out;
 }
+
+.nav_title:hover{
+  transform: scale(1.1)
+}
+
 
 .nav_line{
   height: 1.5px;
@@ -438,6 +444,11 @@ li > a {
   right: 2rem;
   bottom:1rem;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.icon_arrow:hover{
+  transform: scale(1.5)
 }
 
 .icon_alert {
