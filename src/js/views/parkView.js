@@ -57,7 +57,12 @@ export const renderParkImage = (park) => {
     <div class="park_image" alt="park image" style="background:url(${park.imageUrl}); background-position: center; background-size: cover;">
     </div>
   `
+  const markup2 = `
+    <div class="park_image_2" alt="park image" style="background:url(${park.imageUrl}); background-position: center; background-size: cover;">
+    </div>
+  `
   elements.parkBody.insertAdjacentHTML('afterbegin', markup)
+  elements.parkBody.insertAdjacentHTML('beforeend', markup2)
   elements["parkImage"] = document.querySelector('.park_image')
 }
 
@@ -172,13 +177,18 @@ export const renderHikesContent = (hikesArray) => {
     for (i =0; i < hikesArray.length; i ++) {
       const markup = `
         <li>
-          <a href="${hikesArray[i]["url"]}" target="_blank" rel="noopener">
-          <span class="item_title"><strong>${hikesArray[i]["name"]}</strong></span> </a>
-          <p class="item_text no_margin_text">
-          <span>${hikesArray[i]["summary"]}</span>
-          <span><img class="icon_small" src="img/icon_distance.png" alt="distance">${hikesArray[i]["length"]} Miles </span>
-          <span> <img src="img/icon_terrain.png" class="icon_small" alt="distance">${parseHikeLevel(hikesArray[i]["difficulty"])} <img src="img/icon_map.png" class="icon_small" alt="distance">${hikesArray[i]["location"]} </span>
-          </p>
+          <ul class="item_list">
+            <li class="item_title"><a class="item_link" href="${hikesArray[i]["url"]}" target="_blank" rel="noopener"><strong>${hikesArray[i]["name"]}</strong></a>
+            </li>
+            <li class="item_li item_text"><p>${hikesArray[i]["summary"]}</p></li>
+            <li class="item_li item_text">
+              <p>
+                <img class="icon_small" src="img/icon_distance.png" alt="distance">${hikesArray[i]["length"]} miles 
+                <img src="img/icon_terrain.png" class="icon_small" alt="distance">${parseHikeLevel(hikesArray[i]["difficulty"])}
+              </p>
+            </li>
+            <li class="item_li item_text"><img src="img/icon_map.png" class="icon_small" alt="distance"><p>${hikesArray[i]["location"]}</p></li>
+          </ul>
         </li>
       `;
       elements.hikingContent.insertAdjacentHTML('beforeend', markup)
@@ -229,14 +239,17 @@ export const renderMountainContent = (climbsArray) => {
       
       const markup = `
         <li>
-          <a href="${climbsArray[i]["url"]}""  target="_blank" rel="noopener">
-            <span class="item_title"><strong> ${climbsArray[i]["name"]} </strong></span>
-          </a>
-          <p class="item_text">
-            <img class="icon_small" src="img/icon_type.png" alt="type">${climbsArray[i]["type"]} |
-            <img class="icon_small" src="img/icon_stars.png" alt="stars"> ${climbsArray[i]["stars"]}
-            <img class="icon_small" src="img/icon_rate.png" alt="rate"> ${climbsArray[i]["rating"]} Rating | ${locationString}
-          </p>
+          <ul class="item_list">
+            <li class="item_title"><a class="item_link" href="${climbsArray[i]["url"]}" target="_blank" rel="noopener"> <strong> ${climbsArray[i]["name"]} </strong> </a></li>
+            <li class="item_text item_li">
+              <p>
+                <img class="icon_small" src="img/icon_type.png" alt="type">${climbsArray[i]["type"]}
+                <img class="icon_small" src="img/icon_stars.png" alt="stars"> ${climbsArray[i]["stars"]} stars 
+                <img class="icon_small" src="img/icon_rate.png" alt="rate"> ${climbsArray[i]["rating"]} Rating 
+              </p>
+            </li>
+            <li class="item_text item_li"><img class="icon_small" src="img/icon_map.png" alt="rate"><p>${locationString}</p></li>
+          </ul>
         </li>
       `
       elements.mountainContent.insertAdjacentHTML('beforeend', markup)
@@ -288,7 +301,6 @@ export const renderCampingContent = (campsArray, currentParkCode) => {
           </p>
         </li>
       `
-
       elements.campingContent.insertAdjacentHTML('beforeend', markup)
   }
   renderCampsTablink();
@@ -303,17 +315,10 @@ const renderCampsTablink = () => {
 }
 
 export const renderWeather = (weather) => {
-  console.log(`We're in weather: ${weather}`)
-
-  // const markup = `
-  //   <div class = "weather_icon" style="background: url('img/${weather.icon}'); background-repeat: no-repeat; background-position: center; background-size: 75%">
-  //   </div>
-  //   <div class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]}</div>
-  // `
-
+  // console.log(`We're in weather: ${weather}`)
   const markup = `
     <div class="park_weather">
-      <p>Current Conditions: </p>
+      <strong><p>Current Conditions: </p></strong>
       <img src="img/${weather.icon}" alt="weathericon" class="weather_icon">
       <p class="weather_desc"> ${Math.ceil(weather["currentTemp"])}F ${weather["description"]} </p>
     </div>
@@ -366,7 +371,7 @@ export const renderMapEmbed = (link) => {
 
 
 export const renderLoader = () => {
-  setTimeout(showPage, 2500);
+  setTimeout(showPage, 3000);
 }
 const showPage=()=> {
   // document.getElementById("load").style.display = "none";
