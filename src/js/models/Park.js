@@ -36,15 +36,15 @@ export default class Park {
   async getPark() {
     try {
       //DEV View Query Sent
-      console.log("Query Sent:")
-      console.log(this.parkCode)
+      // console.log("Query Sent:")
+      // console.log(this.parkCode)
 
       // Load API response into a variable
       const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
 
       // DEV View Results of API Call
-      console.log('Here are results:')
-      console.log(res)
+      // console.log('Here are results:')
+      // console.log(res)
 
 
       if (res.data.total == 1){
@@ -61,8 +61,8 @@ export default class Park {
         this.states = res.data.data[0].states;
         // this.weather = res.data.data[0].weatherInfo;
 
-        console.log(res.data.data[0].latLong)
-        console.log("Building lat long:")
+        // console.log(res.data.data[0].latLong)
+        // console.log("Building lat long:")
 
         // Build park.latLong
         const latLongArr = res.data.data[0].latLong.split(" ");
@@ -76,8 +76,8 @@ export default class Park {
         const res = await axios(`${nps.baseUrl}parks?parkCode=${this.parkCode}&api_key=${nps.apiKey}`);
       }
     } catch (error) {
-      console.log(error);
-      alert('Something went wrong in getting park!')
+      // console.log(error);
+      // alert('Something went wrong in getting park!')
     }
   }
 
@@ -88,8 +88,8 @@ export default class Park {
       console.log(res)
       let campsites = res.data.data
 
-      console.log(`HERE R camps: ${campsites}`)
-      console.log(campsites.first)
+      // console.log(`HERE R camps: ${campsites}`)
+      // console.log(campsites.first)
       if (campsites.length > 0) {
         this.campsArray = shuffle(campsites).slice(0,5);
       } else {
@@ -97,8 +97,8 @@ export default class Park {
       }
 
     } catch (error) {
-      console.log(error)
-      console.log('trouble in getting camps!')
+      // console.log(error)
+      // console.log('trouble in getting camps!')
     }
   }
 
@@ -123,39 +123,39 @@ export default class Park {
           const nextAlert = new ParkAlert(parkAlert.title, parkAlert.description, parkAlert.url)
 
           //DEV View Each Alert
-          console.log(nextAlert)
-          console.log('pushing to parkAlerts...')
+          // console.log(nextAlert)
+          // console.log('pushing to parkAlerts...')
 
           // 2. Push alert into parkAlerts array
           alertsArray.push(nextAlert)
 
           //DEV View Park Alerts
-          console.log("this is alertArray:")
-          console.log(alertsArray)
+          // console.log("this is alertArray:")
+          // console.log(alertsArray)
 
         })
         this.parkAlertsArr = alertsArray;
 
         //DEV View this.parkalertarr
         console.log("This is this.parkAlertsArr:")
-        console.log(this.parkAlertsArr)
+        // console.log(this.parkAlertsArr)
 
         // Otherwise, if there are no alerts
       } else {
-        console.log("There are no alerts for this park!")
+        // console.log("There are no alerts for this park!")
         // return an empty array
         return this.parkAlertsArr;
       }
 
     } catch (error){
       console.log(error)
-      alert('Something wrong with getting Park Alerts!')
+      // alert('Something wrong with getting Park Alerts!')
     }
   }
 
   async getHikes() {
     try {
-      console.log("Getting hikes")
+      // console.log("Getting hikes")
 
       const res = await axios (`${hikes.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${hikes.apiKey}`)
 
@@ -164,7 +164,7 @@ export default class Park {
       if (trails.length > 0) {
         this.hikesArray = shuffle(trails).slice(0,5);
       } else {
-        console.log("No Hikes Near Here")
+        // console.log("No Hikes Near Here")
       }
 
       console.log(res)
@@ -176,29 +176,30 @@ export default class Park {
 
   async getClimbs() {
     try {
-      console.log("getting climbs")
-      console.log(`Heres the latitude:${this.latLong.latitude}`)
+      // console.log("getting climbs")
+      // console.log(`Heres the latitude:${this.latLong.latitude}`)
 
       const res = await axios (`${mountain.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${mountain.apiKey}`)
 
-      console.log('Here are the climbs')
-      console.log(res)
+      // console.log('Here are the climbs')
+      // console.log(res)
 
       let routes = res.data.routes;
       if (routes.length > 0){
         this.climbsArray = shuffle(routes).slice(0,5);
         console.log(`HERE ARE RANDO CLIMBS: ${this.climbsArray}`)
       } else {
-        console.log('No Climbs Near Here!')
+        // console.log('No Climbs Near Here!')
       }
     } catch (error) {
       console.log(error);
-      alert('Something Went Wrong In Getting Climbs')
+      // alert('Something Went Wrong In Getting Climbs')
     }
   }
 
   getMapLink(){
     console.log( `in getMapLink`)
+    console.log(this.name)
     const locationName = this.name.replace(/\s+/g, '+').toLowerCase()
 
     // if location is more than one word
