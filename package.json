@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+   
+    "build": "node node_modules/webpack/bin/webpack.js --display-error-details",
+    "start": "webpack-dev-server --mode development --open",
+    "heroku-prebuild": "npm install -dev"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "axios": "^0.18.0"
+    "axios": "^0.18.1"
   }
 }
