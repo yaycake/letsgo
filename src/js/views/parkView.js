@@ -103,12 +103,9 @@ export const renderParkAlerts = (parkAlerts) => {
   elements.parkAlert.insertAdjacentHTML('afterbegin', alerticon)
 
   if (parkAlerts.length > 0){
-
-    console.log("AYE THERE BE PARK ALERTS")
     parkAlerts.forEach(function(alert){
       
       if (alert.url){
-        console.log("RENDERING PARK ALERT + URL")
         
         const markup = `
           <p class="alert_item">
@@ -119,7 +116,6 @@ export const renderParkAlerts = (parkAlerts) => {
         `
         elements.parkAlert.insertAdjacentHTML('beforeend', markup)
       } else {
-        console.log("RENDERING PARK ALERT NO URL")
         const markup = `
           <p class="alert_item">
               ${alert.title}:${alert.description}

@@ -155,7 +155,6 @@ export default class Park {
 
   async getHikes() {
     try {
-      // console.log("Getting hikes")
 
       const res = await axios (`${hikes.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${hikes.apiKey}`)
 
@@ -176,13 +175,8 @@ export default class Park {
 
   async getClimbs() {
     try {
-      // console.log("getting climbs")
-      // console.log(`Heres the latitude:${this.latLong.latitude}`)
 
       const res = await axios (`${mountain.baseUrl}${this.latLong.latitude}&lon=${this.latLong.longitude}&key=${mountain.apiKey}`)
-
-      // console.log('Here are the climbs')
-      // console.log(res)
 
       let routes = res.data.routes;
       if (routes.length > 0){
@@ -193,7 +187,7 @@ export default class Park {
       }
     } catch (error) {
       console.log(error);
-      // alert('Something Went Wrong In Getting Climbs')
+      alert('Something Went Wrong In Getting Climbs')
     }
   }
 
