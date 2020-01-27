@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-   
     "build": "node node_modules/webpack/bin/webpack.js --display-error-details",
     "start": "webpack-dev-server --mode development --open",
     "heroku-prebuild": "npm install -dev"
