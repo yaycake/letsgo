@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "build": "node node_modules/webpack/bin/webpack.js --display-error-details",
-    "start": "node server.js",
+    "start": "node src/server.js",
     "heroku-postbuild": "webpack -p",
     "heroku-prebuild": "npm install -dev"
   },
